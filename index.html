@@ -4,348 +4,165 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       
-<title>Foundation | Welcome</title>
+<title>The Dark Side Of Tomato</title>
 <link rel="stylesheet" href="css/foundation.css" />
 <script src="js/modernizr.js"></script>
-<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="http://api.tiles.mapbox.com/mapbox.js/v1.5.2/mapbox.js"></script>
-<link href="http://api.tiles.mapbox.com/mapbox.js/v1.5.2/mapbox.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/style.css">
       
-     <script> 
-$(document).ready(function () {
-       $('li.scrolling').on('click', 'a.scroll', function() {
-    event.preventDefault();
-    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
-  });
+      <script>
+      
+          jQuery(document).ready(function($) {  
+
+// site preloader -- also uncomment the div in the header and the css style for #preloader
+$(window).load(function(){
+	$('#preloader').fadeOut('slow',function(){$(this).remove();});
 });
-     
-     </script> 
-<script type="text/javascript">
-    
-   function animate() {
-    var $lefty = $('#slideleft .mybutton').parent();
-    $lefty.animate({
-        left: parseInt($lefty.css('left'), 10) == 0 ? -$lefty.outerWidth() + 50 : 0
-    });
-}
-    
-$(document).ready(function () {
-    $('#slideleft .mybutton').click(function () {
-        animate();
-    });
-    $(document).mouseup(function (e) {
-        var $lefty = $('#slideleft .mybutton').parent();
-        var container = $("#slideleft");
-        if (parseInt($lefty.css('left')) == 0) if (container.has(e.target).length === 0) {
-            animate();
-        }
-    });
+
 });
       
-</script>
+      </script>
+      
+    
     
   </head>
   <body>
+      <div id="preloader"></div>
       
-      <!-- -----------------------------------------------------------------   MOBILE       SLIDER & MAP -->
-      
-      
-      
-   
-    <nav class="top-bar show-for-touch" data-topbar style="position:fixed; width:100%; z-index:999999">
-  <ul class="title-area">
-    <li class="name">
-      
-    </li>
-    <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
-  </ul>
+      <div class="flex-video">
+        
+  <video autoplay>
+  <source src="video/darkside2.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
 
-  <section class="top-bar-section">
-    <!-- Right Nav Section -->
-    <ul class="right">
-      <li class="active scrolling"><a class="scroll" href="#campania">CAMPANIA</a></li>
-      <li class="has-dropdown">
-        <a href="#">button</a>
-        <ul class="dropdown">
-          <li><a href="#">First link in dropdown</a></li>
-        </ul>
-      </li>
-    </ul>
+</video>
+          </div>
+      
+      <div class="row">
+<div class="medium-7 large-centered columns">
+      <p>  <span class="firstcharacter">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas felis nisl, elementum quis rhoncus vitae, sagittis et orci. Mauris eu ligula in neque malesuada feugiat. Phasellus quis dictum erat, id placerat augue. Suspendisse dui est, molestie quis scelerisque et, iaculis ac justo. Nunc eu posuere arcu, ut pellentesque diam. Fusce id faucibus neque. Nam scelerisque scelerisque nisi, eget vulputate massa vulputate accumsan. Nulla eget diam fringilla, venenatis magna a, ullamcorper mi. Vestibulum porta massa eget suscipit aliquet.
+Aliquam mollis a nulla eget mollis. Donec sit amet posuere arcu. Donec posuere a dolor eu eleifend. Mauris hendrerit, neque sed pulvinar malesuada, dolor est fringilla erat, in egestas arcu nibh vitae ante. Donec pulvinar vitae eros eu semper. Sed malesuada adipiscing mauris, eu lobortis ligula suscipit et. Praesent aliquet, sem eget sodales tristique, ligula justo sagittis turpis, ac iaculis urna nisl eu velit. Cras faucibus dui quam, at mattis massa pretium in. Nam vel justo convallis, feugiat nisi hendrerit, hendrerit orci.<br /><br /></p><br /><br />
+    </div>
+    </div>
+          
+    <div class="header">
+        <img src="img/mockup-04.png">
+      
+    </div>
+ 
+         
 
-    <!-- Left Nav Section -->
-    <ul class="left">
-      <li><a href="#">Left Nav Button</a></li>
-    </ul>
-  </section>
-</nav>
-</div>
+
+      <div class="header">
+<div class="flex-video">
+        
+  <video autoplay loop>
+  <source src="video/ghana_market.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+
+</video>
+          </div>
+          </div>
 
  
-      <div class="header bg-01">
-     <h1>I AM TITOLO</h1>
-          <h1><small>And i am Sottotitolo</small></h1>
-      </div>
-     
-  
-  
-<!-- End Header and Nav -->
+
+
+
+
+    
+      
+      
+
  
-<!-- First Band (Slider) -->
-     
-<div class="row">
-    <div class="large-12 columns"> 
-        <h1>GALLERIA IMMAGINI</h1>
-         <h1><small>Funziona anche con lo swipe su mobile</small></h1>
-  <div class="orbit-container">
-  <ul class="example-orbit" data-orbit>
-  <li>
-    <img src="img/001.jpg" alt="slide 1" />
-    <div class="orbit-caption">
-      Caption One.
+      
+      
+        
+      
+      
+  
+       <div class="row">
+<div class="medium-7 large-centered columns">
+      <p>  <span class="firstcharacter">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas felis nisl, elementum quis rhoncus vitae, sagittis et orci. Mauris eu ligula in neque malesuada feugiat. Phasellus quis dictum erat, id placerat augue. Suspendisse dui est, molestie quis scelerisque et, iaculis ac justo. Nunc eu posuere arcu, ut pellentesque diam. Fusce id faucibus neque. Nam scelerisque scelerisque nisi, eget vulputate massa vulputate accumsan. Nulla eget diam fringilla, venenatis magna a, ullamcorper mi. Vestibulum porta massa eget suscipit aliquet.
+Aliquam mollis a nulla eget mollis. Donec sit amet posuere arcu. Donec posuere a dolor eu eleifend. Mauris hendrerit, neque sed pulvinar malesuada, dolor est fringilla erat, in egestas arcu nibh vitae ante. Donec pulvinar vitae eros eu semper. Sed malesuada adipiscing mauris, eu lobortis ligula suscipit et. Praesent aliquet, sem eget sodales tristique, ligula justo sagittis turpis, ac iaculis urna nisl eu velit. Cras faucibus dui quam, at mattis massa pretium in. Nam vel justo convallis, feugiat nisi hendrerit, hendrerit orci.<br /><br />
+Aenean commodo nisl a sodales lacinia. Praesent ac elementum turpis, id pellentesque ligula. Morbi euismod congue eros. Vestibulum turpis dui, facilisis non hendrerit id, vehicula malesuada augue. Phasellus dignissim enim sed ipsum ultrices luctus quis vitae ligula. Maecenas turpis arcu, sagittis eu nulla in, congue aliquam ante. Ut euismod varius eleifend. Ut ut cursus sapien, ut malesuada elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam facilisis enim vitae feugiat viverra. Mauris ligula odio, commodo at nulla ut, tempor volutpat risus. Quisque tempus odio quis ligula rutrum elementum. Etiam adipiscing lorem id purus ultrices bibendum. Integer augue neque, consectetur ac viverra id, convallis ac lectus. Phasellus ultricies eros venenatis lacus pulvinar, sit amet eleifend odio semper.</p><br /><br />
     </div>
-  </li>
-  <li>
-    <img src="img/002.jpg" alt="slide 2" />
-    <div class="orbit-caption">
-      Caption Two.
     </div>
-  </li>
-  <li>
-    <img src="img/003.jpg" alt="slide 3" />
-    <div class="orbit-caption">
-      Caption Three.
-    </div>
-  </li>
-</ul>
-</div>
-</div>
-</div>
-
-
-<!-- -----------------------------------------------------------------         PARALLAX -->   
+         <!-- -----------------------------------------------------------------         PARALLAX -->   
       <div class="row">
     <div class="large-12 columns">  
-      
-      <h1>I AM PARALLAX IMAGE</h1>
-         <h1><small>with animated overlay</small></h1>
-<div class="row cont hide-for-small-only">
+<div class="row cont hide-for-touch">
     <div class="large-12 columns overlay" id="parallax">
-        <q>ME PARALLAX (hover and im gone)</q>
+        <q>This caption inside image</q>
     </div>
 </div>
     
   </div>
-          </div>
-    
-      
-      
-
- 
-      <!-- -----------------------------------------------------------------   DeSKTOP       SLIDER & MAP -->
-      
-      
-<div class="show-for-large-up" data-magellan-expedition="fixed" style="background-color:transparent;">
-
-   
-      <div id="slideleft" class="slide"> 
-            <div class="inner">
-                <div class="scontent">
-                    
-<div id="map" class="leaflet-container leaflet-fade-anim" tabindex="0" style="position: relative;"><div class="leaflet-map-pane" style="-webkit-transform: translate3d(0px, 0px, 0);"><div class="leaflet-tile-pane"><div class="leaflet-layer"><div class="leaflet-tile-container"></div><div class="leaflet-tile-container leaflet-zoom-animated"><img class="leaflet-tile leaflet-tile-loaded" src="http://c.tiles.mapbox.com/v3/distant.goc6plnk/4/8/6.png" style="height: 256px; width: 256px; left: 282px; top: 98px;"><img class="leaflet-tile leaflet-tile-loaded" src="http://d.tiles.mapbox.com/v3/distant.goc6plnk/4/8/7.png" style="height: 256px; width: 256px; left: 282px; top: 354px;"><img class="leaflet-tile leaflet-tile-loaded" src="http://b.tiles.mapbox.com/v3/distant.goc6plnk/4/7/6.png" style="height: 256px; width: 256px; left: 26px; top: 98px;"><img class="leaflet-tile leaflet-tile-loaded" src="http://b.tiles.mapbox.com/v3/distant.goc6plnk/4/8/5.png" style="height: 256px; width: 256px; left: 282px; top: -158px;"><img class="leaflet-tile leaflet-tile-loaded" src="http://d.tiles.mapbox.com/v3/distant.goc6plnk/4/9/6.png" style="height: 256px; width: 256px; left: 538px; top: 98px;"><img class="leaflet-tile leaflet-tile-loaded" src="http://a.tiles.mapbox.com/v3/distant.goc6plnk/4/9/7.png" style="height: 256px; width: 256px; left: 538px; top: 354px;"><img class="leaflet-tile leaflet-tile-loaded" src="http://c.tiles.mapbox.com/v3/distant.goc6plnk/4/9/5.png" style="height: 256px; width: 256px; left: 538px; top: -158px;"><img class="leaflet-tile leaflet-tile-loaded" src="http://c.tiles.mapbox.com/v3/distant.goc6plnk/4/7/7.png" style="height: 256px; width: 256px; left: 26px; top: 354px;"><img class="leaflet-tile leaflet-tile-loaded" src="http://a.tiles.mapbox.com/v3/distant.goc6plnk/4/7/5.png" style="height: 256px; width: 256px; left: 26px; top: -158px;"><img class="leaflet-tile leaflet-tile-loaded" src="http://a.tiles.mapbox.com/v3/distant.goc6plnk/4/10/6.png" style="height: 256px; width: 256px; left: 794px; top: 98px;"><img class="leaflet-tile leaflet-tile-loaded" src="http://a.tiles.mapbox.com/v3/distant.goc6plnk/4/6/6.png" style="height: 256px; width: 256px; left: -230px; top: 98px;"><img class="leaflet-tile leaflet-tile-loaded" src="http://d.tiles.mapbox.com/v3/distant.goc6plnk/4/10/5.png" style="height: 256px; width: 256px; left: 794px; top: -158px;"><img class="leaflet-tile leaflet-tile-loaded" src="http://d.tiles.mapbox.com/v3/distant.goc6plnk/4/6/5.png" style="height: 256px; width: 256px; left: -230px; top: -158px;"><img class="leaflet-tile leaflet-tile-loaded" src="http://b.tiles.mapbox.com/v3/distant.goc6plnk/4/6/7.png" style="height: 256px; width: 256px; left: -230px; top: 354px;"><img class="leaflet-tile leaflet-tile-loaded" src="http://b.tiles.mapbox.com/v3/distant.goc6plnk/4/10/7.png" style="height: 256px; width: 256px; left: 794px; top: 354px;"></div></div></div><div class="leaflet-objects-pane"><div class="leaflet-shadow-pane"><img src="//api.tiles.mapbox.com/mapbox.js/v1.5.1/images/marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; -webkit-transform: translate3d(449px, 102px, 0);"><img src="//api.tiles.mapbox.com/mapbox.js/v1.5.1/images/marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; -webkit-transform: translate3d(280px, 546px, 0);"></div><div class="leaflet-overlay-pane"></div><div class="leaflet-marker-pane"><img src="//api.tiles.mapbox.com/mapbox.js/v1.5.1/images/marker-icon.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-clickable" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; -webkit-transform: translate3d(449px, 102px, 0); z-index: 102;"><img src="//api.tiles.mapbox.com/mapbox.js/v1.5.1/images/marker-icon.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-clickable" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; -webkit-transform: translate3d(280px, 546px, 0); z-index: 546;"></div><div class="leaflet-popup-pane"></div></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"></div><div class="leaflet-top leaflet-right"><div class="leaflet-control-grid map-tooltip leaflet-control" style="display: none;"><a class="close" href="#" title="close">close</a><div class="map-tooltip-content"></div></div></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="map-legends wax-legends leaflet-control" style="display: none;"></div><div class="mapbox-control-info mapbox-small mapbox-control-info-right leaflet-control" style="display: block;"><div class="map-info-container"><a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a></div><a class="mapbox-info-toggle mapbox-icon mapbox-icon-info" href="#"></a></div></div></div></div> 
-
-           
-        </div>
-        <div class="mybutton"><i style="color:white" class="fa fa-bars fa-2x"></i></div>
-        <div style="clear:both;"></div>
     </div>
-</div>
-        
+      
+       
      
-       
-      
-      <script>
- 
-function onEachFeature(feature, layer) {
-    // does this feature have a property named popupContent?
-    if (feature.properties && feature.properties.popupContent) {
-        layer.bindPopup(feature.properties.popupContent);
-    }
-}
- 
- 
-
- var geojson = [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [14.63958,40.74325]
-      },
-      "properties": {
-        "title": "MapBox DC",
-        "popupContent": "<a class='scroll' href='#campania'>Campania</a>",
-        "marker-color": "#fc4353",
-        "marker-size": "small",
-        "marker-symbol": "monument"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-0.19897,5.58108]
-      },
-      "properties": {
-        "title": "MapBox SF",
-        "popupContent": "<a class='scroll' href='#ghana'>Ghana</a>",
-        "marker-color": "#fc4353",
-        "marker-size": "small",
-        "marker-symbol": "harbor"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [15.58,41.67]
-      },
-      "properties": {
-        "title": "MapBox SF",
-        "popupContent": "<a class='scroll' href='#puglia'>Puglia</a>",
-        "marker-color": "#fc4353",
-        "marker-size": "small",
-        "marker-symbol": "harbor"
-      }
-    }
-  ];
-
- 
-  var map = L.mapbox.map('map', 'distant.goc6plnk', {zoomControl: false});
- 
-    map.setView([26.27371402440643, 10.590820312499998], 4);
-    map.dragging.disable();
-    map.touchZoom.disable();
-    map.doubleClickZoom.disable();
-    map.scrollWheelZoom.disable();
- 
-  L.geoJson(geojson, {
-    pointToLayer: function (feature, latlng) {
-      marker = L.marker(latlng);
-      marker.desc = feature.properties.popupContent;
-      marker.bindPopup(marker.desc);
-      marker.addTo(map); 
-      return marker;
-    }
-  });
-          
-             $('div.leaflet-popup-pane').on('click', 'a.scroll', function() {
-    event.preventDefault();
-    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
-  });
- 
- 
-</script>
-       
-       
-  
- 
-</div>    
-      
-      
-  <div class="row">
-    <div class="large-12 columns"> 
-        <h1> &lt;-----IO SONO LA MAPPA</h1>
-        <h1> <small>Mi chiudo se clicchi sull'icona o in qualsiasi punto della pagina</small></h1>
-      
-    </div>
-  
-    </div>
+<div class="row cont show-for-touch">
     
-      
-      <div class="row">
-    <div class="large-12 columns"> 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat, eros eu viverra fringilla, sapien tellus aliquet nunc, vitae luctus est diam in felis. Aenean sagittis eleifend neque vel imperdiet. Nam dui eros, fermentum eget nisl vitae, suscipit fermentum lorem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed dui nulla, pharetra non ullamcorper a, tincidunt non neque. Etiam neque nisi, condimentum vel enim ut, auctor malesuada nibh. In sit amet aliquam turpis, commodo varius nunc.
+        <div class="row">
+        <div class="medium-9 large-centered columns">
+          <p class="quotation-mark">This caption substitute parallax on touck device</p>
+        </div>
+       </div>
+    </div>
 
-Aliquam porta quam quis rutrum hendrerit. Aenean molestie blandit eros facilisis pharetra. Ut tristique ipsum ut velit fringilla, euismod egestas orci vehicula. Pellentesque dignissim eu nunc ut viverra. Curabitur posuere ipsum ut euismod feugiat. Curabitur posuere justo quam, ac tristique nisl lacinia at. Ut interdum leo non libero interdum, ut consequat enim dignissim. Nunc non libero id libero elementum sagittis quis vitae massa. Integer gravida nibh eu lacinia malesuada. Pellentesque id sagittis purus. Vestibulum pellentesque gravida arcu sit amet viverra. Suspendisse vitae fringilla quam. Donec non aliquet magna. Vestibulum accumsan leo ut lacus lobortis molestie. Nam augue eros, lacinia eu aliquet a, blandit non risus.</p>
-      
+    
+  </div>
     </div>
-  
-    </div>
+          
+    <div class="row">
+       <div class="medium-7 large-centered columns">
+        <p>
+            <br /><br />
+Vestibulum blandit rhoncus quam. Maecenas nibh eros, venenatis sed lacinia a, semper vitae quam. Nullam varius pulvinar eros id consequat. In sed eros et augue ultricies placerat sed sit amet leo. Maecenas id felis at velit gravida vulputate quis vitae purus. Maecenas sit amet augue ut tellus faucibus luctus. Praesent imperdiet sagittis justo eget pretium. Cras a eros eleifend, pretium enim a, tristique sem. Curabitur semper scelerisque congue. Mauris tristique nisi a arcu tristique dictum. Integer dignissim urna nec eros tincidunt tempus. Donec tempus metus eget ante lobortis dignissim. Nulla sed iaculis nisl. Aliquam nec vulputate augue. Etiam et aliquam lorem. Aliquam erat volutpat.
+Nullam ut lectus tincidunt, consectetur neque eget, facilisis metus. Sed a ante velit. Ut volutpat lacus et hendrerit faucibus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas lobortis orci adipiscing sapien accumsan, ut commodo nibh iaculis. Proin quis nisi ut orci mollis condimentum eget ut nisl. Morbi magna urna, consectetur sed.</p>
+           </div>
+        
+        <div class="row">
+       <div class="medium-7 large-centered columns">
+           <h5>Tomato Paste imported by Ghana from Italy</h5>
+           <iframe src="http://cf.datawrapper.de/beYoX/3/" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" width="100%" height="400"></iframe>
            
-
-  <div class="row">
-    <div class="large-12 columns"> 
-        <h1> Full screen Gallery</h1>
-        <h1> <small>L'altezza varia a seconda dell'altezza delle immagini</small></h1>
-      
-    </div>
-  
-    </div>
-          
-  <div class="orbit-container">
-  <ul class="example-orbit" data-orbit>
-  <li>
-    <img src="img/001.jpg" alt="slide 1" />
-    <div class="orbit-caption">
-      Caption One.
-    </div>
-  </li>
-  <li>
-    <img src="img/002.jpg" alt="slide 2" />
-    <div class="orbit-caption">
-      Caption Two.
-    </div>
-  </li>
-  <li>
-    <img src="img/003.jpg" alt="slide 3" />
-    <div class="orbit-caption">
-      Caption Three.
-    </div>
-  </li>
-</ul>
+           </div>
+            </div>
+ 
+         
 </div>
-      
       <div class="row">
-    <div class="large-12 columns">
-        
- 
-
-      <div><h1><span id="puglia">CAPITOLO 1 - PUGLIA</span></h1></div>
-<div><a class="scroll" href="#ghana">Lorem ipsum</a> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
-<div><h1><span id="campania">CAPITOLO 2 - CAMPANIA</span></h1></div>
-<div>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
-        
-
-<div><h1><span id="ghana">CAPITOLO 3 - GHANA</span></h1></div>
-<div>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
- 
+        <div class="medium-9 large-centered columns">
+          <p class="quotation-mark">&#171;LOREM <em>IPSUM</em> AND OTHER  TEXT CAN BE <em>USED</em>&#187;</p>
         </div>
-    </div>
-      
-        
-  <!-- Footer -->
+       </div>
+      <div class="row">
+ 
+
+  <div class="large-5 columns" style="background-color:gray; height:250px">VIDEO</div>
+  <div class="large-7 columns"> <p>
+Vestibulum blandit rhoncus quam. Maecenas nibh eros, venenatis sed lacinia a, semper vitae quam. Nullam varius pulvinar eros id consequat. In sed eros et augue ultricies placerat sed sit amet leo. Maecenas id felis at velit gravida vulputate quis vitae purus. Maecenas sit amet augue ut tellus faucibus luctus. Praesent imperdiet sagittis justo eget pretium. Cras a eros eleifend, pretium enim a, tristique sem. Curabitur semper scelerisque congue. Mauris tristique nisi a arcu tristique dictum. Integer dignissim urna nec eros tincidunt tempus. Donec tempus metus eget ante lobortis dignissim. Nulla sed iaculis nisl. Aliquam nec vulputate augue. Etiam et aliquam lorem. Aliquam erat volutpat.
+Nullam ut lectus tincidunt, consectetur neque eget, facilisis metus. Sed a ante velit. Ut volutpat lacus et hendrerit faucibus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas lobortis orci adipiscing sapien accumsan, ut commodo nibh iaculis. Proin quis nisi ut orci mollis condimentum eget ut nisl. Morbi magna urna, consectetur sed.</p></div>
+
+
+</div>
+              <img src="img/loadingtest.jpg">
+<img src="img/loadingtest_2.jpg">
+<img src="img/loadingtest_3.jpg">
+   
+     
+                  
+     
+
   
-  <footer class="row">
-    <div class="large-12 columns">
-      <hr />
-      <div class="row">
-        <div class="large-6 columns">
-          <p>© Copyright no one at all. Go to town.</p>
-        </div>
-        <div class="large-6 columns">
-          <ul class="inline-list right">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div> 
-  </footer>
-    
+      
+      
+      
+        
+ 
     
     
    <script src="js/jquery.js"></script>

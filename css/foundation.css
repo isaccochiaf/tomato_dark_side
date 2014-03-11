@@ -2644,9 +2644,9 @@ a {
 
 /* Default paragraph styles */
 p {
-  font-family: inherit;
+  font-family: 'Quattrocento', serif;
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 1.25rem;
   text-rendering: optimizeLegibility; }
@@ -2660,10 +2660,10 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-family: archive;
+  
   font-style: normal;
-  color: #222222;
+  color: #3a3a3a;
   text-rendering: optimizeLegibility;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
@@ -4659,8 +4659,8 @@ label.error {
     .large-block-grid-12 > li:nth-of-type(12n+1) {
       clear: both; } }
 .flex-video {
+    margin-top:-100px;
   position: relative;
-  padding-top: 1.5625rem;
   padding-bottom: 67.5%;
   height: 0;
   margin-bottom: 1rem;
