@@ -1,8 +1,11 @@
 body, html{width:100%; height:100%; margin:0}
 
-/*-------------------------------------LOADER--------*/
 
-.js div#preloader { position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: #fff url('http://www.zund.com/website/themes/zuend/img/ajax-loader.gif') no-repeat center center; }
+/*-------------------------------------VideoPlayer-------*/
+
+#play{ background-color:transparent; font-family: 'Quattrocento', serif; font-size:20px; border: solid #fff thin}
+#restart{ background-color:transparent; font-family: 'Quattrocento', serif; font-size:20px; border: solid #fff thin}
+#buttonbar{ margin-top:-70px;}
 
 
 
