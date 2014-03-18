@@ -12,26 +12,66 @@
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/style.css">
       
- 
+ <script>
+
+  function vidplay() {
+       var video = document.getElementById("Video1");
+       var button = document.getElementById("play");
+       if (video.paused) {
+          video.play();
+          button.innerHTML = "<i class=\"fa fa-pause\"></i> ";
+       } else {
+          video.pause();
+          button.innerHTML = "<i class=\"fa fa-play\"></i>";
+       }
+    }
+
+    function restart() {
+        var video = document.getElementById("Video1");
+        video.currentTime = 0;
+        video.play();
+    }
+
+    function skip(value) {
+        var video = document.getElementById("Video1");
+        video.currentTime += value;
+    }      
+      
+</script>
       
     
     
   </head>
   <body>
-     
-    
-     
+      <div class="header" style="background-color:#A8A8A8">
+     <div class="row" >
+    <div class="large-12 columns">
       <div class="flex-video">
-        
-  <video autoplay preload="auto">
-  <source src="video/darkside2.mp4" type="video/mp4">
-  <source src="movie.ogg" type="video/ogg">
+     <video  id="Video1" poster="img/poster.jpg" >
 
+            <source src="video/intro.mp4" type="video/mp4" />
+        <source src="video/intro.webm" type="video/webm" />
+     HTML5 Video is required for this example. 
+     <a href="demo.mp4">Download the video</a> file. 
 </video>
           </div>
+
+<div class="large-12 columns" id="buttonbar">
+    <button class="radius round" id="restart" onclick="restart();"><img src="img/replay.png"></button> 
+  
+    <button class="radius round" id="play" onclick="vidplay()">  <i class="fa fa-play"></i> play trailer </button>
+ 
+</div>  
+        </div>
+      </div>
+      </div>
+  
+      
       
       <div class="row">
+          <br /><br /> <br /><br /> <br /><br />
 <div class="medium-7 large-centered columns">
+
       <p>  <span class="firstcharacter">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas felis nisl, elementum quis rhoncus vitae, sagittis et orci. Mauris eu ligula in neque malesuada feugiat. Phasellus quis dictum erat, id placerat augue. Suspendisse dui est, molestie quis scelerisque et, iaculis ac justo. Nunc eu posuere arcu, ut pellentesque diam. Fusce id faucibus neque. Nam scelerisque scelerisque nisi, eget vulputate massa vulputate accumsan. Nulla eget diam fringilla, venenatis magna a, ullamcorper mi. Vestibulum porta massa eget suscipit aliquet.
 Aliquam mollis a nulla eget mollis. Donec sit amet posuere arcu. Donec posuere a dolor eu eleifend. Mauris hendrerit, neque sed pulvinar malesuada, dolor est fringilla erat, in egestas arcu nibh vitae ante. Donec pulvinar vitae eros eu semper. Sed malesuada adipiscing mauris, eu lobortis ligula suscipit et. Praesent aliquet, sem eget sodales tristique, ligula justo sagittis turpis, ac iaculis urna nisl eu velit. Cras faucibus dui quam, at mattis massa pretium in. Nam vel justo convallis, feugiat nisi hendrerit, hendrerit orci.<br /><br /></p><br /><br />
     </div>
@@ -40,9 +80,7 @@ Aliquam mollis a nulla eget mollis. Donec sit amet posuere arcu. Donec posuere a
      <div class="header">
         <img src="img/divider.png">
       
-    </div>
-      
-    <div class="header">
+   
         <img src="img/mockup-04.png">
       
     </div>
