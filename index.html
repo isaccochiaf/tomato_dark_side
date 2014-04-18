@@ -8,12 +8,12 @@
 <link rel="stylesheet" href="css/foundation.css" />
 <script src="js/modernizr.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/jquery.js"></script>
 <script src="http://ricostacruz.com/jquery.transit/jquery.transit.js"></script>
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/style.css">
-      
- <script>
+   
+      <script>
 
   function vidplay() {
        var video = document.getElementById("Video1");
@@ -41,12 +41,44 @@
      
     
 </script>
+
+      
+       <script type="text/javascript">
+        $(function() {
+    $("#tomato01").click(
+    function(){
+        $("#block").transition({ marginLeft: '8%' }, 1000 );
+    });
+            
+    $("#tomato02").click(
+    function(){
+        $("#block").transition({ marginLeft: '33%'}, 1000 );
+    });
+
+    $("#tomato03").click(
+    function(){
+        $("#block").transition({ marginLeft: '58.5%'}, 1000 );
+    });
+            
+    $("#tomato04").click(
+    function(){
+        $("#block").transition({ marginLeft: '83%'}, 1000 );
+    });
+    
+ 
+});
+       
+   
+
+          
+      </script>
       
       
     
     
   </head>
   <body>
+       
       <div class="header">
      <div class="row" >
     <div class="large-12 columns">
@@ -73,6 +105,7 @@
       
       
       <div class="row">
+           
           <br /><br /> <br /><br /> <br /><br />
 <div class="medium-7 large-centered columns">
 <hr>
@@ -81,69 +114,112 @@ Aliquam mollis a nulla eget mollis. Donec sit amet posuere arcu. Donec posuere a
     </div>
     </div>
       
-      <div class="box"></div>
+      
+      <div class="row">
+          <div class="medium-7 large-centered columns">
+              
+      <div id="myModal" class="reveal-modal" data-reveal>
+  <h2>Embed this on Your Site</h2>
+  <p class="lead">Yes you can di that!!!!!!</p>
+  <p>HERE THE CODE</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+     </div>
+ </div>
           
       
-      <script type="text/javascript">
-      $(function() {
-     $('.box').mouseover(function(){
-        $('.box').transition({ rotate: '40deg' });
-    });
-});
-       
-   
-
+      <div class="row">
+          <div class="medium-7 large-centered columns">
+              
+              <center>
+                  
+                  
+                  <h3 id="title">tomato <strong>traffik</strong></h3>
+                  <hr>
+             
+                  </center>
+        </div>
           
-      </script>
+  
+  <div class="large-1 large-offset-11 columns"><a href="#" data-reveal-id="myModal" data-reveal><img src="img/play.png" width="50px"></a></div>
+
+    </div>
+      
+      <div class="row">
+          <div class="medium-7 large-centered columns">
+              <br /><br /><br /><br />
+        </div>
+    </div>
       
     
      <div class="row">
          
     <dl class="tabs" data-tab>
   <dd class="small-3 columns" id="tomato01"><a href="#panel2-1"><img src="img/t_tomato.png"></a></dd>
-  <dd class="small-3 columns"><a href="#panel2-2"><img src="img/t_market.png"></a></dd>
-  <dd class="small-3 columns"><a href="#panel2-3"><img src="img/t_tomato.png"></a></dd>
-  <dd class="small-3 columns"><a href="#panel2-4"><img src="img/t_tomato.png"></a></dd>
+  <dd class="small-3 columns" id="tomato02"><a href="#panel2-2"><img src="img/t_market.png"></a></dd>
+  <dd class="small-3 columns" id="tomato03"><a href="#panel2-3"><img src="img/t_tomato.png"></a></dd>
+  <dd class="small-3 columns" id="tomato04"><a href="#panel2-4"><img src="img/t_tomato.png"></a></dd>
 </dl>
+         <div id="block"></div>
        
 <div class="tabs-content">
     
   <div class="content active small-12 columns" id="panel2-1">
-      <div id="axis" class="one">
-
-</div>
-    <p>First panel content goes here...</p>
+      <h4 style="color:white">Gahana</h4>
+    <p>Donec pulvinar vitae eros eu semper. Sed malesuada adipiscing mauris, eu lobortis ligula suscipit et. Praesent aliquet, sem eget sodales tristique, ligula justo sagittis turpis, ac iaculis urna nisl eu velit. </p>
   </div>
-  <div class="content" id="panel2-2">
-    <p>Second panel content goes here...</p>
+  <div class="content  small-12 columns" id="panel2-2">
+      <h4 style="color:white">Makola marker</h4>
+    <p>Donec pulvinar vitae eros eu semper. Sed malesuada adipiscing mauris, eu lobortis ligula suscipit et. Praesent aliquet, sem eget sodales tristique, ligula justo sagittis turpis, ac iaculis urna nisl eu velit. </p>
   </div>
-  <div class="content" id="panel2-3">
-    <p>Third panel content goes here...</p>
+  <div class="content  small-12 columns" id="panel2-3">
+      <h4 style="color:white">Fabbrica</h4>
+    <p>Donec pulvinar vitae eros eu semper. Sed malesuada adipiscing mauris, eu lobortis ligula suscipit et. Praesent aliquet, sem eget sodales tristique, ligula justo sagittis turpis, ac iaculis urna nisl eu velit. .</p>
   </div>
-  <div class="content" id="panel2-4">
-    <p>Fourth panel content goes here...</p>
+  <div class="content  small-12 columns" id="panel2-4">
+      <h4 style="color:white">ghetto</h4>
+    <p>Donec pulvinar vitae eros eu semper. Sed malesuada adipiscing mauris, eu lobortis ligula suscipit et. Praesent aliquet, sem eget sodales tristique, ligula justo sagittis turpis, ac iaculis urna nisl eu velit. </p>
   </div>
 </div>
       
     </div>
  
-         
+      <div class="row">
+          <div class="medium-7 large-centered columns">
+              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        </div>
+    </div>
+      <div class="row">
+          <div class="medium-7 large-centered columns">
+              
+              <center>
+                  <img src="img/t_tomato.png">
+                  <hr>
+                  <h3 id="title">Ghana <strong>market</strong></h3>
+              <p>Vitae eros eu semper. Sed malesuada adipiscing mauris, eu lobortis ligula suscipit et. Praesent aliquet, sem eget sodales tristique</p>
+                  </center>
+        </div>
+    </div>
 
-
-      <div class="header">
-<div class="flex-video">
-        
-  <video autoplay loop>
-  <source src="video/ghana_market.mp4" type="video/mp4">
-  <source src="movie.ogg" type="video/ogg">
-
-</video>
-          </div>
-          </div>
+ <div class="row">
+          <div class="medium-7 large-centered columns">
+              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        </div>
+    </div>
 
  
 
-
+ <!-- -----------------------------------------------------------------         PARALLAX -->   
+      <div class="row">
+    <div class="large-12 columns">  
+<div class="row cont hide-for-touch">
+    <div class="large-12 columns overlay" id="parallax">
+        <q>This caption inside image</q>
+    </div>
+</div>
+    
+  </div>
+    </div>
 
 
     
@@ -164,17 +240,7 @@ Aliquam mollis a nulla eget mollis. Donec sit amet posuere arcu. Donec posuere a
 Aenean commodo nisl a sodales lacinia. Praesent ac elementum turpis, id pellentesque ligula. Morbi euismod congue eros. Vestibulum turpis dui, facilisis non hendrerit id, vehicula malesuada augue. Phasellus dignissim enim sed ipsum ultrices luctus quis vitae ligula. Maecenas turpis arcu, sagittis eu nulla in, congue aliquam ante. Ut euismod varius eleifend. Ut ut cursus sapien, ut malesuada elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam facilisis enim vitae feugiat viverra. Mauris ligula odio, commodo at nulla ut, tempor volutpat risus. Quisque tempus odio quis ligula rutrum elementum. Etiam adipiscing lorem id purus ultrices bibendum. Integer augue neque, consectetur ac viverra id, convallis ac lectus. Phasellus ultricies eros venenatis lacus pulvinar, sit amet eleifend odio semper.</p><br /><br />
     </div>
     </div>
-         <!-- -----------------------------------------------------------------         PARALLAX -->   
-      <div class="row">
-    <div class="large-12 columns">  
-<div class="row cont hide-for-touch">
-    <div class="large-12 columns overlay" id="parallax">
-        <q>This caption inside image</q>
-    </div>
-</div>
-    
-  </div>
-    </div>
+        
       
        
 
@@ -188,24 +254,7 @@ Aenean commodo nisl a sodales lacinia. Praesent ac elementum turpis, id pellente
         
        
  
-         
 
-   
-            
-
-     
-                  
-     
-
-  
-      
-      
-  
-        
- 
-    
-    
-   <script src="js/jquery.js"></script>
 <script src="js/foundation/foundation.js"></script>
 <script src="js/foundation/foundation.reveal.js"></script>
 <script src="js/foundation/foundation.orbit.js"></script>

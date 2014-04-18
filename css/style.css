@@ -96,49 +96,22 @@ src: url(../font/Archive.otf);
         text-align:center;
         color:#FFF}
           
-   /*       
 
-.arrow-up {
+          
+/*-------------------------------------Interactive Div--------*/ 
+#block{
 	width: 0; 
 	height: 0; 
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
-	border-bottom: 10px solid black;
-    margin-top:-25px;
-    
-      position: absolute;
-    transition: all 2s ease-in-out;
-    -webkit-transition: all 2s ease-in-out; 
-    -moz-transition: all 2s ease-in-out; 
-    -o-transition: all 2s ease-in-out; 
-    
-}*/
-
-           .object {
-    position: absolute;
-} 
-.van {
-    top: 45%;
-    left: 44%;
+	border-bottom: 10px solid #323232;
+   margin-top:20px;
+    margin-left:8%;
 }
-            #cacca > .move-right{
-    transform: translate(350px,0);
-    -webkit-transform: translate(350px,0); /** Chrome & Safari **/
-    -o-transform: translate(350px,0); /** Opera **/
-    -moz-transform: translate(350px,0); /** Firefox **/
-}
-            .object {
-    position: absolute;
-    transition: all 2s ease-in-out;
-    -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
-    -moz-transition: all 2s ease-in-out; /** Firefox **/
-    -o-transition: all 2s ease-in-out; /** Opera **/
-}
-          
 
 
-
-.box{ width:100px; height:100px; background-color:red;}
+#title {letter-spacing:7px;}
+#title strong {color: #c0392b}
           
           
        
