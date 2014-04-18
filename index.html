@@ -9,6 +9,7 @@
 <script src="js/modernizr.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://ricostacruz.com/jquery.transit/jquery.transit.js"></script>
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/style.css">
       
@@ -19,10 +20,10 @@
        var button = document.getElementById("play");
        if (video.paused) {
           video.play();
-          button.innerHTML = "<i class=\"fa fa-pause\"></i> ";
+          button.innerHTML = "<img src=\"img/pause.png\"> ";
        } else {
           video.pause();
-          button.innerHTML = "<i class=\"fa fa-play\"></i>";
+          button.innerHTML = "<img src=\"img/play.png\">";
        }
     }
 
@@ -37,17 +38,20 @@
         video.currentTime += value;
     }      
       
+     
+    
 </script>
+      
       
     
     
   </head>
   <body>
-      <div class="header" style="background-color:#A8A8A8">
+      <div class="header">
      <div class="row" >
     <div class="large-12 columns">
       <div class="flex-video">
-     <video class="show-for-medium-up"  id="Video1" poster="img/poster.jpg" style="background-color:#A8A8A8">
+     <video id="Video1" poster="img/poster.jpg">
 
             <source src="video/intro.mp4" type="video/mp4" />
         <source src="video/intro.webm" type="video/webm" />
@@ -57,9 +61,9 @@
           </div>
 
 <div class="large-12 columns" id="buttonbar">
-    <button class="radius round" id="restart" onclick="restart();"><img src="img/replay.png"></button> 
+    <button id="restart" onclick="restart();" style="padding:0px; border:0px"><img src="img/replay.png"></button> 
   
-    <button class="radius round" id="play" onclick="vidplay()">  <i class="fa fa-play"></i> play trailer </button>
+    <button id="play" onclick="vidplay()" style="padding:10px; border:0px;">  <img src="img/play.png"> play trailer </button>
  
 </div>  
         </div>
@@ -71,17 +75,55 @@
       <div class="row">
           <br /><br /> <br /><br /> <br /><br />
 <div class="medium-7 large-centered columns">
-
+<hr>
       <p>  <span class="firstcharacter">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas felis nisl, elementum quis rhoncus vitae, sagittis et orci. Mauris eu ligula in neque malesuada feugiat. Phasellus quis dictum erat, id placerat augue. Suspendisse dui est, molestie quis scelerisque et, iaculis ac justo. Nunc eu posuere arcu, ut pellentesque diam. Fusce id faucibus neque. Nam scelerisque scelerisque nisi, eget vulputate massa vulputate accumsan. Nulla eget diam fringilla, venenatis magna a, ullamcorper mi. Vestibulum porta massa eget suscipit aliquet.
 Aliquam mollis a nulla eget mollis. Donec sit amet posuere arcu. Donec posuere a dolor eu eleifend. Mauris hendrerit, neque sed pulvinar malesuada, dolor est fringilla erat, in egestas arcu nibh vitae ante. Donec pulvinar vitae eros eu semper. Sed malesuada adipiscing mauris, eu lobortis ligula suscipit et. Praesent aliquet, sem eget sodales tristique, ligula justo sagittis turpis, ac iaculis urna nisl eu velit. Cras faucibus dui quam, at mattis massa pretium in. Nam vel justo convallis, feugiat nisi hendrerit, hendrerit orci.<br /><br /></p><br /><br />
     </div>
     </div>
-    
-     <div class="header">
-        <img src="img/divider.png">
       
+      <div class="box"></div>
+          
+      
+      <script type="text/javascript">
+      $(function() {
+     $('.box').mouseover(function(){
+        $('.box').transition({ rotate: '40deg' });
+    });
+});
+       
    
-        <img src="img/mockup-04.png">
+
+          
+      </script>
+      
+    
+     <div class="row">
+         
+    <dl class="tabs" data-tab>
+  <dd class="small-3 columns" id="tomato01"><a href="#panel2-1"><img src="img/t_tomato.png"></a></dd>
+  <dd class="small-3 columns"><a href="#panel2-2"><img src="img/t_market.png"></a></dd>
+  <dd class="small-3 columns"><a href="#panel2-3"><img src="img/t_tomato.png"></a></dd>
+  <dd class="small-3 columns"><a href="#panel2-4"><img src="img/t_tomato.png"></a></dd>
+</dl>
+       
+<div class="tabs-content">
+    
+  <div class="content active small-12 columns" id="panel2-1">
+      <div id="axis" class="one">
+
+</div>
+    <p>First panel content goes here...</p>
+  </div>
+  <div class="content" id="panel2-2">
+    <p>Second panel content goes here...</p>
+  </div>
+  <div class="content" id="panel2-3">
+    <p>Third panel content goes here...</p>
+  </div>
+  <div class="content" id="panel2-4">
+    <p>Fourth panel content goes here...</p>
+  </div>
+</div>
       
     </div>
  
@@ -135,54 +177,20 @@ Aenean commodo nisl a sodales lacinia. Praesent ac elementum turpis, id pellente
     </div>
       
        
-     
-<div class="row cont show-for-touch">
-    
-        <div class="row">
-        <div class="medium-9 large-centered columns">
-          <p class="quotation-mark">This caption substitute parallax on touck device</p>
-        </div>
-       </div>
-    </div>
+
 
     
   </div>
     </div>
           
-    <div class="row">
-       <div class="medium-7 large-centered columns">
-        <p>
-            <br /><br />
-Vestibulum blandit rhoncus quam. Maecenas nibh eros, venenatis sed lacinia a, semper vitae quam. Nullam varius pulvinar eros id consequat. In sed eros et augue ultricies placerat sed sit amet leo. Maecenas id felis at velit gravida vulputate quis vitae purus. Maecenas sit amet augue ut tellus faucibus luctus. Praesent imperdiet sagittis justo eget pretium. Cras a eros eleifend, pretium enim a, tristique sem. Curabitur semper scelerisque congue. Mauris tristique nisi a arcu tristique dictum. Integer dignissim urna nec eros tincidunt tempus. Donec tempus metus eget ante lobortis dignissim. Nulla sed iaculis nisl. Aliquam nec vulputate augue. Etiam et aliquam lorem. Aliquam erat volutpat.
-Nullam ut lectus tincidunt, consectetur neque eget, facilisis metus. Sed a ante velit. Ut volutpat lacus et hendrerit faucibus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas lobortis orci adipiscing sapien accumsan, ut commodo nibh iaculis. Proin quis nisi ut orci mollis condimentum eget ut nisl. Morbi magna urna, consectetur sed.</p>
-           </div>
+
+ 
         
-        <div class="row">
-       <div class="medium-7 large-centered columns">
-           <hr>
-           <h5>Tomato Paste imported by Ghana from Italy</h5>
-           <iframe src="http://cf.datawrapper.de/Yz8cj/2/" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" width="100%" height="400"></iframe>
-           
-           </div>
-            </div>
+       
  
          
-</div>
-      <div class="row">
-        <div class="medium-9 large-centered columns">
-          <p class="quotation-mark">&#171;LOREM <em>IPSUM</em> AND OTHER  TEXT CAN BE <em>USED</em>&#187;</p>
-        </div>
-       </div>
-      <div class="row">
- 
 
-  <div class="large-5 columns" style="background-color:gray; height:250px">VIDEO</div>
-  <div class="large-7 columns"> <p>
-Vestibulum blandit rhoncus quam. Maecenas nibh eros, venenatis sed lacinia a, semper vitae quam. Nullam varius pulvinar eros id consequat. In sed eros et augue ultricies placerat sed sit amet leo. Maecenas id felis at velit gravida vulputate quis vitae purus. Maecenas sit amet augue ut tellus faucibus luctus. Praesent imperdiet sagittis justo eget pretium. Cras a eros eleifend, pretium enim a, tristique sem. Curabitur semper scelerisque congue. Mauris tristique nisi a arcu tristique dictum. Integer dignissim urna nec eros tincidunt tempus. Donec tempus metus eget ante lobortis dignissim. Nulla sed iaculis nisl. Aliquam nec vulputate augue. Etiam et aliquam lorem. Aliquam erat volutpat.
-Nullam ut lectus tincidunt, consectetur neque eget, facilisis metus. Sed a ante velit. Ut volutpat lacus et hendrerit faucibus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas lobortis orci adipiscing sapien accumsan, ut commodo nibh iaculis. Proin quis nisi ut orci mollis condimentum eget ut nisl. Morbi magna urna, consectetur sed.</p></div>
-
-
-</div>
+   
             
 
      
@@ -192,7 +200,7 @@ Nullam ut lectus tincidunt, consectetur neque eget, facilisis metus. Sed a ante 
   
       
       
-      
+  
         
  
     
@@ -201,6 +209,7 @@ Nullam ut lectus tincidunt, consectetur neque eget, facilisis metus. Sed a ante 
 <script src="js/foundation/foundation.js"></script>
 <script src="js/foundation/foundation.reveal.js"></script>
 <script src="js/foundation/foundation.orbit.js"></script>
+<script src="js/foundation/foundation.tab.js"></script>
       <script src="js/foundation/foundation.tab.js"></script>
        <script src="js/foundation/foundation.magellan.js"></script>
        <script src="js/foundation/foundation.topbar.js"></script>

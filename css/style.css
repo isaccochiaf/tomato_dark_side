@@ -6,6 +6,10 @@ body, html{width:100%; height:100%; margin:0}
 #play{ background-color:transparent; font-family: 'Quattrocento', serif; font-size:20px; border: solid #fff thin}
 #restart{ background-color:transparent; font-family: 'Quattrocento', serif; font-size:20px; border: solid #fff thin}
 #buttonbar{ margin-top:-70px;}
+button:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
 
 
 
@@ -20,7 +24,6 @@ body, html{width:100%; height:100%; margin:0}
 #map {width: 300px;
     height: 700px ;
     z-index:110;
-   
     }
 
 @font-face
@@ -93,8 +96,49 @@ src: url(../font/Archive.otf);
         text-align:center;
         color:#FFF}
           
+   /*       
+
+.arrow-up {
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid black;
+    margin-top:-25px;
+    
+      position: absolute;
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out; 
+    -moz-transition: all 2s ease-in-out; 
+    -o-transition: all 2s ease-in-out; 
+    
+}*/
+
+           .object {
+    position: absolute;
+} 
+.van {
+    top: 45%;
+    left: 44%;
+}
+            #cacca > .move-right{
+    transform: translate(350px,0);
+    -webkit-transform: translate(350px,0); /** Chrome & Safari **/
+    -o-transform: translate(350px,0); /** Opera **/
+    -moz-transform: translate(350px,0); /** Firefox **/
+}
+            .object {
+    position: absolute;
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 2s ease-in-out; /** Firefox **/
+    -o-transition: all 2s ease-in-out; /** Opera **/
+}
           
-          
+
+
+
+.box{ width:100px; height:100px; background-color:red;}
           
           
        
