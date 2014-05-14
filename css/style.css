@@ -30,10 +30,7 @@ button:focus {
 
 
      
-#map {width: 300px;
-    height: 700px ;
-    z-index:110;
-    }
+
 
 @font-face
 {
@@ -47,11 +44,13 @@ src: url(../font/Archive.otf);
 /*-------------------------------------PARALLAX--------*/     
 
 
+
+
 #parallax{ background-image:url(../img/ch_01_parallax.jpg); 
             background-attachment:fixed;
             background-size:cover; 
             z-index:1;    
-            height: 0;
+            height: 600px;
             padding-top: 35%;
             background-position: center !important;
             background-attachment: fixed !important;
@@ -138,17 +137,20 @@ src: url(../font/Archive.otf);
           
           .overlay {position: relative;}
 
-.overlay q {font-size:50px;
+.overlay q {font-size:30px;
             position: absolute;
             top: 0;
             bottom: 0;
             left: 0;
             right: 0;
             margin: 0;
-            text-align:center;
-            padding-top: 4em;
+            quotes: "" "";
+           
+            padding-top: 6em;
+            padding-left:9em;
+            padding-right:9em;
             background-color: rgba(40,40,40 ,0.60);
-            color: rgba(255,255,255,0.70) ;
+            color:#c0392b  ;
             font-family:quattrocento;
             -webkit-transition: all 2s;
             -moz-transition: all 2s;
@@ -157,10 +159,15 @@ src: url(../font/Archive.otf);
             -webkit-filter: opacity(1);
             opacity:1;
             }
+
+.overlay q p { background-color:#fff;
+                padding:20px 40px ;
+                font-size:37px;
+                width:auto;}
           
-    .cont:hover .overlay q {padding-top: 5em; -webkit-filter: opacity(0); opacity:0;}   
+    .cont:hover .overlay q {margin-left: 2em; margin-right: -2em; -webkit-filter: opacity(0); opacity:0;}   
           
-          
+      .cont {height:100%}    
           
 /*-------------------------------------COVERS--------*/     
 
@@ -188,7 +195,7 @@ src: url(../font/Archive.otf);
 #title {letter-spacing:7px;}
 #title strong {color: #c0392b}
 
-#small-text { font-size:90%; color:#999}
+#small-text { font-size:100%; color:#999}
           
           
 input[type=range] {
@@ -282,11 +289,12 @@ input[type="range"]::-webkit-slider-thumb {
 .img-quote {
     font-family:quattrocento;
     font-size:120%;
-    font-style:italic;
+    
    color:#999;
     line-height:26px;
     
 }
+ .img-quote p{ font-size:14px; font-style:normal; color:#c0392b;}
 
 footer{ background-color:#333}
 
@@ -299,4 +307,69 @@ footer p {
 
 #copyright-year {
     background-color:#999
+}
+
+
+
+video {
+    width:100%;
+    position:absolute;
+    z-index:0
+    
+}
+
+.over-video {
+    position:absolute;
+    color: white;
+    z-index:100;
+    margin-top:22.5%;
+    margin-left:40%;
+    
+}
+.over-video p{
+    font-family:quattrocento;
+    background-color:#fff;
+    color:#c0392b;
+    font-size:30px;
+    padding:18px;
+
+}
+
+
+
+.image {
+    position:relative;
+   
+}
+.image img {
+    width:100%;
+    vertical-align:top;
+}
+.image:after, .image:before {
+    position:absolute;
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.image:after {
+    content:'\A';
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(255,255,255,0.5);
+}
+.image:before {
+    content: attr(data-content);
+    width:100%;
+    color:#333;
+    z-index:1;
+    font-family:quattrocento;
+    font-size:40px;
+    padding:200px 30px;
+    
+   
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+.image:hover:after, .image:hover:before {
+    opacity:1;
 }

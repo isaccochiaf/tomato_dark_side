@@ -25,12 +25,22 @@
 	position: fixed;
 	top:-70px;
 	width: 100%;
-	background-color:rgba(240,240,240,0.90);
-              z-index:1000;
-              padding:0.8em
-}
-#headerSlideContent {
+              background-color:rgba(255,255,255,.7);
 	
+              z-index:1000;
+              padding:0.4em
+}
+          #headerSlideContainer img{
+opacity:0.9
+}
+div.social-button {
+	background-color: rgba(200,200,200,.8);
+    color:#fff;
+    text-align:center;
+    padding:10px 0 10px 0;
+    -webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
 }
           
        
@@ -79,22 +89,46 @@
            
            
         $(function() {
-	 var video = document.getElementById("Video1");
+	 var video = document.getElementById("video_1");
 
 	$(window).scroll(function() {
-		if($(this).scrollTop() > 50) {
+		if($(this).scrollTop() > 100) {
 			video.play();
 		} 
-        if($(this).scrollTop() > 300) {
+        if($(this).scrollTop() > 400) {
 			video.pause();
 		} 
 	});
 });
            
            
+           $(function() {
+    $(".container-dalessio").click(
+    function(){
+        $(".over-video").hide();
+    });
+               
+               $(".icona-small").mouseenter(
+    function(){
+        $(".titolo-small").fadeIn();
+    });
+               
+                $(".icona-small").mouseleave(
+    function(){
+        $(".titolo-small").fadeOut();
+    });
+    
+    });
+           
+           
+           
           
           
       </script>
+      
+      
+      
+     
      
       
     
@@ -106,18 +140,23 @@
     <div id="row">
         <div class="small-1 columns">
 
-        <img src="img/icn.png" width="35px">
+        <img class="icona-small" src="img/icn.png" width="35px">
              </div>
-         <div class="small-11 columns">
+         <div class="small-9 columns">
 
         <h6>The Dark side of italian tomato</h6>
              </div>
-    </div>
+        
+        <div class="small-2 columns social-button">
+
+       F-T-G
+             </div>
+        </div>
           
 
 </div>
 
-   <!--
+   
          <div id="row">
              <br /><br /><br />
            <center><img src="img/logo.jpg"></center>
@@ -137,22 +176,27 @@
             </div>
       
       </div>
+      
+      <div class="row">
+         
+          <div class="medium-12 columns">
              
                 <div class="flex-video hide-for-touch">
-                    <video id="Video1" poster="img/poster.jpg" class="video-js vjs-default-skin vjs-playing " controls
- preload="auto" width="100%" height="720" data-setup="{}" style="background-color:#fff">
+                
+                    <video id="video_1" poster="img/poster.jpg"  preload="auto" width="100%"   style="background-color:#fff">
 
-                        <source src="video/intro.mp4" type="video/mp4" />
-                        <source src="video/intro.webm" type="video/webm" />
+                        <source src="video/total_intro.mp4" type="video/mp4" />
+                        
      HTML5 Video is required for this example. 
                         <a href="demo.mp4">Download the video</a> file. 
                     </video>
          
                 </div> 
-           
-        
-      </div>
-  -->
+           </div>
+        </div>
+     
+ 
+      <!--
       <div class="header">
             <div class="small-12 columns">
                 <img src="img/home.jpg">
@@ -160,20 +204,20 @@
             </div>
       
       </div>
-      
+      -->
       
       <div class="row">
            
           <br /><br /> <br /><br /> <br /><br />
          
           <div class="medium-8 medium-centered columns">
-               <!--
-                <p id="small-text">Stefano Liberti, Mathilde Auvialln <br />
+               
+                <p id="small-text">Mathilde Auviallin Stefano Liberti <br />
     Research and Data: Jacopo Ottaviani<br />
-    Design and Interaction: Isacco Chiaf<br />
-    Photography and Video: Marco Poeta
+    Design and Development: Isacco Chiaf<br />
+    Photography and Video: Mario Poeta
                 </p>
-            -->
+            
                     <hr>
                     <p>  <span class="firstcharacter">P</span>rince Bony n’aurait jamais pu imaginer avoir traversé le désert et la mer pour se retrouver à faire le même travail que celui qu’il faisait dans son pays d’origine. Assis devant un « casolare » abandonné, vestige de la réforme agraire, il pense à sa vie. Prince partage cette demeure de fortune avec une dizaine d’autres saisonniers ghanéens. Faute de papiers, faute d’argent, ils ont trouvé refuge ici, au milieu de la campagne, à Borgo Libertà.
 « Au Ghana, on m’appelait Kofi America parce que j’ai toujours eu envie de voyager. Je voulais conquérir le monde ! ».
@@ -269,59 +313,104 @@ Emmitouflé dans un vieux pardessus élimé, il regarde l’air pensif le soleil
      
       <div class="row">
           <div class="medium-7 large-centered columns">
-              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+              <br /><br /><br /><br /><br /><br /><br />
           </div>
       </div>
 
  
 
- <!-- -----------------------------------------------------------------         PARALLAX -->   
-      <div class="header">
-          <div class="cont hide-for-touch">
-              <div class="overlay" id="parallax">
-                    <q>La culture de la tomate aurait pu être une mine d’or</q>
-              </div>
-          </div>
-      </div>
 
- <!-- -----------------------------------------------------------------         PARALLAX -->
     
 
       
   
        <div class="row">
            <div class="medium-8 medium-centered columns">
-                <br /><br /><br /><br />
+                <br /><br /><br /><br /><br /><br /><br /><br />
+                
                 <p>  <span class="firstcharacter">L</span>e long de la route qui mène de Tamale à Navrongo, les pyramides de tomates vacillent dans le sillage des camions chargés de caisses vides, lancés à toute allure sur l’axe qui relie le Nord et le Sud du Ghana. Le vacarme des moteurs, le hululement des klaxons, couvre les éclats de voix des femmes qui, chaque jour, viennent s’installer là pour tenter de vendre leur production. En vain, la tomate fraîche ne fait plus recette.
-     	  Sur les étals du marché de Bolgatanga, les vendeuses se plaignent. Dans leurs paniers d’osier, les tomates pourpres et brillant au soleil finissent par se gâter et pourrir. Les clientes ne veulent plus de produits frais, mais elles s’arrachent en revanche les boîtes de Salsa, Gino et Obaapa, marques de concentré de tomates en boîte importées d’Italie ou de Chine.
-« Il y a de la tomate dans tous les plats ghanéens, mais les tomates produites ici ne se vendent pas ». Ayine Justice Atomsko, chef de la petite communauté paysanne de Vea, à mi chemin entre Bolgatanga et Navrongo, est amer. Il y a une vingtaine d’années, la culture de la tomate était encore florissante dans cette région du nord du Ghana. Tous les fermiers en cultivaient quelques acres, avec l’assurance de parvenir à les vendre à bon prix par l’intermédiaire des « market queens », les marchandes ayant la mainmise sur les marchés de la capitale, Accra, et des principales villes du pays. </p>
-                    
-                    <div class="flex-video">
-                    <video id="MY_VIDEO_1" class="video-js vjs-default-skin" controls
- preload="auto" width="100%" height="364" poster="MY_VIDEO_POSTER.jpg"
- data-setup="{}">
- <source src="video/intro.mp4" type='video/mp4'>
- <source src="video/intro.webm" type='video/webm'>
- <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
-                   </video>
+
+     	  Sur les étals du marché, les vendeuses se plaignent. Dans leurs paniers d’osier, les tomates pourpres et brillant au soleil finissent par se gâter et pourrir. Les clientes ne veulent plus de produits frais, mais elles s’arrachent en revanche les boîtes de Salsa, Gino et Obaapa, marques de concentré de tomates en boîte importées d’Italie ou de Chine. </p>
+               <br /><br /><br /><br /><br /><br /><br /><br />
                </div>
-                    <p>
-Mais au début des années 2000, la « mine d’or » s’est transformée en malédiction. L’expérience ratée de l’usine de transformation de Pwalugu, la concurrence du Burkina Faso voisin et surtout l’arrivée d’une vague d’importation de tomates en conserves d’Italie et de Chine ont eu raison des rêves des fermiers de l’Upper East Region. Criblés de dettes, après avoir investi toutes leurs économies dans les graines, les terres et la main d’œuvre, certains producteurs de tomates ont mis fin à leurs jours en 2007.
-</p><br /><br />
-               
+
+      </div>
+                    
+                   <div class="container-dalessio">
+      <div class="header over-video">
+        <p>Salsa Production Center</p>
+      </div>
+                     <video id="my_video_1" class="video-js vjs-default-skin" controls preload="auto" 
+  data-setup='{ "asdf": true }' poster="img/poster-d-alessio.png" >
+    <source src="video/d-alessio.mp4" type='video/mp4'>
     
+                         
+  </video>
+            </div> 
+               
+               
+       <div class="row">
+           <div class="medium-8 medium-centered columns">
+               <br /><br /><br /><br /><br /><br /><br /><br />
+                    <p>
+« Il y a de la tomate dans tous les plats ghanéens, mais les tomates produites ici ne se vendent pas ». Ayine Justice Atomsko, chef de la petite communauté paysanne de Vea, à mi chemin entre Bolgatanga et Navrongo, est amer. Il y a une vingtaine d’années, la culture de la tomate était encore florissante dans cette région du nord du Ghana. Tous les fermiers en cultivaient quelques acres, avec l’assurance de parvenir à les vendre à bon prix.
+</p>
+           </div>
+      </div>    
+      
+      <div class="row" >
+                 <div class="medium-8 medium-centered columns" >
+                     <hr>
+          <div class="medium-3 medium columns image-circle">
+                   <img src="img/caption_agnes.png" width="100px" >
+                </div>
+                             
+                                 <div class="medium-9 medium columns img-quote">
+                                     
+                                    
+                                    « Avant je vendais des fruits et des légumes frais. Aujourd’hui les clientes n’achètent plus que des boîtes de conserve».  <p>Aolja Tenitia, ex « agricultrice de l’année 2007 »</p>
+                                </div>
+                            <hr>
+                     </div>
+                </div>
+    
+      
+      <div class="row">
+           <div class="medium-8 medium-centered columns">
+               <br /><br />
+                    <p>
+Mais au début des années 2000, la « mine d’or » s’est transformée en malédiction. L’expérience ratée de l’usine de transformation de Pwalugu, la concurrence du Burkina Faso voisin et surtout l’arrivée d’une vague d’importation de tomates en conserves d’Italie et de Chine ont eu raison des rêves des fermiers de l’Upper East Region. Criblés de dettes, après avoir investi toutes leurs économies dans les graines, les terres et la main d’œuvre, certains producteurs de tomates ont mis fin à leurs jours en 2007, d’autres ont abandonné leurs terres.
+
+</p><br /><br />
+           </div>
+      </div>  
+      
+       <!-- -----------------------------------------------------------------         PARALLAX -->   
+      <div class="header">
+          <div class="cont hide-for-touch">
+              <div class="overlay" id="parallax">
+                    <q><p>La culture de la tomate aurait pu être une mine d’or </p>
+                        <hr>
+                  
+                  </q>
+              </div>
+          </div>
+      </div>
+
+ <!-- -----------------------------------------------------------------         PARALLAX -->
+      
      <!-- 
 
                 <iframe src="anim_test.html" style="border:0px #FFFFFF none;" name="videoframe" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="500px" width="100%"></iframe>
         -->
-           </div>
-      </div>
+           
       
                     <!-------------------Chapter 02---------------------------------------------------->
     
       
       
-      <div class="row full-page">
+      <div class="row">
+          <br /><br /><br /><br /><br /><br />
           <div class="medium-8 small-centered columns ">
               
               <center>
@@ -339,23 +428,13 @@ Mais au début des années 2000, la « mine d’or » s’est transformée en ma
 
       <div class="row">
           <div class="medium-8 large-centered columns">
-              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+              <br /><br /><br /><br /><br /><br />
           </div>
       </div>
 
  
 
- <!-- -----------------------------------------------------------------         PARALLAX -->   
-      <div class="header">
-          <div class="cont hide-for-touch">
-              <div class="overlay" id="parallax-02">
-                    <q>Les importations massives de concentré de tomate européen ont tué le marché local</q>
-              </div>
-          </div>
-      </div>
-
- <!-- -----------------------------------------------------------------         PARALLAX -->
-    
+ 
 
       
   
@@ -374,15 +453,7 @@ Mais au début des années 2000, la « mine d’or » s’est transformée en ma
                     <i> « Si le marché avait été régulé, les agriculteurs auraient pu bénéficier de meilleurs prix et auraient pu vendre leur production ». « Mais le gouvernement a fait l’inverse et ouvert grand les portes à la vague d’importations de concentré de tomates européen. Il y a un choix et une quantité tellement immense qu’il est impossible de vendre les tomates produites localement».</i>
 <br /> <br /></p>
                         
-                         <div class="flex-video">
-                    <video id="MY_VIDEO_1" class="video-js vjs-default-skin" controls
- preload="auto" width="100%" height="364" poster="MY_VIDEO_POSTER.jpg"
- data-setup="{}">
- <source src="video/intro.mp4" type='video/mp4'>
- <source src="video/intro.webm" type='video/webm'>
- <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
-                   </video>
-               </div>
+                        
                
                <p>
 Au début des années 2000, le gouvernement ghanéen a levé les droits de douanes sur les importations de concentré de tomate, comme imposé par le Programme d’Ajustement Structurel du FMI. Au même moment l’Union Européenne, elle, augmentait ses subventions à l’exportation. Une combinaison de facteurs qui a conduit à une augmentation significative des importations de concentré de tomate au Ghana. En 1998, le Ghana importait 3 300 tonnes de concentré de tomates, cinq ans plus tard, en 2003, il en importait 24 740 tonnes, tandis que la part des produits locaux dans ce marché s’effondrait de moitié sur la meme période. 
@@ -395,6 +466,7 @@ Depuis, chaque année le Ghana importe en moyenne 50.000 tonnes de concentré de
                     </p>
                </div>
       </div>
+      
       
       <!-------------------------------GRAPH 01----------------------------------------------------------------->
       
@@ -409,25 +481,23 @@ Depuis, chaque année le Ghana importe en moyenne 50.000 tonnes de concentré de
              </div>
       </div>
              <br /> <br /><br /> <br /><br /> 
-            <div class="row">
-                 <div class="medium-9 medium-centered columns">
-                <div class="medium-3 medium columns image-circle">
-                   <img src="img/caption_agnes.jpg" width="250px" >
-                </div>
-                             <div class="medium-9 medium columns">
-                                 <div class="img-quote">
-                                     <hr>
-                                    « Avant je vendais des fruits et des légumes frais. Aujourd’hui les clientes n’achètent plus que des boîtes de conserve». <hr>
-                                </div>
-                            </div>
-                     </div>
-                </div>
+            
       
                     
       
       
       
-        
+        <!-- -----------------------------------------------------------------         PARALLAX -->   
+      <div class="header">
+          <div class="cont hide-for-touch">
+              <div class="overlay" id="parallax-02">
+                    <q>Les importations massives de concentré de tomate européen ont tué le marché local</q>
+              </div>
+          </div>
+      </div>
+
+ <!-- -----------------------------------------------------------------         PARALLAX -->
+    
       
   
       
@@ -438,7 +508,7 @@ Depuis, chaque année le Ghana importe en moyenne 50.000 tonnes de concentré de
     
       
       
-     <div class="row full-page">
+     <div class="row ">
           <div class="medium-8 small-centered columns ">
               
               <center>
@@ -643,6 +713,30 @@ L’histoire de Kofi America est emblématique de ce mécanisme pervers. Assis d
             </div>
       </footer>
       
+        <script type="text/javascript">
+   videojs.autoSetup();
+
+    videojs('my_video_1').ready(function(){
+      console.log(this.options()); //log all of the default videojs options
+      
+       // Store the video object
+      var myPlayer = this, id = myPlayer.id();
+      // Make up an aspect ratio
+      var aspectRatio = 9/16; 
+
+      function resizeVideoJS(){
+        var width = document.getElementById(id).parentElement.offsetWidth;
+        myPlayer.width(width).height( width * aspectRatio );
+
+      }
+      
+      // Initialize resizeVideoJS()
+      resizeVideoJS();
+      // Then on resize call resizeVideoJS()
+      window.onresize = resizeVideoJS; 
+    });
+</script>
+      
       
         
 <!-- __________________________________SCRIPTS_________________ -->
@@ -660,7 +754,6 @@ L’histoire de Kofi America est emblématique de ce mécanisme pervers. Assis d
     </script>
       
 
-     
-      
+   
   </body>
 </html>

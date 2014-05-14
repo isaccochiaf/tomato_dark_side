@@ -6,8 +6,9 @@
         line-height:36px;
         text-align:center;
     }
+   
     .image-circle{
-        padding:100px;
+        padding:50px;
     }
 
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
