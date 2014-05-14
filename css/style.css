@@ -149,7 +149,7 @@ src: url(../font/Archive.otf);
             padding-top: 6em;
             padding-left:9em;
             padding-right:9em;
-            background-color: rgba(40,40,40 ,0.60);
+           
             color:#c0392b  ;
             font-family:quattrocento;
             -webkit-transition: all 2s;
@@ -165,7 +165,7 @@ src: url(../font/Archive.otf);
                 font-size:37px;
                 width:auto;}
           
-    .cont:hover .overlay q {margin-left: 2em; margin-right: -2em; -webkit-filter: opacity(0); opacity:0;}   
+   /* .cont:hover .overlay q {margin-left: 2em; margin-right: -2em; -webkit-filter: opacity(0); opacity:0;}   */
           
       .cont {height:100%}    
           
