@@ -92,7 +92,7 @@ src: url(../font/Archive.otf);
             left: 0;
             right: 0;
             margin: 0;
-            quotes: "" "";
+           
            color:#fff;
             padding-top: 6em;
             padding-left:9em;
@@ -110,7 +110,7 @@ src: url(../font/Archive.otf);
 
 
           
-  .cont:hover .overlay q {margin-left: 2em; margin-right: -2em; -webkit-filter: opacity(0); opacity:0;}   
+  .cont:hover .overlay q { padding-top:8em; -webkit-filter: opacity(0); opacity:0;}   
           
       .cont {height:100%}    
           
