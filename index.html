@@ -25,7 +25,7 @@
 	position: fixed;
 	top:-70px;
 	width: 100%;
-              background-color:rgba(255,255,255,.7);
+              background-color:#fff;
 	
               z-index:1000;
               padding:0.4em
@@ -34,7 +34,7 @@
 opacity:0.9
 }
 div.social-button {
-	background-color: rgba(200,200,200,.8);
+	background-color: #fff;
     color:#fff;
     text-align:center;
     padding:10px 0 10px 0;
@@ -97,7 +97,8 @@ border-radius: 20px;
 		} 
         if($(this).scrollTop() > 400) {
 			video.pause();
-		} 
+            
+		}
 	});
 });
            
@@ -107,17 +108,6 @@ border-radius: 20px;
     function(){
         $(".over-video").hide();
     });
-               
-               $(".icona-small").mouseenter(
-    function(){
-        $(".titolo-small").fadeIn();
-    });
-               
-                $(".icona-small").mouseleave(
-    function(){
-        $(".titolo-small").fadeOut();
-    });
-    
     });
            
            
@@ -135,7 +125,7 @@ border-radius: 20px;
     
   </head>
   <body>
-       <div id="headerSlideContainer" class="target">
+    <div id="headerSlideContainer" class="target">
 
     <div id="row">
         <div class="small-1 columns">
@@ -154,20 +144,20 @@ border-radius: 20px;
         </div>
           
 
-</div>
+</div> 
 
    
          <div id="row">
-             <br /><br /><br />
+             <br /><br />
            <center><img src="img/logo.jpg"></center>
                 
-             <br /><br />
+             
              </div>
        <div class="header show-for-touch">
-            <div class="flex-video">
+            <div class="flex-video"  style="padding-top:-200px;">
            
           
-           <video poster="img/poster_tablet.jpg" controls preload="auto" width="960" height="540">
+           <video poster="img/poster_tablet.jpg" controls preload="none" width="960" height="540">
 
                         <source src="video/intro.mp4" type="video/mp4" />
                         <source src="video/intro.webm" type="video/webm" />
@@ -183,7 +173,7 @@ border-radius: 20px;
              
                 <div class="flex-video hide-for-touch">
                 
-                    <video id="video_1" poster="img/poster.jpg"  preload="auto" width="100%"   style="background-color:#fff">
+                    <video id="video_1" poster="img/poster.jpg"  preload="none" width="100%"   style="background-color:#fff">
 
                         <source src="video/total_intro.mp4" type="video/mp4" />
                         
@@ -340,12 +330,12 @@ Emmitouflé dans un vieux pardessus élimé, il regarde l’air pensif le soleil
       <div class="header over-video">
         <p>Salsa Production Center</p>
       </div>
-                     <video id="my_video_1" class="video-js vjs-default-skin" controls preload="auto" 
+                     <video id="my_video_1" class="video-js vjs-default-skin" controls preload="none" 
   data-setup='{ "asdf": true }' poster="img/poster-d-alessio.png" >
     <source src="video/d-alessio.mp4" type='video/mp4'>
     
                          
-  </video>
+                    </video>
             </div> 
                
                
@@ -388,11 +378,8 @@ Mais au début des années 2000, la « mine d’or » s’est transformée en ma
        <!-- -----------------------------------------------------------------         PARALLAX -->   
       <div class="header">
           <div class="cont hide-for-touch">
-              <div class="overlay" id="parallax">
-                    <q><p>La culture de la tomate aurait pu être une mine d’or </p>
-                        <hr>
-                  
-                  </q>
+              <div class="parallax overlay" id="parallax-01">
+                    <q>"La culture de la tomate aurait pu être une mine d’or" </q>
               </div>
           </div>
       </div>
@@ -490,7 +477,7 @@ Depuis, chaque année le Ghana importe en moyenne 50.000 tonnes de concentré de
         <!-- -----------------------------------------------------------------         PARALLAX -->   
       <div class="header">
           <div class="cont hide-for-touch">
-              <div class="overlay" id="parallax-02">
+              <div class="parallax overlay" id="parallax-02">
                     <q>Les importations massives de concentré de tomate européen ont tué le marché local</q>
               </div>
           </div>
@@ -535,7 +522,7 @@ Depuis, chaque année le Ghana importe en moyenne 50.000 tonnes de concentré de
  <!-- -----------------------------------------------------------------         PARALLAX -->   
       <div class="header">
           <div class="cont hide-for-touch">
-              <div class="overlay" id="parallax-03">
+              <div class="parallax overlay" id="parallax-03">
                     <q>Les marchés africains veulent la même tomate que celle qui plaît aux italiens</q>
               </div>
           </div>
@@ -554,7 +541,7 @@ Depuis, chaque année le Ghana importe en moyenne 50.000 tonnes de concentré de
  <br /> <br /></p>
                      <div class="flex-video">
                     <video id="MY_VIDEO_1" class="video-js vjs-default-skin" controls
- preload="auto" width="100%" height="364" poster="MY_VIDEO_POSTER.jpg"
+ preload="none" width="100%" height="364" poster="MY_VIDEO_POSTER.jpg"
  data-setup="{}">
  <source src="video/intro.mp4" type='video/mp4'>
  <source src="video/intro.webm" type='video/webm'>
@@ -637,7 +624,7 @@ Seule la production agricole a été délocalisée dans les Pouilles, les terrai
  <!-- -----------------------------------------------------------------         PARALLAX -->   
       <div class="header">
           <div class="cont hide-for-touch">
-              <div class="overlay" id="parallax-04">
+              <div class="parallax overlay" id="parallax-04">
                     <q>Meme en Afrique, je n’ai jamais vu des travailleurs vivre dans ces conditions</q>
               </div>
           </div>
@@ -658,7 +645,7 @@ Employés au noir, ils ne sont pas payés à l’heure, mais à la quantité. 3,
                     
                     <div class="flex-video">
                     <video id="MY_VIDEO_1" class="video-js vjs-default-skin" controls
- preload="auto" width="100%" height="364" poster="MY_VIDEO_POSTER.jpg"
+ preload="none" width="100%" height="364" poster="MY_VIDEO_POSTER.jpg"
  data-setup="{}">
  <source src="video/intro.mp4" type='video/mp4'>
  <source src="video/intro.webm" type='video/webm'>
