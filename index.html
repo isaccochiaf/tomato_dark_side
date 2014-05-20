@@ -37,10 +37,7 @@ div.social-button {
 	background-color: #fff;
     color:#fff;
     text-align:center;
-    padding:10px 0 10px 0;
-    -webkit-border-radius: 20px;
--moz-border-radius: 20px;
-border-radius: 20px;
+    
 }
           
        
@@ -50,25 +47,29 @@ border-radius: 20px;
 
       
        <script type="text/javascript">
+           
+    
+           
+           
         $(function() {
     $("#tomato01").click(
     function(){
-        $("#block").transition({ marginLeft: '8%' }, 1000 );
+        $("#block").transition({ marginLeft: '2%' }, 1000 );
     });
             
     $("#tomato02").click(
     function(){
-        $("#block").transition({ marginLeft: '33%'}, 1000 );
+        $("#block").transition({ marginLeft: '27%'}, 1000 );
     });
 
     $("#tomato03").click(
     function(){
-        $("#block").transition({ marginLeft: '58.5%'}, 1000 );
+        $("#block").transition({ marginLeft: '52%'}, 1000 );
     });
             
     $("#tomato04").click(
     function(){
-        $("#block").transition({ marginLeft: '83%'}, 1000 );
+        $("#block").transition({ marginLeft: '76%'}, 1000 );
     });
     
  
@@ -92,31 +93,48 @@ border-radius: 20px;
 	 var video = document.getElementById("video_1");
 
 	$(window).scroll(function() {
-		if($(this).scrollTop() > 100) {
+		if($(this).scrollTop() > 1 && $(this).scrollTop() < 150) {
 			video.play();
 		} 
         if($(this).scrollTop() > 400) {
 			video.pause();
             
+            
+            
 		}
 	});
 });
+            
            
-           
-           $(function() {
-    $(".container-dalessio").click(
-    function(){
-        $(".over-video").hide();
-    });
-    });
-           
-           
-           
-          
-          
+
       </script>
+  
+      <script>
+     var vid, playbtn, seekslider, curtimetext, durtimetext, mutebtn, volumeslider, fullscreenbtn;
+function intializePlayer(){
+	// Set object references
+	vid = document.getElementById("video_1");
+	
+	mutebtn = document.getElementById("mutebtn");
+	
+	// Add event listeners
+	
+	mutebtn.addEventListener("click",vidmute,false);
+
+}
+          window.onload = intializePlayer;
+          
+          function vidmute(){
+	if(vid.muted){
+		vid.muted = false;
+		mutebtn.innerHTML = "<img src=\"img/unmute.png\">";
+	} else {
+		vid.muted = true;
+		mutebtn.innerHTML = "<img src=\"img/mute.png\">";
+	}
+}
       
-      
+     </script> 
       
      
      
@@ -125,7 +143,7 @@ border-radius: 20px;
     
   </head>
   <body>
-    <div id="headerSlideContainer" class="target">
+    <div id="headerSlideContainer" class="target hide-for-small">
 
     <div id="row">
         <div class="small-1 columns">
@@ -139,7 +157,7 @@ border-radius: 20px;
         
         <div class="small-2 columns social-button">
 
-       F-T-G
+       <img src="img/social_fb.png" width="25"> <img src="img/social_tw.png" width="25"> <img src="img/social_gl.png" width="25">
              </div>
         </div>
           
@@ -157,9 +175,9 @@ border-radius: 20px;
             <div class="flex-video"  style="padding-top:-200px;">
            
           
-           <video poster="img/poster_tablet.jpg" controls preload="none" width="960" height="540">
+           <video poster="img/poster.jpg" controls preload="none" width="960" height="540">
 
-                        <source src="video/intro.mp4" type="video/mp4" />
+                        <source src="video/total_intro.mp4" type="video/mp4" />
                         <source src="video/intro.webm" type="video/webm" />
 
                     </video>
@@ -182,8 +200,11 @@ border-radius: 20px;
                         <a href="demo.mp4">Download the video</a> file. 
                     </video>
          
-                </div> 
+                </div>
+              <button id="mutebtn" style="margin-top:-17%; background-color:transparent;"> <img src="img/unmute.png"> </button>
            </div>
+           
+
         </div>
      
  
@@ -205,9 +226,8 @@ border-radius: 20px;
                
                 <p id="small-text">Mathilde Auviallin Stefano Liberti <br />
     Research and Data: Jacopo Ottaviani<br />
-    
-    Photography: Mario Poeta<br />
-                    Design and Development: Isacco Chiaf
+    Design and Development: Isacco Chiaf<br />
+    Photography and Video: Mario Poeta
                 </p>
             
                     <hr>
@@ -257,29 +277,29 @@ Emmitouflé dans un vieux pardessus élimé, il regarde l’air pensif le soleil
      <div class="row">
          
         <dl class="tabs" data-tab>
-            <dd class="small-3 columns" id="tomato01"><a href="#panel2-1"><img src="img/t_tomato.png"></a></dd>
-            <dd class="small-3 columns" id="tomato02"><a href="#panel2-2"><img src="img/t_can.png"></a></dd>
-            <dd class="small-3 columns" id="tomato03"><a href="#panel2-3"><img src="img/t_market.png"></a></dd>
-            <dd class="small-3 columns" id="tomato04"><a href="#panel2-4"><img src="img/t_pick.png"></a></dd>
+           <dd class="small-3 columns active" id="tomato01"><a href="#panel2-1" class="tabs_a"> </a></dd>
+            <dd class="small-3 columns" id="tomato02"><a href="#panel2-2" class="tabs_b"></a></dd>
+            <dd class="small-3 columns" id="tomato03"><a href="#panel2-3" class="tabs_c"></a></dd>
+            <dd class="small-3 columns" id="tomato04"><a href="#panel2-4" class="tabs_d"></a></dd>
          </dl>
-        <div id="block"></div>
+        <div id="block" class="hide-for-small"></div>
        
          <div class="tabs-content">
     
             <div class="content active small-12 columns" id="panel2-1">
-                <h4 style="color:white">Gahana</h4>
+                <h4>Gahana</h4>
                 <p>Donec pulvinar vitae eros eu semper. Sed malesuada adipiscing mauris, eu lobortis ligula suscipit et. Praesent aliquet, sem eget sodales tristique, ligula justo sagittis turpis, ac iaculis urna nisl eu velit. </p>
             </div>
             <div class="content  small-12 columns" id="panel2-2">
-                <h4 style="color:white">Fabbrica</h4>
+                <h4 >Fabbrica</h4>
                 <p>Donec pulvinar vitae eros eu semper. Sed malesuada adipiscing mauris, eu lobortis ligula suscipit et. Praesent aliquet, sem eget sodales tristique, ligula justo sagittis turpis, ac iaculis urna nisl eu velit. </p>
             </div>
             <div class="content  small-12 columns" id="panel2-3">
-                <h4 style="color:white">Makola marker</h4>
+                <h4>Makola marker</h4>
                 <p>Donec pulvinar vitae eros eu semper. Sed malesuada adipiscing mauris, eu lobortis ligula suscipit et. Praesent aliquet, sem eget sodales tristique, ligula justo sagittis turpis, ac iaculis urna nisl eu velit. .</p>
             </div>
             <div class="content  small-12 columns" id="panel2-4">
-                <h4 style="color:white">ghetto</h4>
+                <h4>ghetto</h4>
                 <p>Donec pulvinar vitae eros eu semper. Sed malesuada adipiscing mauris, eu lobortis ligula suscipit et. Praesent aliquet, sem eget sodales tristique, ligula justo sagittis turpis, ac iaculis urna nisl eu velit. </p>
             </div>
          </div>
@@ -329,9 +349,7 @@ Emmitouflé dans un vieux pardessus élimé, il regarde l’air pensif le soleil
       </div>
                     
                    <div class="row container-dalessio">
-      <div class="header over-video">
-        <p>Salsa Production Center</p>
-      </div>
+      
                      <video id="my_video_1" class="video-js vjs-default-skin" controls preload="none" 
   data-setup='{ "asdf": true }' poster="img/poster-d-alessio.png" >
     <source src="video/d-alessio.mp4" type='video/mp4'>
@@ -381,7 +399,7 @@ Mais au début des années 2000, la « mine d’or » s’est transformée en ma
       <div class="header">
           <div class="cont hide-for-touch">
               <div class="parallax overlay" id="parallax-01">
-                    <q>La culture de la tomate aurait pu être une mine d’or </q>
+                    <q>La culture de la tomate aurait pu être une mine d’or</q>
               </div>
           </div>
       </div>
@@ -571,7 +589,7 @@ Seule la production agricole a été délocalisée dans les Pouilles, les terrai
        <!-- -----------------------------------------------------------------         PARALLAX -->   
       <div class="header">
           <div class="cont hide-for-touch">
-              <div class="parallax overlay" id="parallax-04">
+              <div class="parallax overlay" id="parallax-03">
                     <q>Les marchés africains veulent la même tomate que celle qui plaît aux italiens</q>
               </div>
           </div>
@@ -640,7 +658,16 @@ L’histoire de Kofi America est emblématique de ce mécanisme pervers. Assis d
                </div>
       </div>
       
-   
+      <!-- -----------------------------------------------------------------    -->       
+      <div class="header">
+          <div class="cont hide-for-touch">
+              <div class="parallax overlay" id="parallax-04">
+                    <q>Meme en Afrique, je n’ai jamais vu des travailleurs vivre dans ces conditions</q>
+              </div>
+          </div>
+      </div>
+
+<!-- -----------------------------------------------------------------         PARALLAX -->
    
      
      

@@ -2494,8 +2494,8 @@ div.switch {
     display: none;
     float: left;
     padding: 1.9375rem 3.9375rem;
-    background-color:#323232;
-    color:#fff}
+    
+    }
     .tabs-content > .content.active {
       display: block; }
     .tabs-content > .content.contained {
