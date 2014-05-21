@@ -153,7 +153,7 @@ src: url(../font/Archive.otf);
 	height: 5px; 
 	background-color:#c0392b;
    margin-top:20px;
-    margin-left:2%;
+    margin-left:5%;
 }
 
 
@@ -302,7 +302,7 @@ video {
 
 
 
-
+.tabs dd a{margin-right:auto; margin-left:auto;}
 
 .tabs dd a.tabs_a {
     width:150px;
@@ -365,3 +365,9 @@ video {
 }
 
 .tabs-content h4 {color:#c0392b}
+
+
+
+
+/*VIDEO RESIZE*/
+.wrapper{padding:4% 4%;background:#e4e5d9;border:solid 2rem #fff;}.videocontent{width:80%;max-width:960px;margin:0 auto;}.video-js{padding-top:55.25%;}.vjs-fullscreen{padding-top:0px;}

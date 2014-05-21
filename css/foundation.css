@@ -2493,7 +2493,7 @@ div.switch {
   .tabs-content > .content {
     display: none;
     float: left;
-    padding: 1.9375rem 3.9375rem;
+    padding: 1.9375rem 5%;
     
     }
     .tabs-content > .content.active {
