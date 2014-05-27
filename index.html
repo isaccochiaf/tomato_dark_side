@@ -93,7 +93,7 @@ div.social-button {
 	 var video = document.getElementById("video_1");
 
 	$(window).scroll(function() {
-		if($(this).scrollTop() > 1 && $(this).scrollTop() < 150) {
+		if($(this).scrollTop() > 1 && $(this).scrollTop() < 90) {
 			video.play();
 		} 
         if($(this).scrollTop() > 400) {
@@ -104,6 +104,11 @@ div.social-button {
 		}
 	});
 });
+           
+           
+           $('#video_1').bind("ended", function(){ 
+      alert('Video Ended'); 
+    });
            
             
            
@@ -144,6 +149,7 @@ function intializePlayer(){
     
   </head>
   <body>
+      
     <div id="headerSlideContainer" class="target hide-for-small">
 
     <div id="row">
@@ -219,6 +225,7 @@ function intializePlayer(){
       </div>
       -->
       
+      
       <div class="row">
            
           <br /><br /> <br /><br /> <br /><br />
@@ -241,13 +248,13 @@ function intializePlayer(){
                  <div class="medium-8 medium-centered columns" >
                      <hr>
           <div class="medium-3 medium columns image-circle">
-                   <img src="img/caption_prince.png" width="100px" >
+                   <img src="img/caption_prince.png" style="padding-bottom:10px;">
                 </div>
                              
                                  <div class="medium-9 medium columns img-quote">
                                      
                                     
-                                    « Au Ghana, on m’appelait Kofi America parce que j’ai toujours eu envie de voyager. Je voulais conquérir le monde ! » <p>Prince Bony - Saisonnier ghanéen</p>
+                                    « Au Ghana, on m’appelait Kofi America parce que j’ai toujours eu envie de voyager. Je voulais conquérir le monde ! » <br><br> <p>Prince Bony - Saisonnier ghanéen</p>
                                 </div>
                             <hr>
                      </div>
@@ -286,18 +293,23 @@ function intializePlayer(){
             </div>
         </div>
           
-      
+
+     
+       <div style="float:right; padding:20px 20px 0 0"><a href="#" data-reveal-id="myModal" data-reveal><img src="img/share.png" width="40px"></a></div>
+
       <div class="row">
+          
+          
           <div class="medium-7 medium-centered columns">
-              
+              <br><br><br>
               <center>
-                  <h3 id="title">tomato <strong>traffik</strong></h3>
-                  <hr>
+                  <h2 id="title">tomato <strong>traffik</strong></h2>
+                  
               </center>
           </div>
           
   
-            <div class="large-1 large-offset-11 columns hide-for-touch"><a href="#" data-reveal-id="myModal" data-reveal><img src="img/share.png" width="40px"></a></div>
+            
 
         </div>
       
@@ -359,7 +371,9 @@ function intializePlayer(){
          </div>
       
     </div>
+ 
   <!-- -----------------------------------------------------------------   Chapter---01 -->
+       
       <div class="row full-page">
           <div class="medium-7 small-centered columns ">
               
@@ -431,14 +445,15 @@ function intializePlayer(){
                  <div class="medium-8 medium-centered columns" >
                      <hr>
           <div class="medium-3 medium columns image-circle">
-                   <img src="img/caption_aolja.png" width="100px" >
+                   <img src="img/caption_aolja.png" style="padding-bottom:10px;">
                 </div>
+                     
                              
                                  <div class="medium-9 medium columns img-quote">
                                      
                                     
-                                   « Désormais, je ne cultive plus de tomates. Je ne saurais pas à qui les vendre »
-  <p>Aolja Tenitia - ex agricultrice de l’année 2007</p>
+                                   « Désormais, je ne cultive plus de tomates. Je ne saurais pas à qui les vendre »<br /><br />
+  <p>Aolja Tenitia - ex agricultrice de l’année 2007 </p>
                                 </div>
                             <hr>
                      </div>
@@ -484,7 +499,7 @@ Mais au début des années 2000, la « mine d’or » s’est transformée en ma
                   <hr>
                     <h3 id="title">L’Afrique mise<strong> en boite</strong></h3>
                   <br/><br/>
-                    <img src="img/market.jpg" width="200px">
+                    <img src="img/market.gif" width="200px">
                     <br/><br/>
                  
                     <p class="head-location">Accra - Sud du Ghana</p>
@@ -521,13 +536,13 @@ Mais au début des années 2000, la « mine d’or » s’est transformée en ma
                  <div class="medium-8 medium-centered columns" >
                      <hr>
           <div class="medium-3 medium columns image-circle">
-                   <img src="img/caption_agnes.png" width="100px" >
+                   <img src="img/caption_agnes.png" style="padding-bottom:10px;">
                 </div>
                              
                                  <div class="medium-9 medium columns img-quote">
                                      
                                     
-                                    « Avant je vendais des fruits et des légumes frais. Aujourd’hui les clientes n’achètent plus que des boîtes de conserve»  <p> Agnès Sewa - Vendeuse ambulante</p>
+                                    « Avant je vendais des fruits et des légumes frais. Aujourd’hui les clientes n’achètent plus que des boîtes de conserve» <br><br>  <p> Agnès Sewa - Vendeuse ambulante</p>
                                 </div>
                             <hr>
                      </div>
@@ -761,7 +776,7 @@ Seule la production agricole a été délocalisée dans les Pouilles, les terres
                   <hr>
                     <h3 id="title"><strong>Or rouge</strong> sang noir</h3>
                   <br/><br/>
-                    <img src="img/hand.jpg" width="200px">
+                    <img src="img/hand.gif" width="200px">
                     <br/><br/>
                 
                     <p class="head-location">Borgo Liberta, Sud de l’Italie - Région des Pouilles</p>
@@ -828,7 +843,7 @@ L’Italie, troisième agriculture européenne après la France et l’Allemagne
                  <div class="medium-8 medium-centered columns" >
                      <hr>
           <div class="medium-3 medium columns image-circle">
-                   <img src="img/caption_prince.png" width="100px" >
+                   <img src="img/caption_prince.png" style="padding-bottom:10px;">
                 </div>
                              
                                  <div class="medium-9 medium columns img-quote">

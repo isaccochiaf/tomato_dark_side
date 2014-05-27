@@ -307,7 +307,7 @@ video {
 .tabs dd a.tabs_a {
     width:150px;
     height:150px;
-    background-image:url(../img/t_tomato_hover.png);
+    background-image:url(../img/t_tomato_hover.jpg);
     background-repeat:no-repeat;
    
 }
@@ -352,14 +352,14 @@ video {
 .tabs dd a.tabs_d {
     width:150px;
     height:150px;
-    background-image:url(../img/t_pick_hover.jpg);
+    background-image:url(../img/t_hand_hover.jpg);
     background-repeat:no-repeat;
     
 }
  .tabs dd.active a.tabs_d {
     width:150px;
     height:150px;
-    background-image:url(../img/t_pick.jpg);
+    background-image:url(../img/t_hand.jpg);
     background-repeat:no-repeat;
     
 }
