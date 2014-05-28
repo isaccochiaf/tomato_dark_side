@@ -1,0 +1,946 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      
+<title>The Dark Side Of Tomato</title>
+<link rel="stylesheet" href="css/foundation.css" />
+<script src="js/modernizr.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
+<script src="js/jquery.js"></script>
+<script src="http://ricostacruz.com/jquery.transit/jquery.transit.js"></script>
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/media-query.css">
+<link href="video-js/video-js.css" rel="stylesheet">
+<script src="video-js/video.js"></script>
+  
+      <style type="text/css">
+  .vjs-default-skin .vjs-play-progress,
+  .vjs-default-skin .vjs-volume-level { background-color: #ca3a3a }
+  .vjs-default-skin .vjs-control-bar { font-size: 81% }
+
+#headerSlideContainer {
+	position: fixed;
+	top:-70px;
+	width: 100%;
+              background-color:rgba(255,255,255,0.9);
+	           border-bottom:solid thin #CCCACA;
+              z-index:1000;
+              padding:0.4em
+}
+          #headerSlideContainer img{
+opacity:0.9
+}
+div.social-button {
+	background-color: #fff;
+    color:#fff;
+    text-align:center;
+    
+}
+          
+       
+</style>
+   
+   
+
+      
+       <script type="text/javascript">
+ 
+           
+           
+        $(function() {
+    $("#tomato01").click(
+    function(){
+        $("#block").transition({ marginLeft: '5%' }, 1000 );
+    });
+            
+    $("#tomato02").click(
+    function(){
+        $("#block").transition({ marginLeft: '30%'}, 1000 );
+    });
+
+    $("#tomato03").click(
+    function(){
+        $("#block").transition({ marginLeft: '55%'}, 1000 );
+    });
+            
+    $("#tomato04").click(
+    function(){
+        $("#block").transition({ marginLeft: '80%'}, 1000 );
+    });
+    
+ 
+    });
+           
+           
+           $(function() {
+	var bar = $('#headerSlideContainer');
+	var top = bar.css('top');
+	$(window).scroll(function() {
+		if($(this).scrollTop() > 500) {
+			bar.stop().animate({'top' : '0px'}, 500);
+		} else {
+			bar.stop().animate({'top' : top}, 500);
+		}
+	});
+});
+           
+           
+        $(function() {
+	 var video = document.getElementById("video_1");
+
+	$(window).scroll(function() {
+		if($(this).scrollTop() > 1 && $(this).scrollTop() < 90) {
+			video.play();
+		} 
+        if($(this).scrollTop() > 400) {
+			video.pause();
+            
+            
+            
+		}
+	});
+});
+           
+           
+           $('#video_1').bind("ended", function(){ 
+      alert('Video Ended'); 
+    });
+           
+            
+           
+
+      </script>
+  
+      <script>
+     var vid, playbtn, seekslider, curtimetext, durtimetext, mutebtn, volumeslider, fullscreenbtn;
+function intializePlayer(){
+	// Set object references
+	vid = document.getElementById("video_1");
+	
+	mutebtn = document.getElementById("mutebtn");
+	
+	// Add event listeners
+	
+	mutebtn.addEventListener("click",vidmute,false);
+
+}
+          window.onload = intializePlayer;
+          
+          function vidmute(){
+	if(vid.muted){
+		vid.muted = false;
+		mutebtn.innerHTML = "<img src=\"img/unmute.png\">";
+	} else {
+		vid.muted = true;
+		mutebtn.innerHTML = "<img src=\"img/mute.png\">";
+	}
+}
+      
+     </script> 
+      
+     
+     
+      
+    
+    
+  </head>
+  <body>
+      
+    <div id="headerSlideContainer" class="target hide-for-small">
+
+    <div id="row">
+        <div class="small-1 columns">
+
+        <img class="icona-small" src="img/icn.png" width="35px">
+             </div>
+         <div class="small-9 columns">
+
+        <h6>The Dark side of italian tomato</h6>
+             </div>
+        
+        <div class="small-2 columns social-button">
+
+       <img src="img/social_fb.png" width="25"> <img src="img/social_tw.png" width="25"> <img src="img/social_gl.png" width="25">
+             </div>
+        </div>
+          
+
+</div> 
+
+   
+         <div id="row">
+             <br /><br />
+           <center><img src="img/logo.jpg"></center>
+                
+             
+             </div>
+       <div class="header show-for-touch">
+            <div class="flex-video"  style="padding-top:-200px;">
+           
+          
+           <video poster="img/poster.jpg" controls preload="none" width="960" height="540">
+
+                        <source src="video/total_intro.mp4" type="video/mp4" />
+                        <source src="video/intro.webm" type="video/webm" />
+
+                    </video>
+            </div>
+      
+      </div>
+      
+      <div class="row">
+         
+          <div class="medium-12 columns">
+             
+                <div class="flex-video hide-for-touch">
+                
+                    <video id="video_1" poster="img/poster.jpg"  preload="none" width="100%"   style="background-color:#fff">
+
+                        <source src="video/total_intro.mp4" type="video/mp4" />
+                          <source src="video/intro.webm" type="video/webm" />
+                        
+     HTML5 Video is required for this example. 
+                        <a href="demo.mp4">Download the video</a> file. 
+                    </video>
+         
+                </div>
+              <button id="mutebtn" style="margin-top:-20%; background-color:transparent;"> <img src="img/unmute.png"> </button>
+           </div>
+           
+
+        </div>
+     
+ 
+      <!--
+      <div class="header">
+            <div class="small-12 columns">
+                <img src="img/home.jpg">
+                
+            </div>
+      
+      </div>
+      -->
+      
+      
+      <div class="row">
+           
+          <br /><br /> <br /><br /> <br /><br />
+         
+          <div class="medium-8 medium-centered columns">
+               
+                <p id="small-text">Mathilde Auviallin Stefano Liberti <br />
+    Research and Data: Jacopo Ottaviani<br />
+    Design and Development: Isacco Chiaf<br />
+    Photography and Video: Mario Poeta
+                </p>
+            
+                    <hr>
+                    <p>  <span class="firstcharacter">P</span>rince Bony never thought that he would travel across the desert and the sea only to find himself doing the same work that he used to do back home. Sitting in front of an abandoned farmhouse, a vestige of agrarian reform, he looks out upon the horizon and reflects on his life. Prince shares this makeshift home with a dozen other Ghanaian seasonal workers. Without papers, without money, without prospects, they have found refuge here in the open countryside, in this cluster of ruins that ironically bears the name “Borgo Libertà” (“Liberty Borgo”).<br /></p>
+            </div>
+        </div>
+      
+       <!-- ---------------------------------------------------------Image Caption -->
+      <div class="row" >
+                 <div class="medium-8 medium-centered columns" >
+                     <hr>
+          <div class="medium-3 medium columns image-circle">
+                   <img src="img/caption_prince.jpg" style="padding-bottom:10px;">
+                </div>
+                             
+                                 <div class="medium-9 medium columns img-quote">
+                                     
+                                    
+                                    « In Ghana, they called me Kofi America, because I always yearned to travel. I wanted to conquer the world!» <br><br> <p>Prince Bony - Ghanaian Worker</p>
+                                </div>
+                            <hr>
+                     </div>
+                </div>
+        <!-- ---------------------------------------------------------Image Caption -->
+      
+      
+      <div class="row">
+           
+          <br /><br />  
+         
+          <div class="medium-8 medium-centered columns">
+            
+                    <p>Wrapped up in an old threadbare overcoat, Prince fixes his gaze on the sun as it sinks below the horizon. Then he says just one word: “Tomato”. No sooner has he said it than his face lights up, but it’s a light veiled in sadness. “Also in Navrongo, my town, we grow tomatoes!”<br /><br /></p>
+            </div>
+        </div>
+      
+      
+      <div class="row">
+          <div class="medium-7 large-centered columns">
+              
+                <div id="myModal" class="reveal-modal" data-reveal style="padding:0 !important">
+                     <div class="medium-6 columns" style="background-color:#dbdbdb; margin:0 ; padding:0">
+                         <img src="img/ember_image.jpg">
+                         </div>
+                     <div class="medium-6 columns" style="padding:10% 7%; 0 0">
+                         
+                         <h4>Embed this on Your Site</h4>
+                    <p style="font-size:14px;">In order to puplish this interactive element on your page all you need to do is to simply copy and paste the code below on your site, blog, article.</p>
+                         <form> 
+                         <div class="row">
+    <div class="large-12 columns">
+      <label>
+        <textarea name="txtbox1" placeholder="" style="height:100px;">&lt;iframe src="http://isaccochiaf.me/tomato_dark_side/graph_embedd.html" style="overflow:hidden" scrolling="no" frameborder="0" height="100%" width="420px"&gt; &lt;/iframe &gt;</textarea>
+      </label>
+        
+    </div>
+  </div>
+</form>
+                       
+                   
+                         </div>
+                    
+                    <a class="close-reveal-modal">&#215;</a>
+                </div>
+            </div>
+        </div>
+          
+
+     
+       <div style="float:right; padding:20px 20px 0 0"><a href="#" data-reveal-id="myModal" data-reveal><img src="img/share.png" width="40px"></a></div>
+
+      <div class="row">
+          
+          
+          <div class="medium-7 medium-centered columns">
+              <br><br><br>
+              <center>
+                  <h2 id="title">tomato <strong>traffic</strong></h2>
+                  
+              </center>
+          </div>
+          
+  
+            
+
+        </div>
+      
+      <div class="row">
+          <div class="medium-7 large-centered columns">
+              <br /><br /><br /><br />
+          </div>
+      </div>
+      
+    
+     <div class="row">
+         
+        <dl class="tabs" data-tab>
+           <dd class="small-3 columns active" id="tomato01"><a href="#panel2-1" class="tabs_a"> </a></dd>
+            <dd class="small-3 columns" id="tomato02"><a href="#panel2-3" class="tabs_c"></a></dd>
+            <dd class="small-3 columns" id="tomato03"><a href="#panel2-2" class="tabs_b"></a></dd>
+            <dd class="small-3 columns" id="tomato04"><a href="#panel2-4" class="tabs_d"></a></dd>
+         </dl>
+        <div id="block" class="hide-for-small"></div>
+       
+         <div class="tabs-content">
+    <hr>
+            <div class="content active small-12 columns" id="panel2-1">
+                 <div class="medium-4 columns">
+                     <img src="img/location_navrongo.jpg">
+                </div>
+                <div class="medium-8 columns">
+                <h4>Campi deserti</h4>
+                <p><b>Navrongo, Upper East region, Ghana</b> I campi di pomodori, una volta rigogliosi di frutti, oggi sono deserti. I produttori hanno cambiato colture o abbandonato le terre.  </p>
+                    </div>
+            </div>
+            <div class="content  small-12 columns" id="panel2-3">
+                <div class="medium-4 columns">
+                     <img src="img/location_accra.jpg">
+                </div>
+                <div class="medium-8 columns">
+                <h4 >Piramidi di concentrato</h4>
+                <p><b>Makola market, Accra, Ghana</b> I baracchini traboccano di scatole di pomodoro concentrato importato dall’Italia o dalla Cina. I pomodori freschi non li compra più nessuno. </p>
+                    </div>
+            </div>
+            <div class="content  small-12 columns" id="panel2-2">
+                <div class="medium-4 columns">
+                     <img src="img/location_nocera.jpg">
+                </div>
+                <div class="medium-8 columns">
+                <h4>L’Africa in scatola</h4>
+                <p><b>Nocera superiore, Campania, Italia</b> Le fabbriche funzionano a pieno regime. Sfornano quotidianamente tonnellate di pomodoro in scatola che dal porto di Napoli, vengono esportate in tutto il mondo.</p>
+                    </div>
+            </div>
+            <div class="content  small-12 columns" id="panel2-4">
+                <div class="medium-4 columns">
+                     <img src="img/location_borgoliberta.jpg">
+                </div>
+                <div class="medium-8 columns">
+                <h4>Oro rosso, sangue nero</h4>
+                <p><b>Borgo Libertà, Puglia, Italia</b> Gli immigrati ghanesi raccolgono i pomodori che, una volta trasformati, saranno esportati sotto forma di concentrato nel loro paese.  </p>
+                    </div>
+            </div>
+         </div>
+      
+    </div>
+ 
+  <!-- -----------------------------------------------------------------   Chapter---01 -->
+       
+      <div class="row">
+          <div class="medium-7 small-centered columns ">
+              
+              <center>
+                  <hr>
+                    <h3 id="title">The manna that <br /><strong>becomes a curse</strong></h3>
+                  <br/><br/>
+                    <img src="img/tomato.jpg" width="200px">
+                    <br/><br/>
+                    <p class="head-introduction"></p>
+                    <p class="head-location">Navrongo - Northern Ghana</p>
+                    <hr>
+              </center>
+          </div>
+      </div>
+      
+     
+      <div class="row">
+          <div class="medium-7 large-centered columns">
+              <br /><br /><br /><br /><br /><br /><br />
+          </div>
+      </div>
+
+ 
+
+
+    
+
+      
+  
+       <div class="row">
+           <div class="medium-8 medium-centered columns">
+                 <br /><br /><br /><br />
+                
+                <p>  <span class="firstcharacter">A</span>long the road that leads from Tamale to Navrongo, the pyramids of tomatoes shake as the trucks bearing empty boxes storm past, hurling at full speed down the route that links Northern and Southern Ghana. The noise of the engines, the honking of the horns, the rattling of the trailers drown out the shouts of the women who have artfully displayed their red wares for sale by the roadside. But it’s all in vain: Nobody wants fresh tomatoes anymore. 
+
+<br /><br />
+     	  These sellers have an air of desperation about them. On their stalls, the succulent tomatoes end up spoiling and going rotten. Now the customers only buy cans of Salsa, Gino and Obaapa, brands of tomato paste imported from Italy or China.</p>
+               <br /><br /><br /><br /><br /><br /><br /><br />
+               </div>
+
+      </div>
+      
+      <!------------------------------------------------------------  video   -->
+                    
+                          
+            <div class="row">
+      
+                     <video id="my_video_3" class="video-js vjs-default-skin" controls preload="none" 
+  data-setup='{}' poster="img/poster_vid_01.jpg" >
+    <source src="video/vid-01-campi.mp4" type='video/mp4'>
+    <source src="video/vid-01-campi.webm" type='video/webm'>
+    
+                         
+                    </video>
+            </div>
+
+                    
+     <!------------------------------------------------------------  video   -->
+               
+       <div class="row">
+           <div class="medium-8 medium-centered columns">
+               <br /><br /><br /><br /><br /><br /><br /><br />
+                    <p>
+“There isn’t a dish in Ghana that doesn’t have tomato in it. But the tomatoes produced here don’t sell anymore”. Ayine Justice Atomsko, head of the small agricultural community of Vea, has the doleful tone of someone who remembers another era. Only twenty years ago, the tomato farming was thriving in the Upper East Region, this agricultural area in Northern Ghana. Every farmer grew a couple of hectares of tomatoes, safe in the knowledge that they could sell them at a good price. 
+</p>
+           </div>
+      </div>    
+      <!-- ---------------------------------------------------------Image Caption -->
+      <div class="row" >
+                 <div class="medium-8 medium-centered columns" >
+                     <hr>
+          <div class="medium-3 medium columns image-circle">
+                   <img src="img/caption_aolja.png" style="padding-bottom:10px;">
+                </div>
+                     
+                             
+                                 <div class="medium-9 medium columns img-quote">
+                                     
+                                    
+                                   «I don’t grow tomatoes anymore. I wouldn’t know who to sell them to»<br /><br />
+  <p>Aolja Tenitia - Farmer of the Year in 2007 </p>
+                                </div>
+                            <hr>
+                     </div>
+                </div>
+        <!-- ---------------------------------------------------------Image Caption -->
+      
+      <div class="row">
+           <div class="medium-8 medium-centered columns">
+               <br /><br />
+                    <p>
+But with the beginning of the twenty-first century, the manna turned into a curse. The failure of the Pwalugu processing factory, the strong competition from neighbouring Burkina Faso and especially the arrival of a wave of canned tomato imports from Italy and China destroyed the dreams of the farmers in the region. Worn out from debt, having invested all their savings in seeds, fertiliser and land, a number of desperate cultivators took their own lives in 2007. 
+
+</p><br /><br />
+           </div>
+      </div>  
+      
+       <!-- -----------------------------------------------------------------         PARALLAX -->   
+      <div class="header">
+          <div class="cont hide-for-touch">
+              <div class="parallax overlay" id="parallax-01">
+                    <q>La culture de la tomate aurait pu être une mine d’or</q>
+              </div>
+          </div>
+      </div>
+
+ <!-- -----------------------------------------------------------------         PARALLAX -->
+      
+     <!-- 
+
+                <iframe src="anim_test.html" style="border:0px #FFFFFF none;" name="videoframe" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="500px" width="100%"></iframe>
+        -->
+           
+      
+                    <!-------------------Chapter 02---------------------------------------------------->
+    
+      
+      
+      <div class="row">
+          <br /><br /><br /><br /><br /><br />
+          <div class="medium-8 small-centered columns ">
+              
+              <center>
+                  <hr>
+                    <h3 id="title">Africa in <strong>a box</strong></h3>
+                  <br/><br/>
+                    <img src="img/market.gif" width="200px">
+                    <br/><br/>
+                 
+                    <p class="head-location">Accra - Capital of Ghana</p>
+                    <hr>
+              </center>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="medium-8 large-centered columns">
+              <br /><br /><br /><br /><br /><br />
+          </div>
+      </div>
+
+ 
+
+ 
+
+      
+  
+       <div class="row">
+           <div class="medium-8 medium-centered columns">
+                <br /><br /><br /><br />
+                <p>  <span class="firstcharacter">M</span>akola market, the main market in Accra – one of the largest in Western Africa – is the commercial heart of the capital. A veritable anthill where thousands of peddlers amass in a maze of narrow streets, cluttered with trucks loaded to the brim with all every kind of load under the sun. Everywhere, wooden stalls seem to be laden down by red cans of tomatoes, skilfully balanced by the sellers in mysterious geometric formations. “Gino”, “Salsa”, “Fiorini”, the brands are Italian pastes. Brands work for tomatoes: even the Chinese product “Gino” displays the Italian tricolour on the can to attract customers. 
+                    <br />
+                    
+                    </p>
+               </div>
+      </div>
+      <!-- ---------------------------------------------------------Image Caption -->
+      <div class="row" >
+                 <div class="medium-8 medium-centered columns" >
+                     <hr>
+          <div class="medium-3 medium columns image-circle">
+                   <img src="img/caption_agnes.png" style="padding-bottom:10px;">
+                </div>
+                             
+                                 <div class="medium-9 medium columns img-quote">
+                                     
+                                    
+                                    «I used to sell soups and fresh vegetables. Nowadays, customers only want tins» <br><br>  <p> Agnès Sewa - Vendeuse ambulante</p>
+                                </div>
+                            <hr>
+                     </div>
+                </div>
+        <!-- ---------------------------------------------------------Image Caption -->
+      
+      <div class="row">
+           <div class="medium-8 medium-centered columns">
+               <br /><br />
+                    <p>
+“This Gino can is the one that sells the most, but Salsa also sells well”, explains Agnes Sewa, a seller in front of her small, brightly-coloured stall. Over the years, Agnes has seen the gradual disappearance of the mountains of fresh fruit and vegetables from the market, replaced by cans of preserved tomatoes imported from far-flung places. </p>  
+               <br /><br /><br /><br /><br /><br /><br /><br />
+               </div>
+
+      </div>
+      
+      <!------------------------------------------------------------  video   -->
+                    
+            <div class="row">
+      
+                     <video id="my_video_2" class="video-js vjs-default-skin" controls preload="none" 
+  data-setup='{}' poster="img/poster_vid_02.jpg" >
+                            <source src="video/vid-02-mercato.mp4" type='video/mp4'>
+                            <source src="video/vid-02-mercato.webm" type='video/webm'>
+    
+                         
+                    </video>
+            </div> 
+     <!------------------------------------------------------------  video   -->
+               
+       <div class="row">
+           <div class="medium-8 medium-centered columns">
+               <br /><br /><br /><br /><br /><br /><br /><br />
+                    <p>
+For Philip Ayamba, the Director of the Community Self Reliance Centre, an organisation closely associated with the tomato producers, the government should have limited the quantity of tomato paste coming in from abroad. “If the market had been regulated, the farmers would’ve gotten better prices and would’ve had a market for their produce. But the government did the exact opposite. It swung open the doors of the country to imports of European tomato paste. Now there’s such a wide choice and such an amount of produce that it’s practically impossible to sell locally-grown tomatoes”. 
+
+
+</p><br /><br />
+           </div>
+      </div>  
+      
+      
+      
+      
+      <!-------------------------------GRAPH 01----------------------------------------------------------------->
+      
+      <div class="row">
+           <div class="medium-8 medium-centered columns">
+            <h4> Graph on General Imports into Ghana</h4>
+          <hr>
+               <p style="font-size:14px; color:#999"> Migliaia di tonnellate di concentrato di pomodoro prodotto in Italia arrivano ogni anno in Ghana. Un'importazione che incide sul mercato del pomodoro locale.</p>
+          </div>
+        </div>
+          
+            <div class="row">
+         <div class="medium-10 medium-centered columns">
+             
+           <div class="large-12 columns">
+               <div class="flex-video">
+                    <iframe src="http://cf.datawrapper.de/beYoX/4/" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" width="100%" height="400"></iframe>
+                   </div>
+                </div>
+             
+             
+             </div>
+          
+      </div>
+             
+      
+      <div class="row">
+           <div class="medium-8 medium-centered columns">
+               <br /><br /><br /><br /><br /><br /><br /><br />
+                    <p>
+From 2000 onwards, the government reduced the customs duties on imports of certain products, including tomato paste, thus creating in the mid-term a deluge of foreign products in the local markets. FAO has calculated a rise of 650 per cent in tomato paste imports from 1998 to 2003. During the same period, the share of Ghanaian tomatoes in the local market has plummeted from 92 to 57 per cent (FAO). A drop that hasn’t just hit tomato producers, but also the many spin-off sectors. The International Food Policy Research Institute (IFPRI) estimates that twenty-five people are involved in the chain that brings a tomato from the field to the plate, including farmers, transporters, merchants, intermediaries, and owners of restaurants and chopbars (IFPRI, p. 2). 
+<br /><br />
+Every year Ghana imports roughly 50 thousand tons of preserved tomatoes. A succulent market that Italy had cornered until about 10 years ago, but now must compete for with China. 
+       
+
+
+</p><br /><br /><br /><br /><br />
+           </div>
+      </div>  
+            
+      
+                    
+      
+      
+      
+        <!-- -----------------------------------------------------------------         PARALLAX -->   
+      <div class="header">
+          <div class="cont hide-for-touch">
+              <div class="parallax overlay" id="parallax-02">
+                    <q>Les importations massives de concentré de tomate européen ont tué le marché local</q>
+              </div>
+          </div>
+      </div>
+
+ <!-- -----------------------------------------------------------------         PARALLAX -->
+    
+      
+  
+      
+      
+      
+      
+     <!-------------------Chapter 03---------------------------------------------------->
+    
+      
+      
+     <div class="row ">
+         <br /><br /><br /><br /><br /><br />
+          <div class="medium-8 small-centered columns ">
+              
+              <center>
+                  <hr>
+                    <h3 id="title"><strong>The red gold</strong> factory</h3>
+                  <br/><br/>
+                    <img src="img/can.gif" width="200px">
+                    <br/><br/>
+                   
+                    <p class="head-location">Nocera Superiore - Sud de l’Italie</p>
+                    <hr>
+              </center>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="medium-8 large-centered columns">
+              <br /><br /><br /><br /><br /><br />
+          </div>
+      </div>
+
+ 
+
+      
+  
+       <div class="row">
+           <div class="medium-8 medium-centered columns">
+                <br /><br /><br /><br />
+                <p>  <span class="firstcharacter">I</span>n the “Salsa” tomato paste processing plant, the cans cause a deafening racket as they pirouette down the conveyor belt. Workers busy at the wheels of forklifts load stacks of cans in cardboard boxes into a container. “This leaves tomorrow for the Ivory Coast”, explains the Director. <br />
+«When my father founded the company in 1968 it produced 10,000 cans a day. An exceptional amount at the time”, says Angelo D’Alessio, the Managing Director of the Centro Esportazione Conservati company (CEC). «In Africa, up to twenty years ago, the tomato paste market was the exclusive domain of Italy”. Even today, the business survives because of the African market. All of the produce from this factory in Nocera superiore, in the province of Salerno, is exported beyond the Mediterranean. By virtue of its leading brand, “Salsa”, the business has an annual turnover of between 20 and 30 million euros.
+                    <br /><br /><br /><br /><br />
+               </div>
+      </div>
+      
+      <!------------------------------------------------------------  video   -->
+                    
+                   <div class="row container-dalessio">
+      
+                     <video id="my_video_1" class="video-js vjs-default-skin" controls preload="none" 
+  data-setup='{}' poster="img/poster_vid_03.jpg" >
+                        <source src="video/vid-03-fabbrica.mp4" type='video/mp4'>
+                         <source src="video/vid-03-fabbrica.webm" type='video/webm'>
+    
+                         
+                    </video>
+            </div> 
+     <!------------------------------------------------------------  video   -->
+      
+      <div class="row">
+          <div class="medium-8 medium-centered columns">
+                <br /><br /><br /><br /><br /><br /><br /><br />
+                <p>  « Italy is the second-largest transformer and preserver of tomatoes after California, in terms of the quantity of fresh produce transformed”, chirps Giovanni de Angelis, Director of ANICAV, the National Association for Industrial Producers of Vegetable Food Preserves. In 2013, the Italian processed tomato industry exported 1,127 million tons of tomato paste, with a turnover of 846 million euros in a market that saw 8.32% growth in one year, according to data gathered by Federalimentare.
+
+                    <br /><br /><br />
+               </div>
+      </div>
+      
+          
+  
+      
+       <!-------------------------------GRAPH 02----------------------------------------------------------------->
+       <div class="row">
+           <div class="medium-8 medium-centered columns">
+            <h4>Major tomato importer to ghana</h4>
+          <hr>
+               <p style="font-size:14px; color:#999"> Tra i vari paesi che esportano pomodoro concentrato in Ghana, l'Italia è al secondo posto dopo la Cina.</p>
+          </div>
+        </div>
+      
+      <div class="row">
+          
+         
+          
+         <div class="medium-10 medium-centered columns">
+             
+           <div class="large-12 columns">
+               <div class="flex-video">
+                     <iframe src="http://cf.datawrapper.de/Oeb5V/1/" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" width="100%" height="400"></iframe>
+                    </div>
+                </div>
+             </div>
+         </div>
+        
+     <!-------------------------------GRAPH 02----------------------------------------------------------------->
+    
+  <div class="row">
+           <div class="medium-8 medium-centered columns">
+                <br /><br /><br /><br />
+                <p>  The heart of this “business” is in the centre-south, in the Napoli region, a strategic hub for processing and trade. On the docks of the Neapolitan port, containers loaded with cans of “made in Italy” tomato paste depart each week for the four corners of the earth. <br />
+The agricultural production itself has been moved down to Puglia, following the devouring of Neapolitan agricultural land that has come with rampant urbanisation. The Capitanata plain around Foggia, already an important area for grain cultivation, has now become the mine for this “red gold”. 
+
+
+                    <br /><br /><br /><br />
+               </div>
+      </div>
+     
+       <!-- -----------------------------------------------------------------         PARALLAX -->   
+      <div class="header">
+          <div class="cont hide-for-touch">
+              <div class="parallax overlay" id="parallax-04">
+                    <q>Les marchés africains veulent la même tomate que celle qui plaît aux italiens</q>
+              </div>
+          </div>
+      </div>
+
+ <!-- -----------------------------------------------------------------         PARALLAX -->
+      
+      
+        <!-------------------Chapter 04---------------------------------------------------->
+    
+      
+      
+     <div class="row">
+          <br /><br /><br /><br /><br /><br />
+          <div class="medium-8 small-centered columns ">
+              
+              <center>
+                  <hr>
+                    <h3 id="title"><strong>Red gold</strong> black blood</h3>
+                  <br/><br/>
+                    <img src="img/hand.gif" width="200px">
+                    <br/><br/>
+                
+                    <p class="head-location">Borgo Libertà, Puglia - Southern Italy</p>
+                    <hr>
+              </center>
+          </div>
+      </div>
+
+
+      <div class="row">
+          <div class="medium-7 large-centered columns">
+              <br /><br /><br /><br /><br /><br />
+          </div>
+      </div>
+
+ 
+
+
+    
+
+      
+  
+       <div class="row">
+           <div class="medium-8 medium-centered columns">
+                <br /><br /><br /><br />
+                <p>  <span class="firstcharacter">I</span>n the heart of the yellowish prairies of the Capitanata plain, which extends between the coast of the Adriatic Sea and the Gargano hills, articulated lorries loaded with crates of tomatoes race along badly-paved roads in the direction of Naples, raising clouds of dust as they go. There’s a Wild West atmosphere that gradually gives way to a more African scenario. In single file, seasonal workers from Ghana, Mali, Senegal, approach their camps at the end of a blistering day’s work. From the end of July to mid-October, thousands of them stop over in these camps in the South of Italy for the tomato picking season. 
+<br /><br />
+Paid off the books, the pay is not by hour but by task, € 3.5 for every 300 Kilo chest, which works out at less than €20 per day for crucifying work. Without  work contracts or health cover, and at the mercy of “caporali” – the intermediaries between the workers and their employers. If they get hungry at mid-day, they chew on a stolen tomato. In the evening, they trudge back to their camps, where they have been assigned a “bed”: a mattress in the open air or in a makeshift shack.  
+                  <br /><br /><br /><br /><br />
+                  </p>
+               </div>
+      </div>
+      
+    
+   
+      <!------------------------------------------------------------  video   -->
+                    
+                   <div class="row container-dalessio">
+      
+                     <video id="my_video_4" class="video-js vjs-default-skin" controls preload="none" 
+  data-setup='{ "asdf": true }' poster="img/poster_vid_04.jpg" >
+                         <source src="video/vid-04-ghetto.mp4" type='video/mp4'>
+                         <source src="video/vid-04-ghetto.webm" type='video/webm'>
+    
+                         
+                    </video>
+            </div> 
+     <!------------------------------------------------------------  video   -->
+      
+     <div class="row">
+           <div class="medium-8 medium-centered columns">
+                <br /><br /><br /><br /><br /><br /><br /><br />
+                <p> « The invisible ones of the harvest” number in their thousands throughout Southern Italy. Almost all of them have no papers, and they’ll do anything to work. “Not even in Africa have I seen people living in such conditions”, protests Yvan Sagnet, a Cameroonian student who in 2010 organised the first strike by seasonal workers in the fields of Puglia. He now works for CGIL, the main Italian Union, defending the rights of these immigrant seasonal workers.
+                    <br /><br />
+Italy, the third biggest agricultural producer after France and Germany, vies with Spain for first place in the production of vegetables. In the past ten years, Italy has produced an average of 6 million tons of tomatoes per year (FAOSTAT). According to FAO the exportation of concentrated Italian tomatoes was facilitated in 2001 by a reimbursement by the EU of 45 euros for every ton of product exported (FAO, p. 2). But that’s not all. Overall, according to Oxfam, the EU subsidises tomato production to the tune of approximately 34.5 euros per ton, a subsidy that covers 65 per cent of the market price of the final product (Oxfam, p. 7 + note 13 p. 26). 
+But who in Brussels is aware of the paradox of subsidising an export product that dumps on local produce in Africa? 
+
+
+                    <br />
+               </div>
+      </div>
+      
+      <!-- ---------------------------------------------------------Image Caption -->
+      <div class="row" >
+                 <div class="medium-8 medium-centered columns" >
+                     <hr>
+          <div class="medium-3 medium columns image-circle">
+                   <img src="img/caption_prince.jpg" style="padding-bottom:10px;">
+                </div>
+                             
+                                 <div class="medium-9 medium columns img-quote">
+                                     
+                                    
+                                    «Pendant la saison de récolte des tomates, je réussis à envoyer un peu d’argent à ma famille au Ghana. Mais je ne peux pas repartir, ni les faire venir ici, ni leur dire dans quelles conditions je vis en Italie.» <p>Prince Bony - Saisonnier ghanéen</p>
+                                </div>
+                            <hr>
+                     </div>
+                </div>
+        <!-- ---------------------------------------------------------Image Caption -->
+      
+      
+      <div class="row">
+           <div class="medium-8 medium-centered columns">
+                <br /><br />
+                <p>  The story of Prince Bony-Kofi America is emblematic of this perverse mechanism. Sitting in front of his crumbling abode, which he’ll soon have to leave as the roof is about to cave in, he doesn’t know where his journey will take him next. An authentic modern-day Sisyphus, he seems condemned to pick tomatoes just as the son of Aeolus was forced to constantly roll his stone up to the mountain peak. <br />
+«I’m a farmer. I’ve always worked the land to feed my children». But what Kofi America doesn’t know is that the yield from his undocumented labour in the tomato fields of Southern Italy risks forcing the farmers of the Upper East region in Northern Ghana to abandon their land. That same land that also once was his.
+
+
+                    <br />
+               </div>
+      </div>
+     
+        <div class="row">
+           
+          <br /><br /> <br />
+         
+          <div class="medium-8 medium-centered columns">
+               <hr>
+                <p id="small-text-footer"><b>Mathilde Auvillain, Stefano Liberti</b><br />
+    <b>Research and Data:</b> Jacopo Ottaviani,<br />
+    <b>Photography and Video:</b> Mario Poeta,<br />
+                   <b>Design and Development:</b>  Isacco Chiaf
+                </p>
+        <hr>
+            </div>
+        </div>
+      <div class="row">
+           
+        
+         
+          <div class="medium-8 medium-centered columns">
+               <br /> <br /><br />
+               <center><img src="img/icn.jpg">  </center>
+              <br /> <br /><br />
+            </div>
+        </div>
+     
+
+        <footer>
+             <div class="row">
+                <div class="medium-8 medium-centered columns">
+                     <center><p>This project was realized with the support of EJC Grant for Innovative Reporting</p></center> 
+                    <center><img src="img/footer_ejclogo.png" width="100px"></center> 
+                  <br /> <br />
+                </div>
+            </div>
+      </footer>
+      <footer id="copyright-year">
+             <div class="row">
+                <div class="medium-8 medium-centered columns">
+       <center><h5>©2014</h5></center> 
+                       </div>
+            </div>
+      </footer>
+      
+     <!--   <script type="text/javascript">
+   
+  
+</script> -->
+      
+      
+        
+<!-- __________________________________SCRIPTS_________________ -->
+   <script src="js/videoresize.js"></script>   
+<script src="js/foundation/foundation.js"></script>
+<script src="js/foundation/foundation.reveal.js"></script>
+<script src="js/foundation/foundation.orbit.js"></script>
+<script src="js/foundation/foundation.tab.js"></script>
+      <script src="js/foundation/foundation.tab.js"></script>
+       <script src="js/foundation/foundation.magellan.js"></script>
+       <script src="js/foundation/foundation.topbar.js"></script>
+      
+    <script>
+   $(document).foundation();
+    </script>
+      
+
+   
+  </body>
+</html>
