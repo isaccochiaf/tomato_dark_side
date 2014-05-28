@@ -17,60 +17,60 @@
         padding:50px;
     }
     .tabs dd a.tabs_a {
-      width:75px;
-    height:75px;
+      width:70px;
+    height:70px;
     background-image:url(../img/t_tomato_hover_s.jpg);
     background-repeat:no-repeat;
    
 }
  .tabs dd.active a.tabs_a{
-      width:75px;
-    height:75px;
+      width:70px;
+    height:70px;
     background-image:url(../img/t_tomato_s.jpg);
     background-repeat:no-repeat;
     
 }
 
 .tabs dd a.tabs_b {
-     width:75px;
-    height:75px;
+     width:70px;
+    height:70px;
     background-image:url(../img/t_can_hover_s.jpg);
     background-repeat:no-repeat;
     
 }
  .tabs dd.active a.tabs_b {
-     width:75px;
-    height:75px;
+     width:70px;
+    height:70px;
     background-image:url(../img/t_can_s.jpg);
     background-repeat:no-repeat;
    
 }
 
 .tabs dd a.tabs_c {
-    width:75px;
-    height:75px;
+    width:70px;
+    height:70px;
     background-image:url(../img/t_market_hover_s.jpg);
     background-repeat:no-repeat;
     
 }
  .tabs dd.active a.tabs_c {
-     width:75px;
-    height:75px;
+      width:70px;
+    height:70px;
     background-image:url(../img/t_market_s.jpg);
     background-repeat:no-repeat;
     
 }
 
 .tabs dd a.tabs_d {
-     width:75px;
-    height:75px;
+     width:70px;
+    height:70px;
     background-image:url(../img/t_hand_hover_s.jpg);
     background-repeat:no-repeat;
     
 }
  .tabs dd.active a.tabs_d {
-   width:75px;
-    height:75px;
+   width:70px;
+    height:70px;
     background-image:url(../img/t_hand_s.jpg);
     background-repeat:no-repeat;
         
