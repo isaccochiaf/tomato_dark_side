@@ -371,3 +371,6 @@ video {
 
 /*VIDEO RESIZE*/
 .wrapper{padding:4% 4%;background:#e4e5d9;border:solid 2rem #fff;}.videocontent{width:80%;max-width:960px;margin:0 auto;}.video-js{padding-top:55.25%;}.vjs-fullscreen{padding-top:0px;}
+#small-text-footer {
+    font-size:90%; color:#999
+}
