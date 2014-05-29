@@ -1,0 +1,954 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      
+<title>The Dark Side Of Tomato</title>
+<link rel="stylesheet" href="css/foundation.css" />
+<script src="js/modernizr.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
+<script src="js/jquery.js"></script>
+<script src="http://ricostacruz.com/jquery.transit/jquery.transit.js"></script>
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/media-query.css">
+<link href="video-js/video-js.css" rel="stylesheet">
+<script src="video-js/video.js"></script>
+  
+      <style type="text/css">
+  .vjs-default-skin .vjs-play-progress,
+  .vjs-default-skin .vjs-volume-level { background-color: #ca3a3a }
+  .vjs-default-skin .vjs-control-bar { font-size: 81% }
+
+#headerSlideContainer {
+	position: fixed;
+	top:-70px;
+	width: 100%;
+              background-color:rgba(255,255,255,0.9);
+	           border-bottom:solid thin #CCCACA;
+              z-index:1000;
+              padding:0.4em
+}
+          #headerSlideContainer img{
+opacity:0.9
+}
+div.social-button {
+	background-color: #fff;
+    color:#fff;
+    text-align:center;
+    
+}
+          
+       
+</style>
+   
+   
+
+      
+       <script type="text/javascript">
+ 
+           
+           
+        $(function() {
+    $("#tomato01").click(
+    function(){
+        $("#block").transition({ marginLeft: '5%' }, 1000 );
+    });
+            
+    $("#tomato02").click(
+    function(){
+        $("#block").transition({ marginLeft: '30%'}, 1000 );
+    });
+
+    $("#tomato03").click(
+    function(){
+        $("#block").transition({ marginLeft: '55%'}, 1000 );
+    });
+            
+    $("#tomato04").click(
+    function(){
+        $("#block").transition({ marginLeft: '80%'}, 1000 );
+    });
+    
+ 
+    });
+           
+           
+           $(function() {
+	var bar = $('#headerSlideContainer');
+	var top = bar.css('top');
+	$(window).scroll(function() {
+		if($(this).scrollTop() > 500) {
+			bar.stop().animate({'top' : '0px'}, 500);
+		} else {
+			bar.stop().animate({'top' : top}, 500);
+		}
+	});
+});
+           
+           
+        $(function() {
+	 var video = document.getElementById("video_1");
+
+	$(window).scroll(function() {
+		if($(this).scrollTop() > 1 && $(this).scrollTop() < 90) {
+			video.play();
+		} 
+        if($(this).scrollTop() > 400) {
+			video.pause();
+            
+            
+            
+		}
+	});
+});
+           
+           
+      
+            
+           
+
+      </script>
+  
+      <script>
+     var vid, playbtn, seekslider, curtimetext, durtimetext, mutebtn, volumeslider, fullscreenbtn;
+function intializePlayer(){
+	// Set object references
+	vid = document.getElementById("video_1");
+	
+	mutebtn = document.getElementById("mutebtn");
+	
+	// Add event listeners
+	
+	mutebtn.addEventListener("click",vidmute,false);
+
+}
+          window.onload = intializePlayer;
+          
+          function vidmute(){
+	if(vid.muted){
+		vid.muted = false;
+		mutebtn.innerHTML = "<img src=\"img/unmute.png\">";
+	} else {
+		vid.muted = true;
+		mutebtn.innerHTML = "<img src=\"img/mute.png\">";
+	}
+}
+      
+     </script> 
+      
+     
+     
+      
+    
+    
+  </head>
+  <body>
+      
+    <div id="headerSlideContainer" class="target hide-for-small">
+
+    <div id="row">
+        <div class="small-1 columns">
+
+        <img class="icona-small" src="img/icn.png" width="35px">
+             </div>
+         <div class="small-9 columns">
+
+        <h6>The Dark side of italian tomato</h6>
+             </div>
+        
+        <div class="small-2 columns social-button">
+
+       <img src="img/social_fb.png" width="25"> <img src="img/social_tw.png" width="25"> <img src="img/social_gl.png" width="25">
+             </div>
+        </div>
+          
+
+</div> 
+
+   
+         <div id="row">
+             <br /><br />
+           <center><img src="img/logo.jpg"></center>
+                
+             
+             </div>
+       <div class="header show-for-touch">
+            <div class="flex-video"  style="padding-top:-200px;">
+           
+          
+           <video poster="img/poster.jpg" controls preload="none" width="960" height="540">
+
+                        <source src="video/total_intro.mp4" type="video/mp4" />
+                        <source src="video/intro.webm" type="video/webm" />
+
+                    </video>
+            </div>
+      
+      </div>
+      
+      <div class="row">
+         
+          <div class="medium-12 columns">
+             
+                <div class="flex-video hide-for-touch">
+                
+                    <video id="video_1" poster="img/poster.jpg"  preload="none" width="100%"   style="background-color:#fff">
+
+                        <source src="video/total_intro.mp4" type="video/mp4" />
+                          <source src="video/intro.webm" type="video/webm" />
+                        
+     HTML5 Video is required for this example. 
+                        <a href="demo.mp4">Download the video</a> file. 
+                    </video>
+         
+                </div>
+              <button id="mutebtn" style="margin-top:-20%; background-color:transparent;"> <img src="img/unmute.png"> </button>
+           </div>
+           
+
+        </div>
+     
+ 
+      <!--
+      <div class="header">
+            <div class="small-12 columns">
+                <img src="img/home.jpg">
+                
+            </div>
+      
+      </div>
+      -->
+      
+      
+      <div class="row">
+           
+          <br /><br /> <br /><br /> <br /><br />
+         
+          <div class="medium-8 medium-centered columns">
+               
+                <p id="small-text">Mathilde Auviallin Stefano Liberti <br />
+    Research and Data: Jacopo Ottaviani<br />
+    Design and Development: Isacco Chiaf<br />
+    Photography and Video: Mario Poeta
+                </p>
+            
+                    <hr>
+                    <p>  <span class="firstcharacter">P</span>rince Bony non avrebbe mai immaginato di traversare il deserto e il mare e trovarsi a fare lo stesso lavoro che faceva al suo paese. Seduto davanti a un casolare abbandonato, vestigia della riforma agraria, guarda l’orizzonte e riflette sulla propria vita. Prince divide questa dimora di fortuna con una decina di altri lavoratori stagionali ghanesi. Senza documenti, senza soldi, senza prospettive, hanno trovato rifugio qui, in mezzo alla campagna, in questo gruppuscolo di ruderi che per un’ironia del destino si chiama “Borgo Libertà”.
+<br /></p>
+            </div>
+        </div>
+      
+       <!-- ---------------------------------------------------------Image Caption -->
+      <div class="row" >
+                 <div class="medium-8 medium-centered columns" >
+                     <hr>
+          <div class="medium-3 medium columns image-circle">
+                   <img src="img/caption_prince.jpg" style="padding-bottom:10px;">
+                </div>
+                             
+                                 <div class="medium-9 medium columns img-quote">
+                                     
+                                    
+                                    «In Ghana, mi chiamavano Kofi America, perché ho sempre desiderato viaggiare. Volevo conquistare il mondo!» <br><br> <p>Prince Bony - Lavoratore stagionale ghanese</p>
+                                </div>
+                            <hr>
+                     </div>
+                </div>
+        <!-- ---------------------------------------------------------Image Caption -->
+      
+      
+      <div class="row">
+           
+          <br /><br />  
+         
+          <div class="medium-8 medium-centered columns">
+            
+                    <p>Intabarrato in un vecchio cappotto liso, Prince guarda con aria assorta il sole che tramonta all’orizzonte. Poi dice una sola parola: “Il pomodoro”. Il suo volto si illumina di una luce velata di tristezza non appena la pronuncia. “Anche a Navrongo, la mia città, coltivavamo pomodori!”.
+
+<br /><br /></p>
+            </div>
+        </div>
+      
+      
+      <div class="row">
+          <div class="medium-7 large-centered columns">
+              
+                <div id="myModal" class="reveal-modal" data-reveal style="padding:0 !important">
+                     <div class="medium-6 columns" style="background-color:#dbdbdb; margin:0 ; padding:0">
+                         <img src="img/ember_image.jpg">
+                         </div>
+                     <div class="medium-6 columns" style="padding:10% 7%; 0 0">
+                         
+                         <h4>Embed this on Your Site</h4>
+                    <p style="font-size:14px;">In order to puplish this interactive element on your page all you need to do is to simply copy and paste the code below on your site, blog, article.</p>
+                         <form> 
+                         <div class="row">
+    <div class="large-12 columns">
+      <label>
+        <textarea name="txtbox1" placeholder="" style="height:100px;">&lt;iframe src="http://isaccochiaf.me/tomato_dark_side/graph_embedd.html" style="overflow:hidden" scrolling="no" frameborder="0" height="100%" width="420px"&gt; &lt;/iframe &gt;</textarea>
+      </label>
+        
+    </div>
+  </div>
+</form>
+                       
+                   
+                         </div>
+                    
+                    <a class="close-reveal-modal">&#215;</a>
+                </div>
+            </div>
+        </div>
+          
+
+     
+       <div style="float:right; padding:20px 20px 0 0"><a href="#" data-reveal-id="myModal" data-reveal><img src="img/share.png" width="40px"></a></div>
+
+      <div class="row">
+          
+          
+          <div class="medium-7 medium-centered columns">
+              <br><br><br>
+              <center>
+                  <h2 id="title">tomato <strong>traffic</strong></h2>
+                  
+              </center>
+          </div>
+          
+  
+            
+
+        </div>
+      
+      <div class="row">
+          <div class="medium-7 large-centered columns">
+              <br /><br /><br /><br />
+          </div>
+      </div>
+      
+    
+     <div class="row">
+         
+        <dl class="tabs" data-tab>
+           <dd class="small-3 columns active" id="tomato01"><a href="#panel2-1" class="tabs_a"> </a></dd>
+            <dd class="small-3 columns" id="tomato02"><a href="#panel2-3" class="tabs_c"></a></dd>
+            <dd class="small-3 columns" id="tomato03"><a href="#panel2-2" class="tabs_b"></a></dd>
+            <dd class="small-3 columns" id="tomato04"><a href="#panel2-4" class="tabs_d"></a></dd>
+         </dl>
+        <div id="block" class="hide-for-small"></div>
+       
+         <div class="tabs-content">
+    <hr>
+            <div class="content active small-12 columns" id="panel2-1">
+                 <div class="medium-4 columns">
+                     <img src="img/location_navrongo.jpg">
+                </div>
+                <div class="medium-8 columns">
+                <h4>Campi deserti</h4>
+                <p><b>Navrongo, Upper East region, Ghana</b> I campi di pomodori, una volta rigogliosi di frutti, oggi sono deserti. I produttori hanno cambiato colture o abbandonato le terre.  </p>
+                    </div>
+            </div>
+            <div class="content  small-12 columns" id="panel2-3">
+                <div class="medium-4 columns">
+                     <img src="img/location_accra.jpg">
+                </div>
+                <div class="medium-8 columns">
+                <h4 >Piramidi di concentrato</h4>
+                <p><b>Makola market, Accra, Ghana</b> I baracchini traboccano di scatole di pomodoro concentrato importato dall’Italia o dalla Cina. I pomodori freschi non li compra più nessuno. </p>
+                    </div>
+            </div>
+            <div class="content  small-12 columns" id="panel2-2">
+                <div class="medium-4 columns">
+                     <img src="img/location_nocera.jpg">
+                </div>
+                <div class="medium-8 columns">
+                <h4>L’Africa in scatola</h4>
+                <p><b>Nocera superiore, Campania, Italia</b> Le fabbriche funzionano a pieno regime. Sfornano quotidianamente tonnellate di pomodoro in scatola che dal porto di Napoli, vengono esportate in tutto il mondo.</p>
+                    </div>
+            </div>
+            <div class="content  small-12 columns" id="panel2-4">
+                <div class="medium-4 columns">
+                     <img src="img/location_borgoliberta.jpg">
+                </div>
+                <div class="medium-8 columns">
+                <h4>Oro rosso, sangue nero</h4>
+                <p><b>Borgo Libertà, Puglia, Italia</b> Gli immigrati ghanesi raccolgono i pomodori che, una volta trasformati, saranno esportati sotto forma di concentrato nel loro paese.  </p>
+                    </div>
+            </div>
+         </div>
+      
+    </div>
+ 
+  <!-- -----------------------------------------------------------------   Chapter---01 -->
+       
+      <div class="row">
+          <div class="medium-7 small-centered columns ">
+              
+              <center>
+                  <hr>
+                    <h3 id="title">Campi <strong>deserti</strong></h3>
+                  <br/><br/>
+                    <img src="img/tomato.jpg" width="200px">
+                    <br/><br/>
+                    <p class="head-introduction"></p>
+                    <p class="head-location">Navrongo, Upper East Region, Ghana</p>
+                    <hr>
+              </center>
+          </div>
+      </div>
+      
+     
+      <div class="row">
+          <div class="medium-7 large-centered columns">
+              <br /><br /><br /><br /><br /><br /><br />
+          </div>
+      </div>
+
+ 
+
+
+    
+
+      
+  
+       <div class="row">
+           <div class="medium-8 medium-centered columns">
+                 <br /><br /><br /><br />
+                
+                <p>  <span class="firstcharacter">L</span>ungo la strada che porta da Tamale a Navrongo, le piramidi di pomodoro vacillano al passaggio dei camion carichi di casse vuote, lanciati a tutta velocità lungo l’asse che unisce il Nord e il Sud del Ghana. Il rumore dei motori, l’ululare dei clacson, lo sbatacchiare dei rimorchi copre le urla delle donne che sul ciglio della strada mettono in bella mostra i rossi ortaggi per venderli. Ma invano: il pomodoro fresco non lo compra più nessuno.
+<br /><br />
+Tra i baracchini del mercato di Bolgatanga, le venditrici si lamentano. Nei loro panieri, i pomodori succosi finiscono per guastarsi e marcire. I clienti non vogliono più prodotti freschi, ma solo scatole di Salsa, Gino e Obaapa, marche di pomodoro concentrato importate dall’Italia o dalla Cina.
+</p>
+               <br /><br /><br /><br /><br /><br /><br /><br />
+               </div>
+
+      </div>
+      
+      <!------------------------------------------------------------  video   -->
+                    
+                          
+            <div class="row">
+      
+                     <video id="my_video_3" class="video-js vjs-default-skin" controls preload="none" 
+  data-setup='{}' poster="img/poster_vid_01.jpg" >
+    <source src="video/vid-01-campi.mp4" type='video/mp4'>
+    <source src="video/vid-01-campi.webm" type='video/webm'>
+    
+                         
+                    </video>
+            </div>
+
+                    
+     <!------------------------------------------------------------  video   -->
+               
+       <div class="row">
+           <div class="medium-8 medium-centered columns">
+               <br /><br /><br /><br /><br /><br /><br /><br />
+                    <p>
+“In tutti i piatti ghanesi, c’è del pomodoro. Ma il pomodoro prodotto qui non si vende più”. Ayine Justice Atomsko, capo della piccola comunità agricola di Vea, a metà strada da Bolgatanga e Navrongo, ha il tomo amaro di chi ricorda un’altra epoca. Solo vent’anni fa, la coltura del pomodoro era florida in questa regione del nord del Ghana. Tutti i contadini ne coltivavano qualche ettaro, con la garanzia di riuscire a venderli a buon prezzo. 
+
+</p>
+           </div>
+      </div>    
+      <!-- ---------------------------------------------------------Image Caption -->
+      <div class="row" >
+                 <div class="medium-8 medium-centered columns" >
+                     <hr>
+          <div class="medium-3 medium columns image-circle">
+                   <img src="img/caption_aolja.png" style="padding-bottom:10px;">
+                </div>
+                     
+                             
+                                 <div class="medium-9 medium columns img-quote">
+                                     
+                                    
+                                   «ormai non coltivo più pomodori. Non saprei a chi venderli»<br /><br />
+  <p>Aolja Tenitia - ex Contadina dell’anno 2007 </p>
+                                </div>
+                            <hr>
+                     </div>
+                </div>
+        <!-- ---------------------------------------------------------Image Caption -->
+      
+      <div class="row">
+           <div class="medium-8 medium-centered columns">
+               <br /><br />
+                    <p>
+Ma all’inizio degli anni 2000, la manna si è trasformata in maledizione. L’esperienza fallita della fabbrica di trasformazione di Pwalugu, la concorrenza del vicino Burkina Faso, e soprattutto l’arrivo di un’ondata di importazioni di pomodoro in scatola dall’Italia e dalla Cina hanno distrutto i sogni dei contadini della Upper East region. Sfiancati dai debiti, dopo aver investito tutti i propri risparmi nei semi, nei fertilizzanti e nelle terre, alcuni produttori di pomodori disperati sono arrivati a suicidarsi nel 2007. 
+
+
+</p><br /><br />
+           </div>
+      </div>  
+      
+       <!-- -----------------------------------------------------------------         PARALLAX -->   
+      <div class="header">
+          <div class="cont hide-for-touch">
+              <div class="parallax overlay" id="parallax-01">
+                    <q>La coltura del pomodoro poteva essere una miniera d’oro</q>
+              </div>
+          </div>
+      </div>
+
+ <!-- -----------------------------------------------------------------         PARALLAX -->
+      
+     <!-- 
+
+                <iframe src="anim_test.html" style="border:0px #FFFFFF none;" name="videoframe" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="500px" width="100%"></iframe>
+        -->
+           
+      
+                    <!-------------------Chapter 02---------------------------------------------------->
+    
+      
+      
+      <div class="row">
+          <br /><br /><br /><br /><br /><br />
+          <div class="medium-8 small-centered columns ">
+              
+              <center>
+                  <hr>
+                    <h3 id="title">L’Africa in <strong>scatola</strong></h3>
+                  <br/><br/>
+                    <img src="img/market.gif" width="200px">
+                    <br/><br/>
+                 
+                    <p class="head-location">Makola market, Accra, Ghana</p>
+                    <hr>
+              </center>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="medium-8 large-centered columns">
+              <br /><br /><br /><br /><br /><br />
+          </div>
+      </div>
+
+ 
+
+ 
+
+      
+  
+       <div class="row">
+           <div class="medium-8 medium-centered columns">
+                <br /><br /><br /><br />
+                <p>  <span class="firstcharacter">M</span>akola market, il mercato centrale di Accra – uno dei più grandi dell’Africa Occidentale – è il cuore commerciale della capitale. Un vero e proprio formicaio dove migliaia di venditori ambulanti si ammassano in un dedalo di stradine, ingombre di camion carichi di merci di ogni sorta. Dappertutto, baracchini di legno appaiono sommersi da rosse scatole di pomodoro, sapientemente sistemate dalle venditrici. “Gino”, “Salsa”, “Fiorini”, le marche sono un concentrato d’Italia. Il marchio funziona per il pomodoro: anche il prodotto cinese “Gino” ostenta il tricolore italiano sulla scatola per attirare clienti. 
+
+                    <br />
+                    
+                    </p>
+               </div>
+      </div>
+      <!-- ---------------------------------------------------------Image Caption -->
+      <div class="row" >
+                 <div class="medium-8 medium-centered columns" >
+                     <hr>
+          <div class="medium-3 medium columns image-circle">
+                   <img src="img/caption_agnes.png" style="padding-bottom:10px;">
+                </div>
+                             
+                                 <div class="medium-9 medium columns img-quote">
+                                     
+                                    
+                                    «Prima vendevo zuppe e ortaggi freschi. Oggi, i clienti comprano solo barattoli» <br><br>  <p> Agnès Sewa - Venditrice ambulante</p>
+                                </div>
+                            <hr>
+                     </div>
+                </div>
+        <!-- ---------------------------------------------------------Image Caption -->
+      
+      <div class="row">
+           <div class="medium-8 medium-centered columns">
+               <br /><br />
+                    <p>
+“Questa scatola di Gino è quella che si vende di più, ma anche la Salsa va forte”, spiega Agnes Sewa, una venditrice davanti al suo piccolo baracchino colorato. Nel corso degli anni, Agnes ha visto a poco a poco scomparire le montagne di frutta e verdura fresca dal mercato, rimpiazzati da scatole di conserve importate dal mondo intero.
+</p>  
+               <br /><br /><br /><br /><br /><br /><br /><br />
+               </div>
+
+      </div>
+      
+      <!------------------------------------------------------------  video   -->
+                    
+            <div class="row">
+      
+                     <video id="my_video_2" class="video-js vjs-default-skin" controls preload="none" 
+  data-setup='{}' poster="img/poster_vid_02.jpg" >
+                            <source src="video/vid-02-mercato.mp4" type='video/mp4'>
+                            <source src="video/vid-02-mercato.webm" type='video/webm'>
+    
+                         
+                    </video>
+            </div> 
+     <!------------------------------------------------------------  video   -->
+               
+       <div class="row">
+           <div class="medium-8 medium-centered columns">
+               <br /><br /><br /><br /><br /><br /><br /><br />
+                    <p>
+
+Per Philip Ayamba, direttore del Community Self Reliance Center, organizzazione vicina ai produttori di pomodoro, il governo avrebbe dovuto limitare la quantità di pomodoro concentrato proveniente dall’estero. “Se il mercato fosse stato regolato, gli agricoltori avrebbero potuto beneficiare di prezzi migliori e avrebbero avuto un mercato in cui vendere i propri prodotti. Ma il governo ha fatto il contrario. Ha spalancato le porte del paese alle importazioni di pomodoro concentrato europeo. C’è una tale scelta e una tale quantità che è praticamente impossibile vendere i pomodori prodotti localmente”. 
+
+
+
+</p><br /><br />
+           </div>
+      </div>  
+      
+      
+      
+      
+      <!-------------------------------GRAPH 01----------------------------------------------------------------->
+      
+      <div class="row">
+           <div class="medium-8 medium-centered columns">
+            <h4>Tomato import to Gahna</h4>
+          <hr>
+               <p style="font-size:14px; color:#999"> Migliaia di tonnellate di concentrato di pomodoro prodotto in Italia arrivano ogni anno in Ghana. Un'importazione che incide sul mercato del pomodoro locale.</p>
+          </div>
+        </div>
+          
+            <div class="row">
+         <div class="medium-10 medium-centered columns">
+             
+           <div class="large-12 columns">
+               <div class="flex-video">
+                    <iframe src="http://cf.datawrapper.de/beYoX/4/" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" width="100%" height="400"></iframe>
+                   </div>
+                </div>
+             
+             
+             </div>
+          
+      </div>
+             
+      
+      <div class="row">
+           <div class="medium-8 medium-centered columns">
+               <br /><br /><br /><br /><br /><br /><br /><br />
+                    <p>
+A partire dagli anni 2000, il governo di Accra ha ridotto i dazi doganali sulle importazioni di alcuni prodotti, fra cui il pomodoro concentrato, generando a medio termine un vero e proprio diluvio di prodotti esteri nei mercati locali.
+<br /><br />
+Ogni anno, il Ghana importa circa 50mila tonnellate di pomodoro concentrato. Un mercato succulento che l’Italia, già monopolista fino a circa dieci anni fa, si contende oggi con la Cina. 
+
+
+
+</p><br /><br /><br /><br /><br />
+           </div>
+      </div>  
+            
+      
+                    
+      
+      
+      
+        <!-- -----------------------------------------------------------------         PARALLAX -->   
+      <div class="header">
+          <div class="cont hide-for-touch">
+              <div class="parallax overlay" id="parallax-02">
+                    <q>Le massicce importazioni di concentrato di pomodoro dall’Europa hanno distrutto il mercato locale</q>
+              </div>
+          </div>
+      </div>
+
+ <!-- -----------------------------------------------------------------         PARALLAX -->
+    
+      
+  
+      
+      
+      
+      
+     <!-------------------Chapter 03---------------------------------------------------->
+    
+      
+      
+     <div class="row ">
+         <br /><br /><br /><br /><br /><br />
+          <div class="medium-8 small-centered columns ">
+              
+              <center>
+                  <hr>
+                    <h3 id="title">L’industria <strong>dell’oro rosso</strong></h3>
+                  <br/><br/>
+                    <img src="img/can.gif" width="200px">
+                    <br/><br/>
+                   
+                    <p class="head-location">Nocera superiore, Campania, Italia</p>
+                    <hr>
+              </center>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="medium-8 large-centered columns">
+              <br /><br /><br /><br /><br /><br />
+          </div>
+      </div>
+
+ 
+
+      
+  
+       <div class="row">
+           <div class="medium-8 medium-centered columns">
+                <br /><br /><br /><br />
+                <p>  <span class="firstcharacter">N</span>ella fabbrica di lavorazione del concentrato “Salsa”, i barattoli piroettano lungo i binari con un frastuono assordante. Operai indaffarati al volante di muletti caricano pile di scatole di cartone su un container. “Questo parte domani per la Costa d’Avorio”, spiega il direttore. 
+«Quando mio padre ha fondato l’impresa nel 1968 produceva 10mila scatole al giorno. All’epoca era eccezionale”, racconta Angelo D’Alessio, amministratore delegato di Cec Esportazioni. « In Africa, fino a vent’anni fa, il concentrato di pomodoro era esclusivamente italiano”. Ancora oggi, l’impresa vive grazie al mercato africano. Tutta la produzione di questa fabbrica di Nocera Superiore, in provincia di Salerno, è esportata a sud del Mediterraneo. Grazie alla sua marca più importante, “Salsa”, la società ha un fatturato annuo che oscilla tra i 20 e i 30 milioni di euro. 
+
+                    <br /><br /><br /><br /><br />
+               </div>
+      </div>
+      
+      <!------------------------------------------------------------  video   -->
+                    
+                   <div class="row container-dalessio">
+      
+                     <video id="my_video_1" class="video-js vjs-default-skin" controls preload="none" 
+  data-setup='{}' poster="img/poster_vid_03.jpg" >
+                        <source src="video/vid-03-fabbrica.mp4" type='video/mp4'>
+                         <source src="video/vid-03-fabbrica.webm" type='video/webm'>
+    
+                         
+                    </video>
+            </div> 
+     <!------------------------------------------------------------  video   -->
+      
+      <div class="row">
+          <div class="medium-8 medium-centered columns">
+                <br /><br /><br /><br /><br /><br /><br /><br />
+                <p> « L’Italia è il secondo trasformatore e conservatore mondiale di pomodoro dopo la California, in termini di quantità di prodotti freschi trasformati”, si rallegra Giovanni de Angelis, direttore dell’ANICAV, associazione nazionale dei produttori industriali di conserve alimentari vegetali. Nel 2013, l’industria italiana di pomodoro trasformato ha esportato 1,127 milioni di tonnellate di conserve di pomodoro, per un fatturato di 846 milioni di euro, in un mercato in crescita dell’8,32% in un anno, secondo dati elaborati da Federalimentare.
+
+
+                    <br /><br /><br />
+               </div>
+      </div>
+      
+          
+  
+      
+       <!-------------------------------GRAPH 02----------------------------------------------------------------->
+       <div class="row">
+           <div class="medium-8 medium-centered columns">
+            <h4>Major tomato importer to ghana</h4>
+          <hr>
+               <p style="font-size:14px; color:#999"> Tra i vari paesi che esportano pomodoro concentrato in Ghana, l'Italia è al secondo posto dopo la Cina.</p>
+          </div>
+        </div>
+      
+      <div class="row">
+          
+         
+          
+         <div class="medium-10 medium-centered columns">
+             
+           <div class="large-12 columns">
+               <div class="flex-video">
+                     <iframe src="http://cf.datawrapper.de/Oeb5V/1/" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" width="100%" height="400"></iframe>
+                    </div>
+                </div>
+             </div>
+         </div>
+        
+     <!-------------------------------GRAPH 02----------------------------------------------------------------->
+    
+  <div class="row">
+           <div class="medium-8 medium-centered columns">
+                <br /><br /><br /><br />
+                <p> Il cuore di questo “business” si trova nel centro-sud, nella regione di Napoli, nucleo strategico per la trasformazione e il commercio. Sui moli del porto partenopeo, container carichi di barattoli di pomodoro concentrato “made in Italy” partono ogni settimana per i quattro angoli del pianeta. <br />
+La produzione agricola è stata invece delocalizzata in Puglia, dopo che i terreni dell’agro napoletano sono stati a poco a poco divorati da un’urbanizzazione rampante. La piana della Capitana, intorno a Foggia, già luogo principe delle colture cerealicole, è oggi diventata la miniera dell’“oro rosso”.
+
+
+                    <br /><br /><br /><br />
+               </div>
+      </div>
+     
+       <!-- -----------------------------------------------------------------         PARALLAX -->   
+      <div class="header">
+          <div class="cont hide-for-touch">
+              <div class="parallax overlay" id="parallax-04">
+                    <q>Nemmeno in Africa ho mai visto persone vivere e lavorare in tali condizioni</q>
+              </div>
+          </div>
+      </div>
+
+ <!-- -----------------------------------------------------------------         PARALLAX -->
+      
+      
+        <!-------------------Chapter 04---------------------------------------------------->
+    
+      
+      
+     <div class="row">
+          <br /><br /><br /><br /><br /><br />
+          <div class="medium-8 small-centered columns ">
+              
+              <center>
+                  <hr>
+                    <h3 id="title"><strong>Oro rosso</strong> sangue nero</h3>
+                  <br/><br/>
+                    <img src="img/hand.gif" width="200px">
+                    <br/><br/>
+                
+                    <p class="head-location">Borgo Libertà, Puglia, Italia</p>
+                    <hr>
+              </center>
+          </div>
+      </div>
+
+
+      <div class="row">
+          <div class="medium-7 large-centered columns">
+              <br /><br /><br /><br /><br /><br />
+          </div>
+      </div>
+
+ 
+
+
+    
+
+      
+  
+       <div class="row">
+           <div class="medium-8 medium-centered columns">
+                <br /><br /><br /><br />
+                <p>  <span class="firstcharacter">I</span>n mezzo alle praterie giallastre della piana della Capitanata, che si estende tra le coste del mare Adriatico e le colline del Gargano, dei tir carichi di casse di pomodoro vanno a tutta velocità su strade male asfaltate in direzione di Napoli, sollevando nuvole di polvere. Un’atmosfera da Far West americano, che a poco a poco lascia spazio a uno scenario africano. In fila indiana, lavoratori stagionali ghanesi, maliani, senegalesi raggiungono i loro accampamenti, alla fine di una giornata di duro lavoro. Dalla fine di luglio alla metà di ottobre, sono migliaia a fare tappa nei campi del sud Italia per la stagione della raccolta di pomodori.  
+<br /><br />
+Impiegati per lo più al nero, non sono pagati a ore, ma a cottimo. 3,5 € ogni cassone di 300 Kg, cioè meno di 20€ al giorno, per un lavoro sfiancante. Senza contratto di lavoro, né copertura sanitaria e alla mercé dei “caporali” – gli intermediari tra lavoratori e datori di lavoro. Se hanno fame a metà giornata, sgranocchiano di nascosto un pomodoro. La sera, rientrano nel loro campo, dove hanno affittato un “posto letto”: un materasso all’aria aperta o in una baracca di fortuna.
+
+                  <br /><br /><br /><br /><br />
+                  </p>
+               </div>
+      </div>
+      
+    
+   
+      <!------------------------------------------------------------  video   -->
+                    
+                   <div class="row container-dalessio">
+      
+                     <video id="my_video_4" class="video-js vjs-default-skin" controls preload="none" 
+  data-setup='{ "asdf": true }' poster="img/poster_vid_04.jpg" >
+                         <source src="video/vid-04-ghetto.mp4" type='video/mp4'>
+                         <source src="video/vid-04-ghetto.webm" type='video/webm'>
+    
+                         
+                    </video>
+            </div> 
+     <!------------------------------------------------------------  video   -->
+      
+     <div class="row">
+           <div class="medium-8 medium-centered columns">
+                <br /><br /><br /><br /><br /><br /><br /><br />
+                <p>  « Gli invisibili delle campagne di raccolta” sono migliaia in tutto il sud Italia. Quasi tutti privi di documenti, sono disposti a tutto pur di lavorare. “Neanche in Africa ho mai visto gente vivere in tali condizioni”, si indigna Yvan Sagnet, studente camerunese che ha organizzato nel 2010 il primo sciopero di lavoratori stagionali nei campi delle Puglie. Oggi lavora per la CGIL, principale sindacato italiano, per difendere i diritti dei lavoratori stagionali immigrati. 
+<br /><br />
+L’Italia, terza agricoltura europea dopo la Francia e la Germania, si contende con la Spagna il primato nella produzione di ortaggi. Negli ultimi dieci anni, l’Italia ha prodotto in media 6 milioni di tonnellate di pomodori ogni anno. (FAostat). Secondo la FAO, l’ammontare medio degli aiuti europei al settore del pomodoro era nel 2001 di 45 euro alla tonnellata. Gli esperti considerano che oggi è di 34,5 € a tonnellata (fonte?). Il che rappresenta un totale di circa 200 milioni di euro l’anno. Secondo Oxfam, l’Unione europea sovvenziona la produzione totale di pomodoro in Europa per circa 300 milioni di euro (fonte link). 
+Ma chi si rende conto a Bruxelles del paradosso di sovvenzionare un prodotto destinato all’esportazione, che fa dumping sulle produzioni locali in Africa? 
+
+
+                    <br />
+               </div>
+      </div>
+      
+      <!-- ---------------------------------------------------------Image Caption -->
+      <div class="row" >
+                 <div class="medium-8 medium-centered columns" >
+                     <hr>
+          <div class="medium-3 medium columns image-circle">
+                   <img src="img/caption_prince.jpg" style="padding-bottom:10px;">
+                </div>
+                             
+                                 <div class="medium-9 medium columns img-quote">
+                                     
+                                    
+                                    «Durante la stagione della raccolta dei pomodori, riesco a mandare un po di soldi alla mia famiglia in Ghana. Ma non posso ripartire, né farli venire qui, né dire loro in che condizioni vivo qui» <p>Prince Bony - lavoratore stagionale ghanese</p>
+                                </div>
+                            <hr>
+                     </div>
+                </div>
+        <!-- ---------------------------------------------------------Image Caption -->
+      
+      
+      <div class="row">
+           <div class="medium-8 medium-centered columns">
+                <br /><br />
+                <p>  La storia di Prince Bony-Kofi America è emblematica di questo meccanismo perverso. Seduto davanti alla sua casa fatiscente, che dovrà presto lasciare perché il tetto minaccia di crollare, non sa dove andrà per continuare il suo viaggio. Vero e proprio Sisifo dei tempi moderni, sembra condannato a raccogliere pomodori come il figlio di Eolo faceva rotolare la sua pietra verso la cima della montagna. « Sono un contadino. Ho sempre coltivato la terra per dare da mangiare ai miei figli” ». Quello che Kofi America ignora è che il frutto del suo lavoro al nero, nei campi di pomodori del sud Italia, rischia di spingere a loro volta gli agricoltori dell’Upper East region, nel nord del Ghana, ad abbandonare le loro terre. Quelle stesse terre che un tempo erano anche le sue. 
+
+
+                    <br />
+               </div>
+      </div>
+     
+        <div class="row">
+           
+          <br /><br /> <br />
+         
+          <div class="medium-8 medium-centered columns">
+               <hr>
+                <p id="small-text-footer"><b>Mathilde Auvillain, Stefano Liberti</b><br />
+    <b>Research and Data:</b> Jacopo Ottaviani,<br />
+    <b>Photography and Video:</b> Mario Poeta,<br />
+                   <b>Design and Development:</b>  Isacco Chiaf
+                </p>
+        <hr>
+            </div>
+        </div>
+      <div class="row">
+           
+        
+         
+          <div class="medium-8 medium-centered columns">
+               <br /> <br /><br />
+               <center><img src="img/icn.jpg">  </center>
+              <br /> <br /><br />
+            </div>
+        </div>
+     
+
+        <footer>
+             <div class="row">
+                <div class="medium-8 medium-centered columns">
+                     <center><p>This project was realized with the support of EJC Grant for Innovative Reporting</p></center> 
+                    <center><img src="img/footer_ejclogo.png" width="100px"></center> 
+                  <br /> <br />
+                </div>
+            </div>
+      </footer>
+      <footer id="copyright-year">
+             <div class="row">
+                <div class="medium-8 medium-centered columns">
+       <center><h5>©2014</h5></center> 
+                       </div>
+            </div>
+      </footer>
+      
+     <!--   <script type="text/javascript">
+   
+  
+</script> -->
+      
+      
+        
+<!-- __________________________________SCRIPTS_________________ -->
+   <script src="js/videoresize.js"></script>   
+<script src="js/foundation/foundation.js"></script>
+<script src="js/foundation/foundation.reveal.js"></script>
+<script src="js/foundation/foundation.orbit.js"></script>
+<script src="js/foundation/foundation.tab.js"></script>
+      <script src="js/foundation/foundation.tab.js"></script>
+       <script src="js/foundation/foundation.magellan.js"></script>
+       <script src="js/foundation/foundation.topbar.js"></script>
+      
+    <script>
+   $(document).foundation();
+    </script>
+      
+
+   
+  </body>
+</html>
