@@ -27,18 +27,13 @@
 	width: 100%;
               background-color:rgba(255,255,255,0.9);
 	           border-bottom:solid thin #CCCACA;
-              z-index:1000;
+              z-index:10;
               padding:0.4em
 }
           #headerSlideContainer img{
 opacity:0.9
 }
-div.social-button {
-	background-color: #fff;
-    color:#fff;
-    text-align:center;
-    
-}
+
           
        
 </style>
@@ -48,7 +43,7 @@ div.social-button {
       
        <script type="text/javascript">
  
-           
+      
            
         $(function() {
     $("#tomato01").click(
@@ -103,12 +98,19 @@ div.social-button {
 		}
 	});
 });
-           
-           
-           $('#video_1').bind("ended", function(){ 
-      alert('Video Ended'); 
+       
+    $(function() {
+    $(".show").click(
+    function(){
+        $(".overlay-Big").fadeIn();
+    }); 
+         $("#close").click(
+    function(){
+        $(".overlay-Big").fadeOut();
     });
+    });            
            
+      
             
            
 
@@ -149,23 +151,66 @@ function intializePlayer(){
   </head>
   <body>
       
-    <div id="headerSlideContainer" class="target hide-for-small">
+       <div class="header overlay-Big">
+          <a id="close" ><img src="img/overlay-close.png" width="40px">  </a>
+           <div class="overlay-first-band">
+            <div class="row">
+               <div class="medium-8 medium-centered columns">
+               <img src="img/social_fb_w.png"  width="25">
+            <img src="img/social_tw_w.png" width="25"> 
+            <img src="img/social_gl_w.png" width="25"><br><br>
+            <h3 style="color:#fff">the dark side of italian tomato</h3>
+               </div>
+               <div class="small-12 columns">
+               
+               </div>
+            
+               
+           </div>
+               </div>
+           <div class="overlay-second-band">
+            <div class="row">
+               <div class="medium-8 medium-centered columns">
+               <p>This Project is bla bla bla Lorem Ipsum.</p>
+               </div>
+               
+            
+               
+           </div>
+               </div>
+           
+      </div>
+      
+    <div id="headerSlideContainer" class="target">
 
     <div id="row">
-        <div class="small-1 columns">
-
-        <img class="icona-small" src="img/icn.png" width="35px">
+        <div id="logo-media" class="hide-for-small"> 
+                 <a href="http://www.internazionale.it/" target="_blank">   <img src="img/logo_int_s.png" width="230px"></a>
              </div>
-         <div class="small-9 columns">
-
-        <h6>The Dark side of italian tomato</h6>
+         <div class="small-4 medium-centered columns hide-for-small">
+             
+            
+       <img src="img/logo_header.png" width="400px;">
              </div>
         
-        <div class="small-2 columns social-button">
+       
+        
+         <div class="small-2 columns show-for-small">
 
-       <img src="img/social_fb.png" width="25"> <img src="img/social_tw.png" width="25"> <img src="img/social_gl.png" width="25">
+       <img class="show" src="img/social_open.png" width="25">
              </div>
+        
         </div>
+         <div class="hide-for-small buttons-social">
+
+       <img src="img/social_fb.png" onmouseover="this.src='img/social_fb_h.png';" onmouseout="this.src='img/social_fb.png';" width="25"> 
+            <img src="img/social_tw.png" onmouseover="this.src='img/social_tw_h.png';"
+onmouseout="this.src='img/social_tw.png';" width="25"> 
+            <img src="img/social_gl.png" onmouseover="this.src='img/social_gl_h.png';"
+onmouseout="this.src='img/social_gl.png';" width="25">
+            <img src="img/social_ab.png" class="show"  onmouseover="this.src='img/social_ab_h.png';"
+onmouseout="this.src='img/social_ab.png';" width="70">
+             </div>
           
 
 </div> 
@@ -231,7 +276,7 @@ function intializePlayer(){
          
           <div class="medium-8 medium-centered columns">
                
-                <p id="small-text">Mathilde Auviallin Stefano Liberti <br />
+                <p id="small-text">Mathilde Auvillain Stefano Liberti <br />
     Research and Data: Jacopo Ottaviani<br />
     Design and Development: Isacco Chiaf<br />
     Photography and Video: Mario Poeta
@@ -253,7 +298,7 @@ function intializePlayer(){
                                  <div class="medium-9 medium columns img-quote">
                                      
                                     
-                                    « Au Ghana, on m’appelait Kofi America parce que j’ai toujours eu envie de voyager. Je voulais conquérir le monde ! » <br><br> <p>Prince Bony - Saisonnier ghanéen</p>
+                                    « Au Ghana, on m’appelait Kofi America parce que j’ai toujours eu envie de voyager. Je voulais conquérir le monde!» <br><br> <p>Prince Bony - Saisonnier ghanéen</p>
                                 </div>
                             <hr>
                      </div>
@@ -305,17 +350,17 @@ function intializePlayer(){
           
 
      
-       <div style="float:right; padding:20px 20px 0 0"><a href="#" data-reveal-id="myModal" data-reveal><img src="img/share.png" width="40px"></a></div>
+       <div style="float:right; padding:20px 20px 0 0"><a href="#" data-reveal-id="myModal" data-reveal><img src="img/share.png" width="40px" onmouseover="this.src='img/share_h.png';" onmouseout="this.src='img/share.png';"></a></div>
 
       <div class="row">
           
           
-          <div class="medium-7 medium-centered columns">
+          <div class="medium-8 medium-centered columns">
               <br><br><br>
               <center>
-                  <h2 id="title">tomato <strong>traffic</strong></h2>
-                  
-              </center>
+                  <h4 id="title">tomato <strong>traffic</strong></h4>
+               </center>   
+              
           </div>
           
   
@@ -338,9 +383,9 @@ function intializePlayer(){
             <dd class="small-3 columns" id="tomato03"><a href="#panel2-2" class="tabs_b"></a></dd>
             <dd class="small-3 columns" id="tomato04"><a href="#panel2-4" class="tabs_d"></a></dd>
          </dl>
-        <div id="block" class="hide-for-small"></div>
+        <div id="block" class="show-for-large-up"></div>
        
-         <div class="tabs-content">
+         <div class="tabs-content graph">
     <hr>
             <div class="content active small-12 columns" id="panel2-1">
                  <div class="medium-4 columns">
@@ -492,6 +537,15 @@ Mais au début des années 2000, la « mine d’or » s’est transformée en ma
 
  <!-- -----------------------------------------------------------------         PARALLAX -->
       
+        <!-- -----------------------------------------------------------------         PARALLAX -->   
+      <div class="header">
+          <div class="cont show-for-touch">
+             <img src="img/ch_01_parallax.jpg">
+          </div>
+      </div>
+
+ <!-- -----------------------------------------------------------------         PARALLAX -->
+      
      <!-- 
 
                 <iframe src="anim_test.html" style="border:0px #FFFFFF none;" name="videoframe" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="500px" width="100%"></iframe>
@@ -601,7 +655,7 @@ Pour Philippe Ayamba, directeur du Community Self Reliance Center, association p
       <!-------------------------------GRAPH 01----------------------------------------------------------------->
       
       <div class="row">
-           <div class="medium-8 medium-centered columns">
+           <div class="medium-8 medium-centered columns graph">
             <h4>Tomato import to Gahna</h4>
           <hr>
                <p style="font-size:14px; color:#999"> Migliaia di tonnellate di concentrato di pomodoro prodotto in Italia arrivano ogni anno in Ghana. Un'importazione che incide sul mercato del pomodoro locale.</p>
@@ -651,7 +705,14 @@ Aujourd’hui, chaque année le Ghana importe en moyenne 20.000 tonnes de concen
       </div>
 
  <!-- -----------------------------------------------------------------         PARALLAX -->
-    
+     <!-- -----------------------------------------------------------------         PARALLAX -->   
+      <div class="header">
+          <div class="cont show-for-touch">
+             <img src="img/ch_02_parallax.jpg">
+          </div>
+      </div>
+
+ <!-- -----------------------------------------------------------------         PARALLAX -->
       
   
       
@@ -726,7 +787,7 @@ Aujourd’hui, chaque année le Ghana importe en moyenne 20.000 tonnes de concen
       
        <!-------------------------------GRAPH 02----------------------------------------------------------------->
        <div class="row">
-           <div class="medium-8 medium-centered columns">
+           <div class="medium-8 medium-centered columns graph">
             <h4>Major tomato importer to ghana</h4>
           <hr>
                <p style="font-size:14px; color:#999"> Tra i vari paesi che esportano pomodoro concentrato in Ghana, l'Italia è al secondo posto dopo la Cina.</p>
@@ -741,7 +802,7 @@ Aujourd’hui, chaque année le Ghana importe en moyenne 20.000 tonnes de concen
              
            <div class="large-12 columns">
                <div class="flex-video">
-                     <iframe src="http://cf.datawrapper.de/Oeb5V/1/" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" width="100%" height="400"></iframe>
+                     <iframe src="http://cf.datawrapper.de/2LNQE/1/" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" width="100%" height="300"></iframe>
                     </div>
                 </div>
              </div>
@@ -766,6 +827,14 @@ Seule la production agricole a été délocalisée dans les Pouilles, les terres
               <div class="parallax overlay" id="parallax-04">
                     <q>Les marchés africains veulent la même tomate que celle qui plaît aux italiens</q>
               </div>
+          </div>
+      </div>
+
+ <!-- -----------------------------------------------------------------         PARALLAX -->
+       <!-- -----------------------------------------------------------------         PARALLAX -->   
+      <div class="header">
+          <div class="cont show-for-touch">
+             <img src="img/ch_04_parallax.jpg">
           </div>
       </div>
 

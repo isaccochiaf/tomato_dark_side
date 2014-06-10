@@ -366,7 +366,7 @@ easily in the skin designer. http://designer.videojs.com/
 
 .vjs-default-skin .vjs-big-play-button {
   left: 45%;
-  top: 40%;
+  top: 45%;
   font-size: 3em;
   display: block;
   z-index: 2;
@@ -387,12 +387,7 @@ easily in the skin designer. http://designer.videojs.com/
   
 }
 
-.vjs-default-skin .vjs-big-play-button:hover {
- background-image:url(../img/play-hover.png);
-    background-repeat:no-repeat;
 
-  
-}
 
 /* Optionally center */
 .vjs-default-skin.vjs-big-play-centered .vjs-big-play-button {
