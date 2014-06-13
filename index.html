@@ -2,16 +2,23 @@
 <html class="no-js" lang="en">
   <head>
       
-      <!--[if lt IE 9]>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
-  <script src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
-  <script src="//html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
-<![endif]-->
+ 	<!--[if lt IE 9]>
+  	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  	<script src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
+  	<script src="//html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js"></script>
+  	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+	<![endif]-->
       
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>The Dark Side Of The Tomato</title>
+    
+    <meta property="og:title" content="The Dark Side Of The Italian Tomato"/>
+	<meta property="og:image" content="http://"/>
+	<meta property="og:site_name" content="The Dark Side Of The Italian Tomatog"/>
+	<meta property="og:description" content="Facebook's Open Graph protocol allows for web developers to turn their websites into Facebook "graph" objects, allowing a certain level of customization over how information is carried over from a non-Facebook website to Facebook when a page is 'recommended', 'liked', or just generally shared."/>
+	
+    
+      <title>The Dark Side Of The Italian Tomato</title>
       <link rel="stylesheet" href="css/foundation.css" />
       <script src="js/modernizr.js"></script>
       <link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
@@ -22,6 +29,11 @@
       <link rel="stylesheet" href="css/media-query.css">
       <link href="video-js/video-js.css" rel="stylesheet">
       <script src="video-js/video.js"></script> 
+      <style type="text/css">
+        .vjs-default-skin .vjs-play-progress,
+  .vjs-default-skin .vjs-volume-level { background-color: #ca3a3a }
+  .vjs-default-skin .vjs-control-bar { font-size: 81% }
+      </style>
       <script type="text/javascript">   
         $(function() {
             $("#tomato01").click(
@@ -109,12 +121,26 @@
     </script> 
     </head>
     <body>   
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
       <div class="header overlay-Big">
           <a id="close" ><img src="img/overlay-close.png" width="40px">  </a>   
           <div class="overlay-first-band">
               <div class="row">
                   <div class="medium-8 medium-centered columns">
-                      <img src="img/social_fb_w.png"  width="25">
+                  
+                  <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-type="link"></div>
+                  
+                  <a shref='http://www.facebook.com/share.php?u=http://www.mindfiresolutions.com' onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600'); return false;">
+                      <img src="img/social_fb_w.png"  width="25"></a>
+                      
+                      
                       <img src="img/social_tw_w.png" width="25"> 
                       <img src="img/social_gl_w.png" width="25"><br><br>
                       <h4 style="color:#fff">the dark side of the italian tomato</h4>
@@ -176,6 +202,26 @@ onmouseout="this.src='img/social_ab.png';" width="70">
           </div>
       </div>
       
+        
+             <!------------------------------------------------------------  video   -->
+                    
+                          
+            <div class="row">
+      
+                     <video id="my_video_5" class="video-js vjs-default-skin" controls preload="none" 
+  data-setup='{}' poster="img/poster.jpg" >
+                        <source src="video/total_intro.mp4" type='video/mp4'>
+                        <source src="video/intro.webm" type='video/webm'>
+                         HTML5 Video is required for this example. 
+                        <a href="demo.mp4">Download the video</a> file, or Upgrade your Browser.
+    
+                         
+                    </video>
+            </div>
+
+                    
+     <!--
+        
       <div class="row">
           <div class="medium-12 columns"> 
                 <div class="flex-video hide-for-touch">
@@ -190,7 +236,7 @@ onmouseout="this.src='img/social_ab.png';" width="70">
            </div>
         </div>
      
- 
+ -->
       
       
       
@@ -372,8 +418,8 @@ onmouseout="this.src='img/social_ab.png';" width="70">
       
                      <video id="my_video_3" class="video-js vjs-default-skin" controls preload="none" 
   data-setup='{}' poster="img/poster_vid_01.jpg" >
-    <source src="video/vid-01-campi.mp4" type='video/mp4'>
-    <source src="video/vid-01-campi.webm" type='video/webm'>
+                        <source src="video/vid-01-campi.mp4" type='video/mp4'>
+                        <source src="video/vid-01-campi.webm" type='video/webm'>
     
                          
                     </video>
@@ -702,7 +748,7 @@ Seule la production agricole a été délocalisée dans les Pouilles, les terres
       <div class="header">
           <div class="cont hide-for-touch">
               <div class="parallax overlay" id="parallax-04">
-                    <q>Les marchés africains veulent la même tomate que celle qui plaît aux italiens</q>
+                    <q>Même en Afrique, je n’ai jamais vu des travailleurs vivre dans ces conditions</q>
               </div>
           </div>
       </div>
@@ -748,9 +794,9 @@ Seule la production agricole a été délocalisée dans les Pouilles, les terres
       <div class="row">
           <div class="medium-8 medium-centered columns"> 
               <br /><br /><br /><br />  
-              <p>  <span class="firstcharacter">A</span>u milieu des prairies jaunies de la plaine de la Capitanata qui s’étend entre les côtes de la mer  Adriatique  et  les  collines  du  Gargano,  des semi-remorques chargés de caisses de tomates filent à toute allure sur des routes mal asphaltées en direction de Naples, soulevant à leur passage des nuages de poussière. Une atmosphère de Far West américain qui se fond peu à peu en ambiance de brousse africaine. En file indienne, des travailleurs saisonniers ghanéens, maliens, sénégalais rejoignent leur campement, au terme d’une journée de dur labeur. De la fin-juillet à la mi-octobre, ils sont des milliers à faire étape dans les champs du sud de l’Italie pour la saison de récolte des tomates. 
-
-Employés au noir, ils ne sont pas payés à l’heure, mais à la quantité de fruits ramassés : 3,5€ par caisson de 300 kg rempli, soit moins de 20 € par jour, pour un travail harassant. Sans contrat de travail, sans protection sanitaire, à la merci des « caporaux » - les intermédiaires entre les travailleurs et les employeurs. S’ils ont faim à midi, ils croquent en cachette dans une tomate. Le soir, ils rentrent au campement où ils louent un matelas sous des bâches ou dans une baraque de fortune. 
+              <p>  <span class="firstcharacter">A</span>u milieu des prairies jaunies de la plaine de la Capitanata qui s’étend entre les côtes de la mer Adriatique et les collines du Gargano, des semi-remorques chargés de caisses de tomates filent à toute allure sur des routes mal asphaltées en direction de Naples, soulevant à leur passage des nuages de poussière. Une atmosphère de Far West américain qui se fond peu à peu en ambiance de brousse africaine. En file indienne, des travailleurs saisonniers ghanéens, maliens, sénégalais rejoignent leur campement, au terme d’une journée de dur labeur. De la fin-juillet à la mi-octobre, ils sont des milliers à faire étape dans les champs du sud de l’Italie pour la saison de récolte des tomates. 
+<br /><br />  
+Employés au noir, ils ne sont pas payés à l’heure, mais à la quantité de fruits ramassés : 3,5€ par caisson de 300 kg rempli, soit moins de 20€ par jour, pour un travail harassant. Sans contrat de travail, sans protection sanitaire, à la merci des « caporaux » - les intermédiaires entre les travailleurs et les employeurs. S’ils ont faim à midi, ils croquent en cachette dans une tomate. Le soir, ils rentrent au campement où ils louent un matelas sous des bâches ou dans une baraque de fortune. 
                   <br /><br /><br /><br /><br />  
               </p>
           </div>
@@ -772,10 +818,11 @@ Employés au noir, ils ne sont pas payés à l’heure, mais à la quantité de 
       <div class="row"> 
           <div class="medium-8 medium-centered columns">  
               <br /><br /><br /><br /><br /><br /><br /><br />
-              <p>  «Les invisibles des campagnes de récolte» sont des milliers dans tout le sud de l’Italie. Dans leur grande majorité sans-papiers, ils sont prêts à tous les sacrifices pour travailler. «Même en Afrique, je n’ai jamais vu des gens vivre dans de telles conditions» s’indigne Yvan Sagnet, étudiant camerounais qui a organisé en 2010 la première grève des saisonniers dans les champs des Pouilles. Aujourd’hui il est employé par la CGIL, première centrale syndicale en Italie, pour défendre les droits des saisonniers migrants. 
+              <p>  <em>« Les invisibles des campagnes de récolte »</em> sont des milliers dans tout le sud de l’Italie. Dans leur grande majorité sans-papiers, ils sont prêts à tous les sacrifices pour travailler. <em>« Même en Afrique, je n’ai jamais vu des gens vivre dans de telles conditions »</em> s’indigne Yvan Sagnet, étudiant camerounais qui a organisé en 2010 la première grève des saisonniers dans les champs des Pouilles. Aujourd’hui il est employé par la CGIL, première centrale syndicale en Italie, pour défendre les droits des saisonniers migrants. 
+
 
 <br /><br />
-L’Italie, troisième agriculture européenne après la France et l’Allemagne, se dispute avec l’Espagne la première place pour les cultures maraîchères. Au cours des dix dernières années l’Italie a produit en moyenne 6 millions de tonnes de tomates par an (FAO Stat). Selon la FAO, le montant moyen des aides européennes au secteur tomate s’élevait en 2001 à 45 euros par tonne de produit exporté. Qui plus est, selon Oxfam, l’Union Européenne subventionne la production totale annuelle de tomate en Europe à hauteur de 300 millions d’euros, soit environ 34,5 € par tonne, subvention qui couvrirait 65% du prix de marché du produit final. Mais qui à Bruxelles se rend compte de ce paradoxe : subventionner un produit destiné à l’exportation, qui de fait exerce un dumping sur les productions locales africaines ?     
+L’Italie, troisième agriculture européenne après la France et l’Allemagne, se dispute avec l’Espagne la première place pour les cultures maraîchères. Au cours des dix dernières années, selon des <a href="http://faostat3.fao.org/faostat-gateway/go/to/home/E" target="_blank">données élaborées par FAO Stat</a>, l’Italie a produit en moyenne 6 millions de tonnes de tomates par an. Selon la FAO, le montant moyen des <a href="ftp://ftp.fao.org/docrep/fao/009/ah628e/ah628e00.pdf" target="_blank">aides européennes au secteur</a> tomate s’élevait en 2001 à 45€ par tonne de produit exporté. Qui plus est, selon <a href="http://www.oxfam.org/sites/www.oxfam.org/files/truth.pdf" target="_blank">Oxfam</a>, l’Union Européenne subventionne la production totale annuelle de tomate en Europe à hauteur de 300 millions d’euros, soit environ 34,5€ par tonne, subvention qui couvrirait 65% du prix de marché du produit final. Qui à Bruxelles réalise ce paradoxe? Pourquoi continuer à subventionner un produit destiné à l’exportation exerçant, de fait, un dumping sur les productions locales africaines?  
                   <br />
               </div>
       </div>
@@ -799,8 +846,8 @@ L’Italie, troisième agriculture européenne après la France et l’Allemagne
       <div class="row">
           <div class="medium-8 medium-centered columns">
                 <br /><br />
-                <p>  L’histoire de Kofi America est emblématique de ce mécanisme pervers. Assis devant la maison délabrée qu’il va devoir quitter car le toit menace de s’effondrer, il ne sait pas où il va poursuivre son «voyage». Sisyphe des temps modernes, il semble condamné à ramasser des tomates comme le fils d’Eole à rouler sa pierre en haut de la montagne. 
-Ce que Kofi America ignore, c’est que le fruit de son travail au noir, dans les champs de tomates du sud de l’Italie, risque de contraindre à leur tour les agriculteurs de l’Upper East Region, au nord du Ghana, à abandonner leurs terres. Ces mêmes terres sur lesquelles il a vécu et qu’il a cultivées pour nourrir sa famille, avant de partir. 
+                <p>  L’histoire de Kofi America est emblématique de ce mécanisme pervers. Assis devant la maison délabrée qu’il va devoir quitter car le toit menace de s’effondrer, il ne sait pas où il va poursuivre son <em>«voyage»</em>. Sisyphe des temps modernes, il semble condamné à ramasser des tomates comme le fils d’Eole à rouler sa pierre en haut de la montagne. 
+Ce que Kofi America ignore, c’est que le fruit de son travail au noir, dans les champs de tomates du sud de l’Italie, risque de contraindre à leur tour les agriculteurs de l’Upper East Region, au nord du Ghana, à abandonner leurs terres. Ces mêmes terres sur lesquelles il a vécu et qu’il a cultivées pour nourrir sa famille, avant de partir.  
                     <br />
               </div>
       </div>
@@ -874,3 +921,4 @@ Ce que Kofi America ignore, c’est que le fruit de son travail au noir, dans le
    
   </body>
 </html>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
