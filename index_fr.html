@@ -1,0 +1,926 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+      
+ 	<!--[if lt IE 9]>
+  	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  	<script src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
+  	<script src="//html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js"></script>
+  	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+	<![endif]-->
+      
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      
+  
+	
+	
+    
+      <title>The Dark Side Of The Italian Tomato</title>
+      <link rel="stylesheet" href="css/foundation.css" />
+      <script src="js/modernizr.js"></script>
+      <link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
+      <script src="js/jquery.js"></script>
+      <script src="http://ricostacruz.com/jquery.transit/jquery.transit.js"></script>
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/style.css">    
+      <link rel="stylesheet" href="css/media-query.css">
+      <link href="video-js/video-js.css" rel="stylesheet">
+      <script src="video-js/video.js"></script> 
+      <style type="text/css">
+        .vjs-default-skin .vjs-play-progress,
+  .vjs-default-skin .vjs-volume-level { background-color: #ca3a3a }
+  .vjs-default-skin .vjs-control-bar { font-size: 81% }
+      </style>
+      <script type="text/javascript">   
+        $(function() {
+            $("#tomato01").click(
+                function(){
+                    $("#block").transition({ marginLeft: '5%' }, 1000 );
+                });
+            
+            $("#tomato02").click(
+                function(){
+                    $("#block").transition({ marginLeft: '30%'}, 1000 );
+                });
+
+            $("#tomato03").click(
+                function(){
+                    $("#block").transition({ marginLeft: '55%'}, 1000 );
+                });
+   
+            $("#tomato04").click(
+                function(){
+                    $("#block").transition({ marginLeft: '80%'}, 1000 );
+                });
+        });
+           
+           
+           
+          $(function() {
+              var bar = $('#headerSlideContainer');
+              var top = bar.css('top');
+              $(window).scroll(function() {
+                  if($(this).scrollTop() > 500) {
+                      bar.stop().animate({'top' : '0px'}, 500);
+                  } else {
+                      bar.stop().animate({'top' : top}, 500);
+                  }
+              });
+          });
+           
+           
+        
+          $(function() {
+              var video = document.getElementById("video_1");
+              $(window).scroll(function() {
+                  if($(this).scrollTop() > 1 && $(this).scrollTop() < 90) {
+                      video.play();
+                  } 
+                  if($(this).scrollTop() > 400) {
+                      video.pause();
+                  }
+              });
+          });
+    
+          $(function() {
+              $(".show").click(            
+                  function(){
+                      $(".overlay-Big").fadeIn();
+                  }); 
+              $("#close").click(
+                  function(){
+                      $(".overlay-Big").fadeOut();
+                  });
+          });            
+           
+      </script>
+  
+      <script>
+          var vid, playbtn, seekslider, curtimetext, durtimetext, mutebtn, volumeslider, fullscreenbtn;
+          function intializePlayer(){
+              // Set object reference
+              vid = document.getElementById("video_1");
+              mutebtn = document.getElementById("mutebtn");
+              // Add event listeners
+              mutebtn.addEventListener("click",vidmute,false);
+          }
+          window.onload = intializePlayer;
+          function vidmute(){
+              if(vid.muted){
+                  vid.muted = false;
+                  mutebtn.innerHTML = "<img src=\"img/unmute.png\">";
+              } else {
+                  vid.muted = true;
+                  mutebtn.innerHTML = "<img src=\"img/mute.png\">";
+              }
+          }
+      
+    </script> 
+    </head>
+    <body>   
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+      <div class="header overlay-Big">
+          <a id="close" ><img src="img/overlay-close.png" width="40px">  </a>   
+          <div class="overlay-first-band">
+              <div class="row">
+                  <div class="medium-8 medium-centered columns">
+                  
+                  <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-type="link"><img src="img/social_fb_w.png"  width="25"></div>
+                  
+                  <a shref='http://www.facebook.com/share.php?u=http://www.mindfiresolutions.com' onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600'); return false;">
+                      <img src="img/social_fb_w.png"  width="25"></a>
+                      
+                      
+                      <img src="img/social_tw_w.png" width="25"> 
+                      <img src="img/social_gl_w.png" width="25"><br><br>
+                      <h4 style="color:#fff">the dark side of the italian tomato</h4>
+                  </div>
+                  <div class="small-12 columns">
+                  </div>
+              </div>
+          </div>
+           
+          <div class="overlay-second-band">
+              <div class="row">
+                  <div class="medium-8 medium-centered columns">
+                      <p>This Project is bla bla bla Lorem Ipsum.</p>
+                      <center>
+                          <a href="#" target="_blank"><img src="img/logo_alj_02_h.png" onmouseover="this.src='img/logo_alj_02.png';" onmouseout="this.src='img/logo_alj_02_h.png';"></a>
+                          <a href="#" target="_blank"><img src="img/logo_int_02_h.png" onmouseover="this.src='img/logo_int_02.png';" onmouseout="this.src='img/logo_int_02_h.png';"></a>
+                          <a href="#" target="_blank"> <img src="img/logo_rfi_02_h.png" onmouseover="this.src='img/logo_rfi_02.png';" onmouseout="this.src='img/logo_rfi_02_h.png';"></a>
+                      </center>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div id="headerSlideContainer" class="target">
+          <div id="row">
+              <div id="logo-media" class="hide-for-small">   
+                  <a href="http://www.internazionale.it/" target="_blank">   <img src="img/logo_rfi_02.png" width="150px"></a>
+              </div>
+              <div class="small-4 medium-centered columns hide-for-small">
+                  <img src="img/logo_header.png" width="400px;">
+              </div>
+              <div class="small-2 columns show-for-small">
+                  <img class="show" src="img/social_open.png" width="25">
+              </div>
+          </div>
+
+          <div class="hide-for-small buttons-social">
+              
+             
+            
+              <a id="ref_fb"  href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=http://isaccochiaf.me/tomato_dark_side/index_fr.html&amp;p[images][0]=http://isaccochiaf.me/tomato_dark_side/img/poster.jpg&amp;p[title]=Creating Custom share buttons: Facebook, Twitter, Google+&amp;p[summary]=Build your custom share buttons from normal images with examples on each button" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600'); return false;">
+              <img src="img/social_fb.png" onmouseover="this.src='img/social_fb_h.png';" onmouseout="this.src='img/social_fb.png';" width="25"> </a>
+              <img src="img/social_tw.png" onmouseover="this.src='img/social_tw_h.png';"
+onmouseout="this.src='img/social_tw.png';" width="25"> 
+              <img src="img/social_gl.png" onmouseover="this.src='img/social_gl_h.png';"
+onmouseout="this.src='img/social_gl.png';" width="25">
+              <img src="img/social_ab.png" class="show"  onmouseover="this.src='img/social_ab_h.png';"
+onmouseout="this.src='img/social_ab.png';" width="70">
+          </div>
+      </div> 
+   
+      <div id="row"> 
+          <br /><br />
+          <center><img src="img/logo.jpg"></center>             
+      </div>
+       
+      <div class="header show-for-touch">
+          <div class="flex-video"  style="padding-top:-200px;">
+              <video poster="img/poster.jpg" controls preload="none" width="960" height="540">
+                  <source src="video/total_intro.mp4" type="video/mp4" />
+                  <source src="video/intro.webm" type="video/webm" /> 
+              </video>
+          </div>
+      </div>
+      
+        
+             <!------------------------------------------------------------  video   -->
+                    
+                          
+            <div class="row">
+      
+                     <video id="my_video_5" class="video-js vjs-default-skin" controls preload="none" 
+  data-setup='{}' poster="img/poster.jpg" >
+                        <source src="video/total_intro.mp4" type='video/mp4'>
+                        <source src="video/intro.webm" type='video/webm'>
+                         HTML5 Video is required for this example. 
+                        <a href="demo.mp4">Download the video</a> file, or Upgrade your Browser.
+    
+                         
+                    </video>
+            </div>
+
+                    
+     <!--
+        
+      <div class="row">
+          <div class="medium-12 columns"> 
+                <div class="flex-video hide-for-touch">
+                    <video id="video_1" poster="img/poster.jpg"  preload="none" width="100%"   style="background-color:#fff">
+                        <source src="video/total_intro.mp4" type="video/mp4" />
+                          <source src="video/intro.webm" type="video/webm" />
+                        HTML5 Video is required for this example. 
+                        <a href="demo.mp4">Download the video</a> file. 
+                    </video>
+                </div>
+              <button id="mutebtn" style="margin-top:-20%; background-color:transparent;"> <img src="img/unmute.png"> </button>
+           </div>
+        </div>
+     
+ -->
+      
+      
+      
+      <div class="row">
+          <br /><br /> <br /><br /> <br /><br />
+          <div class="medium-8 medium-centered columns">
+                <p id="small-text">Mathilde Auvillain Stefano Liberti <br />
+                    Research and Data: Jacopo Ottaviani<br />
+                    Design and Development: Isacco Chiaf<br />
+                    Photography and Video: Mario Poeta
+                </p>
+                    <hr>
+              <p>  <span class="firstcharacter">P</span>rince Bony n’aurait jamais imaginé avoir traversé le désert et la mer pour se retrouver à faire le même travail que celui qu’il faisait dans son pays d’origine. Assis devant sa bicoque, un « casolare » abandonné, vestige de la réforme agraire, il repense à sa vie. Prince partage cette demeure de fortune avec une dizaine d’autres saisonniers ghanéens. Faute de papiers, faute d’argent, ils ont trouvé refuge ici, au milieu de la campagne italienne, à Borgo Libertà. <br /></p>
+          </div>  
+      </div>
+      
+       <!-- ---------------------------------------------------------Image Caption -->
+      <div class="row" >
+          <div class="medium-8 medium-centered columns" >
+                     <hr>
+              <div class="medium-3 medium columns image-circle">
+                   <img src="img/caption_prince.jpg" style="padding-bottom:10px;">
+              </div>
+              <div class="medium-9 medium columns img-quote">   
+                                   «Au Ghana, on m’appelait Kofi America parce que j’ai toujours eu envie de voyager. Je voulais conquérir le monde!» <br><br> <p>Prince Bony - Saisonnier ghanéen</p>           
+              </div>         
+              <hr>       
+          </div>     
+      </div>
+        <!-- ---------------------------------------------------------Image Caption -->
+      
+      
+      <div class="row">
+           
+          <br /><br />  
+         
+          <div class="medium-8 medium-centered columns">
+            
+                    <p>Emmitouflé dans un vieux pardessus élimé, il regarde l’air pensif le soleil qui se couche à l’horizon. Il ne dit qu’un mot.<i> «Pomodoro»</i> – tomate. Son visage s’éclaire rien qu’à le prononcer.  <i> « A Navrongo, d’où je viens, on cultivait aussi des tomates».</i>
+<br /><br /></p>
+            </div>
+        </div>
+      
+      
+      <div class="row">
+          <div class="medium-7 large-centered columns">  
+              <div id="myModal" class="reveal-modal" data-reveal style="padding:0 !important">
+                    <div class="medium-6 columns" style="background-color:#dbdbdb; margin:0 ; padding:0">
+                        <img src="img/ember_image.jpg">
+                    </div>  
+                    <div class="medium-6 columns" style="padding:10% 7%; 0 0">
+                        <h4>Embed this on Your Site</h4>
+                    <p style="font-size:14px;">In order to puplish this interactive element on your page all you need to do is to simply copy and paste the code below on your site, blog, article.</p>
+                         <form>
+                             <div class="row">
+                                 <div class="large-12 columns">
+                                     <label>
+                                     <textarea name="txtbox1" placeholder="" style="height:100px;">&lt;iframe src="http://webdoc.rfi.fr/dark_side_tomato/graph_embedd.html" style="overflow:hidden" scrolling="no" frameborder="0" height="100%" width="420px"&gt; &lt;/iframe &gt;</textarea>
+                                     </label>
+                                 </div>
+                             </div>
+                        </form>
+                  </div>
+                  <a class="close-reveal-modal">&#215;</a>
+              </div>
+          </div>
+      </div>
+        
+      <div style="float:right; padding:20px 20px 0 0"><a href="#" data-reveal-id="myModal" data-reveal><img src="img/share.png" width="40px" onmouseover="this.src='img/share_h.png';" onmouseout="this.src='img/share.png';"></a></div>
+
+      
+      <div class="row">
+          <div class="medium-7 large-centered columns">
+              <br /><br /><br /><br />
+          </div>
+      </div>
+      
+    
+     <div class="row">
+        <dl class="tabs" data-tab>
+            <dd class="small-3 columns active" id="tomato01"><a href="#panel2-1" class="tabs_a"> </a></dd>
+            <dd class="small-3 columns" id="tomato02"><a href="#panel2-3" class="tabs_c"></a></dd>
+            <dd class="small-3 columns" id="tomato03"><a href="#panel2-2" class="tabs_b"></a></dd>
+            <dd class="small-3 columns" id="tomato04"><a href="#panel2-4" class="tabs_d"></a></dd>
+         </dl>
+        <div id="block" class="show-for-large-up"></div>
+       
+         <div class="tabs-content">
+             <hr>
+            <div class="content active small-12 columns" id="panel2-1">
+                 <div class="medium-4 columns">
+                     <img src="img/location_navrongo.jpg">
+                </div>
+                <div class="medium-8 columns">
+                <h4>Champs déserts</h4>
+                <p><b>Navrongo, Upper East Region, Ghana.</b> Les champs qui autrefois abondaient de plants de tomates sont aujourd’hui déserts. Les paysans ont changé de culture ou abandonné leurs terres. </p>
+                    </div>
+            </div>
+            <div class="content  small-12 columns" id="panel2-3">
+                <div class="medium-4 columns">
+                     <img src="img/location_accra.jpg">
+                </div>
+                <div class="medium-8 columns">
+                <h4 >L’Afrique mise en boîte</h4>
+                <p><b>Makola Market, Accra, Ghana.</b> Les étals du marché croulent sous les boîtes de conserves de concentré de tomate importé d’Italie ou de Chine. Les clients boudent les tomates fraîches. </p>
+                    </div>
+            </div>
+            <div class="content  small-12 columns" id="panel2-2">
+                <div class="medium-4 columns">
+                     <img src="img/location_nocera.jpg">
+                </div>
+                <div class="medium-8 columns">
+                <h4>L’industrie de l’or rouge</h4>
+                <p><b>Nocera Superiore, Campanie, Italie.</b> Chaque jour des tonnes de boîtes de conserves de tomates sortent des usines de transformation. Du port de Naples, elles sont ensuite exportées dans le monde entier.</p>
+                    </div>
+            </div>
+            <div class="content  small-12 columns" id="panel2-4">
+                <div class="medium-4 columns">
+                     <img src="img/location_borgoliberta.jpg">
+                </div>
+                <div class="medium-8 columns">
+                <h4>Or rouge, sang noir</h4>
+                <p><b>Borgo Libertà, Pouilles, Italie.</b> Les immigrés ghanéens récoltent les tomates qui, une fois transformées en concentré, seront exportées vers leur pays d’origine. </p>
+                    </div>
+            </div>
+         </div>
+      
+    </div>
+ 
+  <!-- -----------------------------------------------------------------   Chapter---01 -->
+       
+      <div class="row">
+          <div class="medium-7 small-centered columns ">
+              
+              <center>
+                  <hr>
+                    <h3 id="title">Champs <strong>déserts</strong></h3>
+                  <br/><br/>
+                    <img src="img/tomato.jpg" width="200px">
+                    <br/><br/>
+                    <p class="head-introduction"></p>
+                    <p class="head-location">Navrongo - Région Nord Est du Ghana</p>
+                    <hr>
+              </center>
+          </div>
+      </div>
+      
+     
+      <div class="row">
+          <div class="medium-7 large-centered columns">
+              <br /><br /><br /><br /><br /><br /><br />
+          </div>
+      </div>
+
+ 
+
+
+    
+
+      
+  
+       <div class="row">
+           <div class="medium-8 medium-centered columns">
+                 <br /><br /><br /><br />
+                
+                <p>  <span class="firstcharacter">L</span>e long de la route qui mène de Tamale à Navrongo, les pyramides de tomates vacillent dans le sillage des camions chargés de caisses vides, lancés à toute allure sur l’axe qui relie le Nord et le Sud du Ghana. Le vacarme des moteurs, le hululement des klaxons, le grincement des remorques, couvrent les éclats de voix des femmes qui, chaque jour, viennent s’installer là pour tenter de vendre leur production. En vain, la tomate fraîche ne fait plus recette.
+<br /><br />
+     	  Sur les étals du marché, les vendeuses se plaignent. Dans leurs paniers d’osier, les tomates pourpres et brillant au soleil finissent par se gâter et pourrir. Les clientes ne veulent plus de produits frais, mais elles s’arrachent en revanche les boîtes de Salsa, Gino et Obaapa, marques de concentré de tomates en boîte importées d’Italie ou de Chine.
+ </p>
+               <br /><br /><br /><br /><br /><br /><br /><br />
+               </div>
+
+      </div>
+      
+      <!------------------------------------------------------------  video   -->
+                    
+                          
+            <div class="row">
+      
+                     <video id="my_video_3" class="video-js vjs-default-skin" controls preload="none" 
+  data-setup='{}' poster="img/poster_vid_01.jpg" >
+                        <source src="video/vid-01-campi.mp4" type='video/mp4'>
+                        <source src="video/vid-01-campi.webm" type='video/webm'>
+    
+                         
+                    </video>
+            </div>
+
+                    
+     <!------------------------------------------------------------  video   -->
+               
+       <div class="row">
+           <div class="medium-8 medium-centered columns">
+               <br /><br /><br /><br /><br /><br /><br /><br />
+                    <p>
+<i>« Il y a de la tomate dans tous les plats ghanéens, mais les tomates produites ici ne se vendent pas ».</i> Ayine Justice Atomsko, chef de la petite communauté paysanne de Vea, est amer. Il y a une vingtaine d’années, la culture de la tomate était encore florissante dans cette région agricole du nord du Ghana. Tous les fermiers en cultivaient quelques hectares, avec l’assurance de parvenir à les vendre à bon prix.
+
+</p>
+           </div>
+      </div>    
+      <!-- ---------------------------------------------------------Image Caption -->
+      <div class="row" >
+                 <div class="medium-8 medium-centered columns" >
+                     <hr>
+          <div class="medium-3 medium columns image-circle">
+                   <img src="img/caption_aolja.png" style="padding-bottom:10px;">
+                </div>
+                     
+                             
+                                 <div class="medium-9 medium columns img-quote">
+                                     
+                                    
+                                  «Désormais, je ne cultive plus de tomates. Je ne saurais pas à qui les vendre»<br /><br />
+  <p>Aolja Tenitia - ex agricultrice de l’année 2007 </p>
+                                </div>
+                            <hr>
+                     </div>
+                </div>
+        <!-- ---------------------------------------------------------Image Caption -->
+      
+      <div class="row">
+           <div class="medium-8 medium-centered columns">
+               <br /><br />
+                    <p>
+Mais au début des années 2000, la mine d’or s’est transformée en malédiction. L’expérience ratée de l’usine de transformation de Pwalugu, la concurrence du Burkina Faso voisin et surtout l’arrivée d’une vague d’importation de tomates en conserves d’Italie et de Chine ont eu raison des rêves des fermiers de la région. Criblés de dettes, après avoir investi toutes leurs économies dans les terres, les graines et la main d’œuvre, certains producteurs de tomates ont mis fin à leurs jours en 2007, d’autres ont définitivement abandonné leurs terres.
+
+
+</p><br /><br />
+           </div>
+      </div>  
+      
+       <!-- -----------------------------------------------------------------         PARALLAX -->   
+      <div class="header">
+          <div class="cont hide-for-touch">
+              <div class="parallax overlay" id="parallax-01">
+                    <q>La culture de la tomate aurait pu être une mine d’or</q>
+              </div>
+          </div>
+      </div>
+
+ <!-- -----------------------------------------------------------------         PARALLAX -->
+      
+        <!-- -----------------------------------------------------------------         PARALLAX -->   
+      <div class="header">
+          <div class="cont show-for-touch">
+             <img src="img/ch_01_parallax.jpg">
+          </div>
+      </div>
+
+ <!-- -----------------------------------------------------------------         PARALLAX -->
+      
+  
+
+       
+      
+                    <!-------------------Chapter 02---------------------------------------------------->
+    
+      
+      
+      <div class="row">
+          <br /><br /><br /><br /><br /><br />
+          <div class="medium-8 small-centered columns ">
+              <center>
+                  <hr>
+                    <h3 id="title">L’Afrique mise<strong> en boîte</strong></h3>
+                        <br/><br/>
+                        <img src="img/market.gif" width="200px">
+                        <br/><br/>
+                        <p class="head-location">Accra - Capitale du Ghana</p>
+                        <hr>
+              </center>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="medium-8 large-centered columns">
+              <br /><br /><br /><br /><br /><br />
+          </div>
+      </div>
+
+
+       <div class="row">
+           <div class="medium-8 medium-centered columns">
+                <br /><br /><br /><br />
+                <p>  <span class="firstcharacter">M</span>akola Market, le marché central d’Accra -l’un des plus grands d’Afrique Occidentale- est le cœur commercial de la capitale. Une véritable fourmilière où se frôlent dans un ballet incessant des femmes transportant sur leurs têtes cartons et bassines remplis de marchandises, où se bouscule une cohue de vendeurs ambulants dans un dédale de coupe-gorges, encombrés de camions encore chargés de marchandises de toutes sortes.
+ <br /><br />
+ Partout les étals croulent sous des pyramides de boîtes rouges de concentré de tomate, savamment agencées par les marchandes. <i>« Gino » « Salsa » « Fiorini »</i>, les marques sont un concentré d’Italie. Une image vendeuse pour la tomate, le produit chinois <i>«Gino»</i> arbore d’ailleurs les couleurs vert-blanc-rouge du drapeau italien pour attirer les clientes. D’autres produits misent sur la référence à l’identité africaine, <i>« African Choice »</i>, <i>« Obaapa »</i>, mais à y regarder de plus près, on peut lire « mis en boîte en Italie » sur les conserves.
+                    <br />
+                    
+                    </p>
+               </div>
+      </div>
+      <!-- ---------------------------------------------------------Image Caption -->
+      <div class="row" >
+          <div class="medium-8 medium-centered columns" >
+              <hr>
+              <div class="medium-3 medium columns image-circle">
+                  <img src="img/caption_agnes.png" style="padding-bottom:10px;">
+              </div>        
+              <div class="medium-9 medium columns img-quote">         
+                  «Avant je vendais des fruits et des légumes frais. Aujourd’hui les clientes n’achètent plus que des boîtes de conserve» <br><br>  <p> Agnès Sewa - Vendeuse ambulante</p>     
+              </div>      
+              <hr>     
+          </div>          
+      </div>
+        <!-- ---------------------------------------------------------Image Caption -->
+      
+      <div class="row">
+           <div class="medium-8 medium-centered columns">
+               <br /><br />
+                    <p>
+<i>« Ce qui se vend le mieux ce sont ces boîtes de Gino, mais les boîtes de Salsa partent bien aussi »</i> explique Agnès Sewa, petite marchande au grand tablier rouge. Au fil des ans, elle a vu peu à peu disparaître les montagnes de fruits et légumes frais des étals, remplacés par les boîtes de conserves importées du monde entier.
+</p>  
+               <br /><br /><br /><br /><br /><br /><br /><br />
+               </div>
+
+      </div>
+      
+      <!------------------------------------------------------------  video   -->
+                    
+            <div class="row">
+      
+                     <video id="my_video_2" class="video-js vjs-default-skin" controls preload="none" 
+  data-setup='{}' poster="img/poster_vid_02.jpg" >
+                            <source src="video/vid-02-mercato.mp4" type='video/mp4'>
+                            <source src="video/vid-02-mercato.webm" type='video/webm'>
+    
+                         
+                    </video>
+            </div> 
+     <!------------------------------------------------------------  video   -->
+               
+       <div class="row">
+           <div class="medium-8 medium-centered columns">
+               <br /><br /><br /><br /><br /><br /><br /><br />
+                    <p>
+ Pour Philippe Ayamba, directeur du Community Self Reliance Center, association proche des producteurs de tomates, le gouvernement aurait dû limiter la quantité de concentré de tomates importée de l’étranger. <i>«Si le marché avait été régulé, les agriculteurs auraient pu bénéficier de meilleurs prix et auraient pu vendre leur production. Mais le gouvernement a fait l’inverse. Il a ouvert grand les portes aux importations de concentré de tomates européen. Il y a un tel choix et une telle quantité de produits sur le marché qu’il est impossible de vendre les tomates produites localement».</i>
+
+               </p>
+               <br /><br />
+           </div>
+      </div>  
+      
+      
+      
+      
+      <!-------------------------------GRAPH 01----------------------------------------------------------------->
+      
+      <div class="row">
+           <div class="medium-8 medium-centered columns">
+               <h5>IMPORTATIONS DE CONCENTRE DE TOMATE D’ITALIE AU GHANA</h5>
+               <hr>
+               <p style="font-size:14px; color:#999"> Des milliers de tonnes de concentré de tomate produit en Italie arrivent chaque année au Ghana. Ces importations ont un impact sur le marché local de la tomate.</p>
+          </div>
+        </div>
+          
+      <div class="row">
+         <div class="medium-10 medium-centered columns">
+           <div class="large-12 columns">
+               <div class="flex-video">
+                    <iframe src="http://cf.datawrapper.de/beYoX/4/" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" width="100%" height="400"></iframe>
+               </div>
+             </div>
+          </div>
+      </div>
+             
+      
+      <div class="row">
+           <div class="medium-8 medium-centered columns">
+               <br /><br /><br /><br /><br /><br /><br /><br />
+                    <p>
+Au début des années 2000, le gouvernement ghanéen a réduit les droits de douanes sur les importations de certains produits, dont le concentré de tomates, provoquant un déluge de produits étrangers sur les marchés locaux. La FAO a fait le calcul : entre 1998 et 2003, les importations de concentré de tomate ont augmenté de 650%. Alors qu’en 1998, 92% des tomates vendues au niveau national étaient d’origine ghanéene, en 2003, la part de marché avait chuté à 57%. Une baisse qui a non seulement eu un impact direct sur les agriculteurs, mais aussi sur l’organisation de la filière. L’Institut International de Recherche sur les Politiques Alimentaires (IFPRI) estime que le voyage d’une tomate du champ à l’assiette donne du travail à au moins vingt-cinq personnes, de l’agriculteur au transporteur, des vendeurs en gros au petits commercants, des intermédiaires aux propriétaires de restaurants.  
+<br /><br />
+Aujourd’hui, chaque année le Ghana importe en moyenne 20.000 tonnes de concentré de tomates par an. Un juteux marché que l’Italie, qui en avait encore le monopole il y a encore dix ans, se dispute aujourd’hui avec la Chine. 
+
+               </p>
+               <br /><br /><br /><br /><br />
+           </div>
+      </div>  
+            
+      
+                    
+      
+      
+      
+        <!-- -----------------------------------------------------------------         PARALLAX -->   
+      <div class="header">
+          <div class="cont hide-for-touch">
+              <div class="parallax overlay" id="parallax-02">
+                    <q>Les importations massives de concentré de tomate européen ont tué le marché local</q>
+              </div>
+          </div>
+      </div>
+
+ <!-- -----------------------------------------------------------------         PARALLAX -->
+     <!-- -----------------------------------------------------------------         PARALLAX -->   
+      <div class="header">
+          <div class="cont show-for-touch">
+             <img src="img/ch_02_parallax.jpg">
+          </div>
+      </div>
+
+ <!-- -----------------------------------------------------------------         PARALLAX -->
+      
+  
+      
+      
+      
+      
+     <!-------------------Chapter 03---------------------------------------------------->
+    
+      
+      
+     <div class="row ">
+         <br /><br /><br /><br /><br /><br /> 
+         <div class="medium-8 small-centered columns "> 
+             <center>
+                 <hr>
+                 <h3 id="title">L’industrie de <strong>l’or rouge</strong></h3>
+                 <br/><br/>
+                 <img src="img/can.gif" width="200px">
+                 <br/><br/>
+                 <p class="head-location">Nocera Superiore - Sud de l’Italie</p>
+                 <hr>
+             </center>
+         </div>
+      </div>
+
+      <div class="row">
+          <div class="medium-8 large-centered columns">
+              <br /><br /><br /><br /><br /><br />
+          </div>
+      </div>
+
+ 
+
+      
+  
+       <div class="row">
+           <div class="medium-8 medium-centered columns">
+                <br /><br /><br /><br />
+                <p>  <span class="firstcharacter">D</span>ans l’usine de conditionnement du concentré Salsa, les boîtes de conserves virevoltent sur des rails dans un tintamarre assourdissant. Les ouvriers affairés chargent des palettes de cartons dans un container. <i>«Il part demain pour la Côte d’Ivoire»</i> explique le maître d’œuvre.<br />
+<i>« Quand mon père a fondé l’entreprise en 1968 à Nocera Superiore, elle produisait 10.000 cartons par jour. A l’époque c’était exceptionnel !»</i> raconte Angelo D’Alessio, l’actuel administrateur délégué de Cec - Centro Esportazioni Conservati. « En Afrique, il y a vingt ans, le concentré de tomate était exclusivement italien ». Aujourd’hui encore toute la production de l’usine italienne de Nocera Superiore est exportée de l’autre coté de la Méditerranée. Grâce à sa marque phare « Salsa », destinée au marché africain, l’entreprise affiche un chiffre d’affaires annuel oscillant entre 25 et 30 millions d’euros annuels.
+</p>
+                    <br /><br /><br /><br /><br />
+               </div>
+      </div>
+      
+      <!------------------------------------------------------------  video   -->
+                    
+                   
+      <div class="row container-dalessio">
+          <video id="my_video_1" class="video-js vjs-default-skin" controls preload="none" 
+  data-setup='{}' poster="img/poster_vid_03.jpg" >
+              <source src="video/vid-03-fabbrica.mp4" type='video/mp4'>
+              <source src="video/vid-03-fabbrica.webm" type='video/webm'>
+          </video>    
+      </div> 
+     <!------------------------------------------------------------  video   -->
+      
+      <div class="row">
+          <div class="medium-8 medium-centered columns">
+                <br /><br /><br /><br /><br /><br /><br /><br />
+                <p>  <i>« L’Italie est le deuxième transformateur et conservateur de tomate après la Californie, en terme de quantité de produits frais transformés »</i> se félicite Giovanni de Angelis, directeur de l’ANICAV, association nationale des producteurs industriels de conserves alimentaires végétales. <i>« Cette année nous avons dépassé la Chine ! »</i>. En 2013, l’industrie italienne de la conserve de tomate a exporté 1,127 millions de tonnes de conserves de tomates pour un chiffre d’affaires 846 millions d’euros, dans un marché en croissance de 8,32% sur un an, selon des chiffres élaborés par Federalimentare.
+
+                    <br /><br /><br />
+               </div>
+      </div>
+      
+          
+  
+      
+       <!-------------------------------GRAPH 02----------------------------------------------------------------->
+       
+      <div class="row">
+          <div class="medium-8 medium-centered columns">
+              <h5>PRINCIPAUX PAYS EXPORTATEURS DE CONCENTRE DE TOMATE VERS LE GHANA</h5>
+              <hr>
+              <p style="font-size:14px; color:#999"> L’Italie est le deuxième exportateur de concentré de tomate vers le Ghana, après la Chine (2011). </p>
+          </div>
+      </div>
+      
+      
+      
+      <div class="row">
+          <div class="medium-10 medium-centered columns">
+              <div class="large-12 columns">
+                  <div class="flex-video">
+                      <iframe src="http://cf.datawrapper.de/2LNQE/1/" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" width="100%" height="300"></iframe>
+                    </div>
+                </div>
+             </div>
+         </div>
+        
+     <!-------------------------------GRAPH 02----------------------------------------------------------------->
+    
+  
+      <div class="row">
+          <div class="medium-8 medium-centered columns">
+              <br /><br /><br /><br />
+              <p> Le cœur de ce <i>« business »</i> se trouve dans le centre sud de l’Italie, dans la région de Naples, carrefour stratégique pour la transformation et le commerce. Sur les quais du port parthénopéen, chaque semaine des containers de boîtes de concentré de tomate <i>« made in Italy »</i>, partent pour les quatre coins du monde.
+<br /><br />
+Seule la production agricole a été délocalisée dans les Pouilles, les terres fertiles de l’agro-napoletano ayant été peu à peu grignotés par l’urbanisation rampante. La plaine de la Capitanata, autour de Foggia, autrefois haut lieu de la culture céréalière, est devenue la mine <i>« d’or rouge »</i>.
+                  <br /><br /><br /><br />
+              </div>
+      </div>
+     
+       <!-- -----------------------------------------------------------------         PARALLAX -->   
+      <div class="header">
+          <div class="cont hide-for-touch">
+              <div class="parallax overlay" id="parallax-04">
+                    <q>Même en Afrique, je n’ai jamais vu des travailleurs vivre dans ces conditions</q>
+              </div>
+          </div>
+      </div>
+
+ <!-- -----------------------------------------------------------------         PARALLAX -->
+       <!-- -----------------------------------------------------------------         PARALLAX -->   
+      <div class="header">
+          <div class="cont show-for-touch">
+             <img src="img/ch_04_parallax.jpg">
+          </div>
+      </div>
+
+ <!-- -----------------------------------------------------------------         PARALLAX -->
+      
+      
+        <!-------------------Chapter 04---------------------------------------------------->
+    
+      
+      
+     <div class="row">
+        <br /><br /><br /><br /><br /><br />
+         <div class="medium-8 small-centered columns ">
+             <center>
+                 <hr>
+                 <h3 id="title"><strong>Or rouge</strong> sang noir</h3>
+                 <br/><br/>
+                 <img src="img/hand.gif" width="200px">
+                 <br/><br/>
+                 <p class="head-location">Borgo Libertà, Sud de l’Italie - Région des Pouilles</p>
+                 <hr>
+             </center>
+         </div>
+      </div>
+
+
+      <div class="row">
+          <div class="medium-7 large-centered columns">
+              <br /><br /><br /><br /><br /><br />
+          </div>
+      </div>
+
+       
+      <div class="row">
+          <div class="medium-8 medium-centered columns"> 
+              <br /><br /><br /><br />  
+              <p>  <span class="firstcharacter">A</span>u milieu des prairies jaunies de la plaine de la Capitanata qui s’étend entre les côtes de la mer Adriatique et les collines du Gargano, des semi-remorques chargés de caisses de tomates filent à toute allure sur des routes mal asphaltées en direction de Naples, soulevant à leur passage des nuages de poussière. Une atmosphère de Far West américain qui se fond peu à peu en ambiance de brousse africaine. En file indienne, des travailleurs saisonniers ghanéens, maliens, sénégalais rejoignent leur campement, au terme d’une journée de dur labeur. De la fin-juillet à la mi-octobre, ils sont des milliers à faire étape dans les champs du sud de l’Italie pour la saison de récolte des tomates. 
+<br /><br />  
+Employés au noir, ils ne sont pas payés à l’heure, mais à la quantité de fruits ramassés : 3,5€ par caisson de 300 kg rempli, soit moins de 20€ par jour, pour un travail harassant. Sans contrat de travail, sans protection sanitaire, à la merci des « caporaux » - les intermédiaires entre les travailleurs et les employeurs. S’ils ont faim à midi, ils croquent en cachette dans une tomate. Le soir, ils rentrent au campement où ils louent un matelas sous des bâches ou dans une baraque de fortune. 
+                  <br /><br /><br /><br /><br />  
+              </p>
+          </div>
+      </div>
+      
+    
+   
+      <!------------------------------------------------------------  video   -->
+      <div class="row container-dalessio">          
+          <video id="my_video_4" class="video-js vjs-default-skin" controls preload="none" 
+  data-setup='{ "asdf": true }' poster="img/poster_vid_04.jpg" >           
+              <source src="video/vid-04-ghetto.mp4" type='video/mp4'>
+              <source src="video/vid-04-ghetto.webm" type='video/webm'>
+          </video>
+      </div> 
+     <!------------------------------------------------------------  video   -->
+      
+     
+      <div class="row"> 
+          <div class="medium-8 medium-centered columns">  
+              <br /><br /><br /><br /><br /><br /><br /><br />
+              <p>  <em>« Les invisibles des campagnes de récolte »</em> sont des milliers dans tout le sud de l’Italie. Dans leur grande majorité sans-papiers, ils sont prêts à tous les sacrifices pour travailler. <em>« Même en Afrique, je n’ai jamais vu des gens vivre dans de telles conditions »</em> s’indigne Yvan Sagnet, étudiant camerounais qui a organisé en 2010 la première grève des saisonniers dans les champs des Pouilles. Aujourd’hui il est employé par la CGIL, première centrale syndicale en Italie, pour défendre les droits des saisonniers migrants. 
+
+
+<br /><br />
+L’Italie, troisième agriculture européenne après la France et l’Allemagne, se dispute avec l’Espagne la première place pour les cultures maraîchères. Au cours des dix dernières années, selon des <a href="http://faostat3.fao.org/faostat-gateway/go/to/home/E" target="_blank">données élaborées par FAO Stat</a>, l’Italie a produit en moyenne 6 millions de tonnes de tomates par an. Selon la FAO, le montant moyen des <a href="ftp://ftp.fao.org/docrep/fao/009/ah628e/ah628e00.pdf" target="_blank">aides européennes au secteur</a> tomate s’élevait en 2001 à 45€ par tonne de produit exporté. Qui plus est, selon <a href="http://www.oxfam.org/sites/www.oxfam.org/files/truth.pdf" target="_blank">Oxfam</a>, l’Union Européenne subventionne la production totale annuelle de tomate en Europe à hauteur de 300 millions d’euros, soit environ 34,5€ par tonne, subvention qui couvrirait 65% du prix de marché du produit final. Qui à Bruxelles réalise ce paradoxe? Pourquoi continuer à subventionner un produit destiné à l’exportation exerçant, de fait, un dumping sur les productions locales africaines?  
+                  <br />
+              </div>
+      </div>
+      
+      <!-- ---------------------------------------------------------Image Caption -->
+      <div class="row" >
+          <div class="medium-8 medium-centered columns" >    
+              <hr>
+              <div class="medium-3 medium columns image-circle">
+                  <img src="img/caption_prince.jpg" style="padding-bottom:10px;">
+              </div>        
+              <div class="medium-9 medium columns img-quote">                       
+                  «Pendant la saison de récolte des tomates, je réussis à envoyer un peu d’argent à ma famille au Ghana. Mais je ne peux pas repartir, ni les faire venir ici, ni leur dire dans quelles conditions je vis en Italie.» <p>Prince Bony - Saisonnier ghanéen</p>  
+              </div>          
+              <hr>
+          </div>
+      </div>
+        <!-- ---------------------------------------------------------Image Caption -->
+      
+      
+      <div class="row">
+          <div class="medium-8 medium-centered columns">
+                <br /><br />
+                <p>  L’histoire de Kofi America est emblématique de ce mécanisme pervers. Assis devant la maison délabrée qu’il va devoir quitter car le toit menace de s’effondrer, il ne sait pas où il va poursuivre son <em>«voyage»</em>. Sisyphe des temps modernes, il semble condamné à ramasser des tomates comme le fils d’Eole à rouler sa pierre en haut de la montagne. 
+Ce que Kofi America ignore, c’est que le fruit de son travail au noir, dans les champs de tomates du sud de l’Italie, risque de contraindre à leur tour les agriculteurs de l’Upper East Region, au nord du Ghana, à abandonner leurs terres. Ces mêmes terres sur lesquelles il a vécu et qu’il a cultivées pour nourrir sa famille, avant de partir.  
+                    <br />
+              </div>
+      </div>
+     
+       
+      <div class="row">
+          <br /><br /> <br />         
+          <div class="medium-8 medium-centered columns">        
+              <hr>
+              <p id="small-text-footer"><b>Mathilde Auvillain, Stefano Liberti</b><br />
+                  <b>Research and Data:</b> Jacopo Ottaviani,<br />
+                  <b>Photography and Video:</b> Mario Poeta,<br />
+                  <b>Design and Development:</b>  Isacco Chiaf
+              </p>
+              <hr>
+          </div>
+      </div>
+      
+      <div class="row">
+          <div class="medium-8 medium-centered columns">
+              <center>
+                  <p id="small-text-footer">
+                       Do you want to stay updated on tomato? Like us on Facebook
+                  </p><br /><br /><br /><br />
+                  <a href="https://www.facebook.com/darksidetomato" target="_blank" class="button radius facebook">Facebook Page</a>
+                  <br /> <br /><br /><br /><br />
+                  <img src="img/icn.jpg">
+                  <br /> <br /><br />
+              </center>
+          </div>
+      </div>
+     
+
+        
+      <footer>
+          <div class="row">
+              <div class="medium-8 medium-centered columns">
+                  <center><p>This project was realized with the support of EJC Grant for Innovative Reporting</p></center> 
+                  <center><img src="img/footer_ejclogo.png" width="100px"></center> 
+                  <br /> <br />
+              </div>
+          </div>
+      </footer>
+      
+      <footer id="copyright-year">
+          <div class="row">
+              <div class="medium-8 medium-centered columns">
+                  <center><h5>©2014</h5></center> 
+              </div>
+          </div>
+      </footer>
+      
+  
+      
+        
+<!-- __________________________________SCRIPTS_________________ -->
+   <script src="js/videoresize.js"></script>   
+<script src="js/foundation/foundation.js"></script>
+<script src="js/foundation/foundation.reveal.js"></script>
+<script src="js/foundation/foundation.orbit.js"></script>
+<script src="js/foundation/foundation.tab.js"></script>
+      <script src="js/foundation/foundation.tab.js"></script>
+       <script src="js/foundation/foundation.magellan.js"></script>
+       <script src="js/foundation/foundation.topbar.js"></script>
+      
+    <script>
+   $(document).foundation();
+    </script>
+      
+
+   
+  </body>
+</html>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
