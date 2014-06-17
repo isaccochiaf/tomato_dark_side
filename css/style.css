@@ -411,6 +411,9 @@ video {
 .overlay-second-band {
     padding-top:4%;
 }
+.overlay-second-band p {
+    font-size:1em;
+}
 
 .buttons-social img {
     margin-left:10px;
