@@ -406,6 +406,7 @@ video {
     position:absolute;
     padding:15px 15px 0 0;
     right:0;
+    z-index:1000
 }
 
 .overlay-second-band {
