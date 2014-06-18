@@ -168,6 +168,7 @@ src: url(../font/Archive.otf);
 #title strong {color: #c0392b}
 
 #small-text { font-size:110%; color:#999}
+#small-text-name { font-size:1em; color:#999}
           
           
 input[type=range] {
